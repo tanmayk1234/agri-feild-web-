@@ -532,6 +532,64 @@
             .guarantee-grid { grid-template-columns: 1fr; }
             .vb-hero { padding: 120px 20px 60px; }
             .apply-dual { flex-direction: column; align-items: center; }
+            .about-grid { grid-template-columns: 1fr; }
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background: #fff;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .about-text p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+        .about-text p:last-child { margin-bottom: 0; }
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .about-highlight-card {
+            background: #f8faf9;
+            border: 1px solid #e8f0ec;
+            border-radius: 14px;
+            padding: 24px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .about-highlight-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 6px 20px rgba(0,104,56,0.08);
+        }
+        .about-highlight-card .about-icon {
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            background: rgba(0,104,56,0.1);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 14px;
+            color: var(--primary);
+        }
+        .about-highlight-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-family: var(--font-heading);
+        }
+        .about-highlight-card p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -571,6 +629,45 @@
                 <h1>We Don't Just Give You Ideas.<br><span>We Give You Validated Opportunities.</span></h1>
                 <p>How a farm labor crisis became a ₹7 crore venture in 100 days — and what it means for the next builder.</p>
                 <a href="success-stories.html" class="btn btn-primary-white">See How It Happened <i data-lucide="arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">ABOUT <span class="highlight">THE VENTURE BLUEPRINT</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>The Venture Blueprint is the core methodology behind <strong>Agri Founders Field</strong> — India's only on-farm venture building program, a joint initiative by <strong>Sahyadri Farms</strong>, <strong>Digital Impact Square (DISQ)</strong>, and <strong>Maharashtra State Innovation Society (MSIS)</strong>.</p>
+                        <p>We don't ask founders to guess what to build. Instead, we invest months in deep field research — interviewing 1,000+ stakeholders, mapping value chain frictions, and sizing real market opportunities — so every builder starts with a validated problem and guaranteed pilot customers.</p>
+                        <p>Each blueprint is backed by real data: market sizing, unit economics, competitive analysis, and risk frameworks. Builders get hands-on access to Sahyadri's 15,000+ farmer network, on-farm R&D facilities, and practitioner mentors who have built ₹2,000+ crore agri-ventures.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="about-highlight-card fade-in-up stagger-1">
+                            <div class="about-icon"><i data-lucide="search" style="width:22px;height:22px;"></i></div>
+                            <h4>Field-Validated</h4>
+                            <p>1,000+ stakeholder interviews per opportunity</p>
+                        </div>
+                        <div class="about-highlight-card fade-in-up stagger-2">
+                            <div class="about-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+                            <h4>15,000+ Farmers</h4>
+                            <p>Direct access to Sahyadri's farmer network</p>
+                        </div>
+                        <div class="about-highlight-card fade-in-up stagger-3">
+                            <div class="about-icon"><i data-lucide="bar-chart-3" style="width:22px;height:22px;"></i></div>
+                            <h4>7 Opportunities</h4>
+                            <p>Each with market sizing and solution blueprints</p>
+                        </div>
+                        <div class="about-highlight-card fade-in-up stagger-4">
+                            <div class="about-icon"><i data-lucide="rocket" style="width:22px;height:22px;"></i></div>
+                            <h4>100-Day Launch</h4>
+                            <p>From blueprint to pilot in under 4 months</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
