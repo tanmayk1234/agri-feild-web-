@@ -4,23 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venture Blueprint | Agri Founders Field - Sahyadri Farms & DISQ</title>
+    <title>Venture Blue Print | Agri Founders Field - Sahyadri Farms & DISQ</title>
     <meta name="description"
-        content="Discover validated agricultural venture opportunities through our Venture Blueprint Method. We provide the roadmap, you bring the execution.">
-    <meta name="keywords"
-        content="Agri Ventures, Venture Blueprint, Agricultural Opportunities, Sahyadri Farms, DISQ, Agri Founders Field, Farm Logistics, Agri Credit, Crop Insurance">
-    <link rel="canonical" href="https://agrifounders.com/venture-blueprint.html">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://agrifounders.com/venture-blueprint.html">
-    <meta property="og:title" content="Venture Blueprint | Agri Founders Field">
-    <meta property="og:description" content="We don't just give you ideas. We give you validated opportunities.">
-    <meta property="og:image" content="https://agrifounders.com/assets/logo.png">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Venture Blueprint | Agri Founders Field">
-    <meta property="twitter:description" content="We don't just give you ideas. We give you validated opportunities.">
-
+        content="We don't just give you ideas. We give you validated opportunities. The Venture Blueprint Method by Agri Founders Field.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +15,6 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
-        /* Venture Blueprint Page Styles */
         .vb-hero {
             background: linear-gradient(135deg, #006838 0%, #004d2a 50%, #003d20 100%);
             padding: 140px 20px 80px;
@@ -37,25 +22,19 @@
             position: relative;
             overflow: hidden;
         }
-
         .vb-hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 30% 50%, rgba(74, 222, 128, 0.08) 0%, transparent 50%);
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(74,222,128,0.08) 0%, transparent 50%);
             animation: pulseGlow 8s ease-in-out infinite;
         }
-
         @keyframes pulseGlow {
-            0%, 100% { opacity: 0.5; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.1); }
+            0%,100% { opacity:.5; transform:scale(1); }
+            50% { opacity:1; transform:scale(1.1); }
         }
-
         .vb-hero .container { position: relative; z-index: 2; }
-
         .vb-hero-tag {
             display: inline-block;
             background: rgba(255,255,255,0.15);
@@ -69,7 +48,6 @@
             margin-bottom: 30px;
             font-family: var(--font-heading);
         }
-
         .vb-hero h1 {
             color: #fff;
             font-size: clamp(28px, 5vw, 52px);
@@ -80,27 +58,31 @@
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
-
         .vb-hero h1 span { color: #4ade80; }
-
         .vb-hero p {
             color: rgba(255,255,255,0.8);
             font-size: clamp(16px, 2vw, 20px);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 40px;
             line-height: 1.6;
         }
 
-        /* How We Find Section */
+        /* How Section */
         .how-section { padding: 80px 20px; background: #fff; }
-
+        .how-section .lead-text {
+            text-align: center;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .how-cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
-            margin-top: 50px;
         }
-
         .how-card {
             background: #f8faf9;
             border: 2px solid #e8f0ec;
@@ -109,159 +91,48 @@
             text-align: center;
             transition: all 0.4s ease;
         }
-
         .how-card:hover {
             border-color: var(--primary);
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0,104,56,0.08);
         }
-
         .how-card-icon {
-            width: 64px;
-            height: 64px;
+            width: 64px; height: 64px;
             border-radius: 16px;
             background: linear-gradient(135deg, #006838, #4ade80);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin: 0 auto 20px;
             color: #fff;
         }
-
         .how-card-num {
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 13px; font-weight: 700;
             color: var(--primary);
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 10px;
             font-family: var(--font-heading);
         }
-
         .how-card h3 {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 20px; font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 12px;
             font-family: var(--font-heading);
         }
+        .how-card p { font-size: 15px; color: #666; line-height: 1.6; }
 
-        .how-card p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Market Stats Banner */
-        .market-stats {
-            background: linear-gradient(135deg, #006838, #004d2a);
-            padding: 60px 20px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            text-align: center;
-        }
-
-        .stat-item h3 {
-            font-size: clamp(32px, 4vw, 48px);
-            font-weight: 800;
-            color: #4ade80;
-            font-family: var(--font-heading);
-            margin-bottom: 8px;
-        }
-
-        .stat-item p {
-            color: rgba(255,255,255,0.85);
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        /* Opportunity Cards */
-        .opportunities { padding: 80px 20px; background: #f4f7f5; }
-
-        .opp-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-top: 50px;
-        }
-
-        .opp-card {
-            background: #fff;
-            border: 2px solid #e8f0ec;
-            border-radius: 16px;
-            padding: 32px 28px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .opp-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #006838, #4ade80);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-            transform-origin: left;
-        }
-
-        .opp-card:hover::before { transform: scaleX(1); }
-
-        .opp-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0,104,56,0.08);
-        }
-
-        .opp-card-icon {
-            width: 52px;
-            height: 52px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, rgba(0,104,56,0.1), rgba(74,222,128,0.1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 18px;
-            color: var(--primary);
-        }
-
-        .opp-card h3 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-            font-family: var(--font-heading);
-        }
-
-        .opp-card p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Example Section - Logistics */
-        .example-section { padding: 80px 20px; background: #fff; }
-
+        /* Example Section */
+        .example-section { padding: 80px 20px; background: #f4f7f5; }
         .example-label {
             display: inline-block;
             background: rgba(0,104,56,0.08);
             color: var(--primary);
             padding: 6px 18px;
             border-radius: 50px;
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 13px; font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 20px;
         }
-
         .example-title {
             font-size: clamp(24px, 3.5vw, 40px);
             font-weight: 800;
@@ -269,118 +140,115 @@
             margin-bottom: 16px;
             font-family: var(--font-heading);
         }
-
         .example-subtitle {
-            font-size: 18px;
-            color: #666;
-            max-width: 700px;
+            font-size: 18px; color: #666;
+            max-width: 750px;
             line-height: 1.6;
             margin-bottom: 50px;
         }
 
-        /* What's Broken Table */
+        /* Broken Grid */
         .broken-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-bottom: 60px;
         }
-
         .broken-col h3 {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 22px; font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 24px;
             padding-bottom: 12px;
             border-bottom: 3px solid var(--primary);
             font-family: var(--font-heading);
         }
-
         .broken-item {
-            display: flex;
-            gap: 14px;
+            display: flex; gap: 14px;
             margin-bottom: 20px;
             align-items: flex-start;
         }
-
         .broken-item .icon-circle {
-            width: 32px;
-            height: 32px;
+            width: 32px; height: 32px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-top: 2px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; margin-top: 2px;
         }
-
-        .broken-col:first-child .icon-circle {
-            background: rgba(239, 68, 68, 0.1);
+        .broken-col .icon-circle {
+            background: rgba(239,68,68,0.1);
             color: #ef4444;
         }
-
-        .broken-col:last-child .icon-circle {
-            background: rgba(239, 68, 68, 0.1);
-            color: #ef4444;
-        }
-
-        .broken-item p {
-            font-size: 16px;
-            color: #444;
-            line-height: 1.5;
-        }
-
+        .broken-item p { font-size: 16px; color: #444; line-height: 1.5; }
         .broken-item strong { color: #1a1a1a; }
 
-        /* Big Stats Row */
-        .big-stats {
+        /* How Big Stats */
+        .howbig-section { padding: 80px 20px; background: #fff; }
+        .howbig-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin: 60px 0;
+            gap: 24px;
+            margin-top: 50px;
+            margin-bottom: 30px;
         }
-
-        .big-stat {
-            background: #f8faf9;
-            border: 2px solid #e8f0ec;
+        .howbig-stat {
+            background: linear-gradient(135deg, #006838, #004d2a);
             border-radius: 16px;
-            padding: 32px;
+            padding: 32px 24px;
             text-align: center;
         }
-
-        .big-stat h3 {
+        .howbig-stat .stat-label {
+            font-size: 12px; font-weight: 700;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-family: var(--font-heading);
+        }
+        .howbig-stat h3 {
             font-size: clamp(28px, 3vw, 40px);
             font-weight: 800;
-            color: var(--primary);
+            color: #4ade80;
             font-family: var(--font-heading);
             margin-bottom: 8px;
         }
+        .howbig-stat p { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5; }
 
-        .big-stat p {
-            font-size: 15px;
-            color: #666;
+        .howbig-descriptions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
         }
+        .howbig-desc {
+            background: #f8faf9;
+            border: 2px solid #e8f0ec;
+            border-radius: 16px;
+            padding: 28px 24px;
+        }
+        .howbig-desc h4 {
+            font-size: 16px; font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-family: var(--font-heading);
+        }
+        .howbig-desc p { font-size: 15px; color: #666; line-height: 1.6; }
 
         /* Builders Section */
         .builders-section {
             padding: 80px 20px;
             background: linear-gradient(135deg, #006838, #004d2a);
         }
-
-        .builders-section .section-title { color: #fff; }
-        .builders-section .highlight { color: #4ade80; }
-
-        .builders-section .section-subtitle {
-            color: rgba(255,255,255,0.8);
+        .builders-lead {
+            font-size: 20px;
+            color: rgba(255,255,255,0.85);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
         }
-
         .builders-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
-            margin-top: 50px;
+            margin-bottom: 50px;
         }
-
         .builder-card {
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
@@ -390,48 +258,72 @@
             backdrop-filter: blur(10px);
             transition: all 0.4s ease;
         }
-
         .builder-card:hover {
             background: rgba(255,255,255,0.12);
             transform: translateY(-4px);
         }
-
         .builder-card-icon {
-            width: 56px;
-            height: 56px;
+            width: 56px; height: 56px;
             border-radius: 14px;
             background: rgba(74,222,128,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin: 0 auto 18px;
             color: #4ade80;
         }
-
         .builder-card h3 {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 18px; font-weight: 700;
             color: #fff;
             margin-bottom: 10px;
             font-family: var(--font-heading);
         }
+        .builder-card p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; }
 
-        .builder-card p {
-            font-size: 14px;
-            color: rgba(255,255,255,0.7);
+        .why-works {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 36px;
+        }
+        .why-works h3 {
+            font-size: 22px; font-weight: 700;
+            color: #4ade80;
+            margin-bottom: 20px;
+            font-family: var(--font-heading);
+        }
+        .why-works ul { list-style: none; padding: 0; }
+        .why-works li {
+            color: rgba(255,255,255,0.85);
+            font-size: 16px;
             line-height: 1.6;
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+        }
+        .why-works li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: 700;
         }
 
         /* Guarantee Section */
         .guarantee-section { padding: 80px 20px; background: #f4f7f5; }
-
+        .guarantee-lead {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .guarantee-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 24px;
-            margin-top: 50px;
+            margin-bottom: 50px;
         }
-
         .guarantee-card {
             background: #fff;
             border: 2px solid #e8f0ec;
@@ -440,98 +332,206 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-
         .guarantee-card:hover {
             border-color: var(--primary);
             box-shadow: 0 15px 35px rgba(0,104,56,0.06);
         }
-
         .guarantee-card-icon {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border-radius: 50%;
             background: linear-gradient(135deg, #006838, #4ade80);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin: 0 auto 16px;
             color: #fff;
         }
-
         .guarantee-card h3 {
-            font-size: 28px;
-            font-weight: 800;
+            font-size: 28px; font-weight: 800;
             color: var(--primary);
             font-family: var(--font-heading);
             margin-bottom: 6px;
         }
+        .guarantee-card p { font-size: 14px; color: #666; }
 
-        .guarantee-card p {
-            font-size: 14px;
-            color: #666;
+        .pilot-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .pilot-box {
+            background: #fff;
+            border: 2px solid #e8f0ec;
+            border-radius: 16px;
+            padding: 32px 28px;
+        }
+        .pilot-box h4 {
+            font-size: 18px; font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            font-family: var(--font-heading);
+        }
+        .pilot-box p, .pilot-box li {
+            font-size: 15px; color: #666; line-height: 1.6;
+        }
+        .pilot-box ul { list-style: none; padding: 0; }
+        .pilot-box li { padding: 6px 0; padding-left: 20px; position: relative; }
+        .pilot-box li::before {
+            content: '✓';
+            position: absolute; left: 0;
+            color: var(--primary); font-weight: 700;
         }
 
         /* Beyond Section */
         .beyond-section { padding: 80px 20px; background: #fff; }
-
         .beyond-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 24px;
             margin-top: 50px;
         }
-
         .beyond-card {
             background: #f8faf9;
             border: 2px solid #e8f0ec;
             border-radius: 16px;
             padding: 28px 22px;
-            text-align: center;
             transition: all 0.3s ease;
         }
-
         .beyond-card:hover {
             border-color: var(--primary);
             transform: translateY(-3px);
         }
-
         .beyond-card-icon {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border-radius: 12px;
             background: linear-gradient(135deg, rgba(0,104,56,0.1), rgba(74,222,128,0.1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 14px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 14px;
             color: var(--primary);
         }
-
         .beyond-card h4 {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 16px; font-weight: 700;
             color: #1a1a1a;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             font-family: var(--font-heading);
         }
-
-        .beyond-card p {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.5;
+        .beyond-card ul { list-style: none; padding: 0; }
+        .beyond-card li {
+            font-size: 13px; color: #666; line-height: 1.5;
+            padding: 4px 0; padding-left: 16px; position: relative;
+        }
+        .beyond-card li::before {
+            content: '•'; position: absolute; left: 0; color: var(--primary);
         }
 
-        /* Responsive */
+        /* Ready Section */
+        .ready-section { padding: 80px 20px; background: #f4f7f5; }
+        .ready-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        .ready-box {
+            background: #fff;
+            border: 2px solid #e8f0ec;
+            border-radius: 16px;
+            padding: 36px 30px;
+        }
+        .ready-box h3 {
+            font-size: 20px; font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-family: var(--font-heading);
+        }
+        .ready-box ul { list-style: none; padding: 0; }
+        .ready-box li {
+            font-size: 16px; color: #444; line-height: 1.6;
+            padding: 8px 0; padding-left: 24px; position: relative;
+        }
+        .ready-box li::before {
+            content: '→'; position: absolute; left: 0;
+            color: var(--primary); font-weight: 700;
+        }
+
+        .apply-dual {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        /* 7 Opportunities Grid */
+        .seven-section { padding: 80px 20px; background: #fff; }
+        .seven-lead {
+            text-align: center;
+            font-size: 18px; color: #666;
+            max-width: 750px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+        .seven-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .seven-card {
+            background: #f8faf9;
+            border: 2px solid #e8f0ec;
+            border-radius: 16px;
+            padding: 28px 24px;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .seven-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, #006838, #4ade80);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+            border-radius: 16px 16px 0 0;
+        }
+        .seven-card:hover::before { transform: scaleX(1); }
+        .seven-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0,104,56,0.06);
+        }
+        .seven-card h3 {
+            font-size: 18px; font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-family: var(--font-heading);
+        }
+        .seven-card p { font-size: 14px; color: #666; line-height: 1.5; margin-bottom: 16px; }
+        .seven-card .btn-sm {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .seven-card .btn-sm:hover { background: #005a2e; }
+
         @media (max-width: 992px) {
             .how-cards { grid-template-columns: repeat(2, 1fr); }
             .broken-grid { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: repeat(2, 1fr); }
+            .pilot-metrics { grid-template-columns: 1fr; }
+            .ready-grid { grid-template-columns: 1fr; }
         }
-
         @media (max-width: 768px) {
             .how-cards { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr; gap: 30px; }
-            .big-stats { grid-template-columns: 1fr; }
+            .howbig-stats { grid-template-columns: 1fr; }
+            .howbig-descriptions { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: 1fr; }
             .vb-hero { padding: 120px 20px 60px; }
+            .apply-dual { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -551,7 +551,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="venture-blueprint.html" class="active">Ventures</a></li>
+                <li><a href="venture-blueprint.html" class="active">Venture Blue Print</a></li>
                 <li><a href="success-stories.html">Success Stories</a></li>
                 <li><a href="faq.html">FAQs</a></li>
                 <li><a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
@@ -564,342 +564,413 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section class="vb-hero">
             <div class="container">
                 <span class="vb-hero-tag">The Venture Blueprint Method</span>
                 <h1>We Don't Just Give You Ideas.<br><span>We Give You Validated Opportunities.</span></h1>
-                <p>Every venture we launch starts with a deeply researched, field-validated opportunity—not a pitch deck written in a coffee shop.</p>
-                <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-primary-white">APPLY NOW <i data-lucide="arrow-right"></i></a>
+                <p>How a farm labor crisis became a ₹7 crore venture in 100 days — and what it means for the next builder.</p>
+                <a href="success-stories.html" class="btn btn-primary-white">See How It Happened <i data-lucide="arrow-right"></i></a>
             </div>
         </section>
 
-        <!-- How We Find Opportunities -->
+        <!-- HOW WE FIND OPPORTUNITIES WORTH SOLVING -->
         <section class="how-section section" id="how">
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">HOW WE FIND <span class="highlight">OPPORTUNITIES WORTH SOLVING</span></h2>
                 </div>
+                <p class="how-section lead-text">Before we ask you to build, we do the hard work:</p>
 
                 <div class="how-cards">
                     <div class="how-card fade-in-up stagger-1">
                         <div class="how-card-icon"><i data-lucide="search" style="width:28px;height:28px;"></i></div>
                         <div class="how-card-num">Step 01</div>
                         <h3>Deep Field Research</h3>
-                        <p>100+ hours on farms. Conversations with 1,000+ farmers. We don't Google problems—we walk the fields.</p>
+                        <p>We interview 1,000+ stakeholders across the value chain — farmers, FPO operators, packhouse managers, transporters, wholesalers, retailers.</p>
                     </div>
                     <div class="how-card fade-in-up stagger-2">
                         <div class="how-card-icon"><i data-lucide="map-pin" style="width:28px;height:28px;"></i></div>
                         <div class="how-card-num">Step 02</div>
                         <h3>Friction Mapping</h3>
-                        <p>We map every friction point in the value chain—from seed to shelf. Where does money, time, or produce get lost?</p>
+                        <p>We identify where value is lost: post-harvest losses, broken logistics, information asymmetry, financing gaps.</p>
                     </div>
                     <div class="how-card fade-in-up stagger-3">
                         <div class="how-card-icon"><i data-lucide="bar-chart-3" style="width:28px;height:28px;"></i></div>
                         <div class="how-card-num">Step 03</div>
                         <h3>Market Sizing</h3>
-                        <p>We validate each opportunity against real market data. TAM, SAM, SOM—backed by numbers, not assumptions.</p>
+                        <p>We quantify the total addressable market, validate willingness to pay, and estimate unit economics.</p>
                     </div>
                     <div class="how-card fade-in-up stagger-4">
                         <div class="how-card-icon"><i data-lucide="check-circle" style="width:28px;height:28px;"></i></div>
                         <div class="how-card-num">Step 04</div>
                         <h3>Solution Validation</h3>
-                        <p>Before you write a line of code, we've already validated demand with farmers. You build what's already needed.</p>
+                        <p>We test assumptions with pilot customers and secure early LOIs (Letters of Intent) before you even start building.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Market Stats -->
-        <section class="market-stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item fade-in-up stagger-1">
-                        <h3>&#8377;2.1 Lakh Crore</h3>
-                        <p>Total Addressable Market (TAM)</p>
-                    </div>
-                    <div class="stat-item fade-in-up stagger-2">
-                        <h3>&#8377;40-50K Crore</h3>
-                        <p>Immediate Opportunity</p>
-                    </div>
-                    <div class="stat-item fade-in-up stagger-3">
-                        <h3>&#8377;4,570 Crore</h3>
-                        <p>Government Push (AIF Fund)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7 Opportunity Cards -->
-        <section class="opportunities section" id="opportunities">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">VALIDATED <span class="highlight">OPPORTUNITY AREAS</span></h2>
-                    <p class="section-subtitle center">Each opportunity is backed by field research, market data, and farmer demand.</p>
-                </div>
-
-                <div class="opp-grid">
-                    <div class="opp-card fade-in-up stagger-1">
-                        <div class="opp-card-icon"><i data-lucide="truck" style="width:26px;height:26px;"></i></div>
-                        <h3>First-Mile to Last-Mile Logistics</h3>
-                        <p>25-40% post-harvest losses. Fragmented cold chain. No SLA-driven logistics for perishables. A massive infrastructure gap waiting to be solved.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-2">
-                        <div class="opp-card-icon"><i data-lucide="banknote" style="width:26px;height:26px;"></i></div>
-                        <h3>Agri Credit &amp; Financial Services</h3>
-                        <p>₹18 Lakh Crore credit gap. Farmers depend on moneylenders at 24-36% interest. Formal credit reaches less than 40% of small farmers.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-3">
-                        <div class="opp-card-icon"><i data-lucide="shield-check" style="width:26px;height:26px;"></i></div>
-                        <h3>Crop Insurance &amp; Risk Management</h3>
-                        <p>Only 30% penetration despite PMFBY. Claim settlement takes 6+ months. Parametric insurance and AI-based assessment are wide open.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-4">
-                        <div class="opp-card-icon"><i data-lucide="recycle" style="width:26px;height:26px;"></i></div>
-                        <h3>Waste to Wealth</h3>
-                        <p>₹1.5 Lakh Crore of agri-waste generated annually. Less than 10% is processed. Biochar, compost, animal feed, biofuel—all untapped.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-5">
-                        <div class="opp-card-icon"><i data-lucide="cog" style="width:26px;height:26px;"></i></div>
-                        <h3>Farm Mechanization</h3>
-                        <p>Only 40% mechanization in India vs 90%+ globally. Custom Hiring Centers (CHCs) are broken. Uber-for-tractors models haven't cracked unit economics.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-1">
-                        <div class="opp-card-icon"><i data-lucide="mountain" style="width:26px;height:26px;"></i></div>
-                        <h3>Agritourism</h3>
-                        <p>₹2,000+ Crore market growing at 15% CAGR. Farmers earn 3-5x more per acre through agritourism vs traditional farming. Barely organized.</p>
-                    </div>
-                    <div class="opp-card fade-in-up stagger-2">
-                        <div class="opp-card-icon"><i data-lucide="link" style="width:26px;height:26px;"></i></div>
-                        <h3>Value Chain Integration</h3>
-                        <p>Farmers get only 15-25% of consumer price. Middlemen capture 40-60%. Direct market access, processing, and brand building remain unsolved at scale.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Example: Logistics Deep Dive -->
+        <!-- EXAMPLE: FIRST-MILE TO LAST-MILE LOGISTICS -->
         <section class="example-section section" id="example">
             <div class="container">
-                <span class="example-label">Example Opportunity</span>
+                <span class="example-label">Example</span>
                 <h2 class="example-title">First-Mile to Last-Mile Logistics</h2>
-                <p class="example-subtitle">India's agricultural supply chain loses ₹92,000 crore annually to post-harvest waste. The problem isn't production—it's movement.</p>
+                <p class="example-subtitle">₹92,000 Cr Lost Annually. 18-22% Post-Harvest Losses. Zero Reliable Solutions.</p>
 
                 <div class="broken-grid fade-in-up">
                     <div class="broken-col">
                         <h3>What's Broken</h3>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="x" style="width:16px;height:16px;"></i></div>
-                            <p><strong>No cold chain at farm gate.</strong> Produce sits in open sun for 6-12 hours before first pickup.</p>
+                            <p><strong>18-22% of fruits &amp; vegetables spoil</strong> before reaching consumers</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="x" style="width:16px;height:16px;"></i></div>
-                            <p><strong>Fragmented transport.</strong> 3-5 middlemen between farm and consumer. Each adds cost, delay, and quality loss.</p>
+                            <p><strong>₹92,000 crores</strong> annual economic loss</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="x" style="width:16px;height:16px;"></i></div>
-                            <p><strong>No SLA-driven logistics.</strong> No guaranteed pickup times. No temperature tracking. No accountability.</p>
+                            <p><strong>41% of trucks run empty</strong> on return journeys (wasted fuel, wasted capacity)</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="x" style="width:16px;height:16px;"></i></div>
-                            <p><strong>25-40% post-harvest loss.</strong> Grapes, tomatoes, strawberries—perishables die before reaching markets.</p>
+                            <p><strong>No SLA-driven, temperature-aware logistics</strong> for smallholder produce</p>
+                        </div>
+                        <div class="broken-item">
+                            <div class="icon-circle"><i data-lucide="x" style="width:16px;height:16px;"></i></div>
+                            <p><strong>Quality disputes eat 15%</strong> of export opportunities</p>
                         </div>
                     </div>
                     <div class="broken-col">
                         <h3>Who Suffers</h3>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="alert-triangle" style="width:16px;height:16px;"></i></div>
-                            <p><strong>Small farmers (< 2 hectares)</strong> — can't afford own transport, dependent on traders.</p>
+                            <p><strong>Farmers</strong> lose 20-30% of potential income to wastage</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="alert-triangle" style="width:16px;height:16px;"></i></div>
-                            <p><strong>FPOs</strong> — aggregate but can't move produce fast enough for perishables.</p>
+                            <p><strong>Buyers</strong> pay premium for unpredictable quality</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="alert-triangle" style="width:16px;height:16px;"></i></div>
-                            <p><strong>Export markets</strong> — India loses billions in export-grade produce to logistics failures.</p>
+                            <p><strong>Transporters</strong> waste fuel on empty returns</p>
                         </div>
                         <div class="broken-item">
                             <div class="icon-circle"><i data-lucide="alert-triangle" style="width:16px;height:16px;"></i></div>
-                            <p><strong>Consumers</strong> — pay premium prices for produce that's already 5-7 days old.</p>
+                            <p><strong>Consumers</strong> pay inflated prices due to supply chain inefficiency</p>
                         </div>
-                    </div>
-                </div>
-
-                <!-- How Big Stats -->
-                <div class="section-header text-center">
-                    <h2 class="section-title">HOW BIG IS <span class="highlight">THIS REALLY?</span></h2>
-                </div>
-                <div class="big-stats fade-in-up">
-                    <div class="big-stat">
-                        <h3>&#8377;92,000 Cr</h3>
-                        <p>Annual post-harvest losses</p>
-                    </div>
-                    <div class="big-stat">
-                        <h3>25-40%</h3>
-                        <p>Produce lost before reaching market</p>
-                    </div>
-                    <div class="big-stat">
-                        <h3>&#8377;50,000 Cr</h3>
-                        <p>Cold chain infrastructure gap</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Builders Section -->
+        <!-- HOW BIG IS THIS REALLY? -->
+        <section class="howbig-section section" id="howbig">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">HOW BIG IS <span class="highlight">THIS REALLY?</span></h2>
+                </div>
+
+                <div class="howbig-stats fade-in-up">
+                    <div class="howbig-stat">
+                        <div class="stat-label">Total Addressable Market</div>
+                        <h3>₹2.1 Lakh Crore</h3>
+                        <p>India's fruit &amp; vegetable logistics + cold chain infrastructure market</p>
+                    </div>
+                    <div class="howbig-stat">
+                        <div class="stat-label">Immediate Opportunity</div>
+                        <h3>₹40-50K Crore</h3>
+                        <p>Preventable first-24-hour losses that better logistics can capture</p>
+                    </div>
+                    <div class="howbig-stat">
+                        <div class="stat-label">Government Push</div>
+                        <h3>₹4,570 Crore</h3>
+                        <p>Agricultural Infrastructure Fund disbursed for storage/logistics projects (2020-26)</p>
+                    </div>
+                </div>
+
+                <div class="howbig-descriptions fade-in-up">
+                    <div class="howbig-desc">
+                        <h4>Current State</h4>
+                        <p>90% of produce moves in non-refrigerated vehicles</p>
+                    </div>
+                    <div class="howbig-desc">
+                        <h4>The Gap</h4>
+                        <p>Ambient reliability is under-served; most startups chase expensive cold-chain capex</p>
+                    </div>
+                    <div class="howbig-desc">
+                        <h4>What's Changing</h4>
+                        <p>Organized retail (Big Basket, Reliance Fresh) demand predictable delivery windows</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE'RE LOOKING FOR: BUILDERS WHO CAN SOLVE THIS -->
         <section class="builders-section section" id="builders">
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title" style="color:#fff;">WHAT WE'RE LOOKING FOR: <span class="highlight">BUILDERS WHO CAN SOLVE THIS</span></h2>
-                    <p class="section-subtitle center" style="color:rgba(255,255,255,0.8);">Build an asset-light, SLA-driven logistics network that connects farm gates to markets.</p>
                 </div>
+                <p class="builders-lead">Build an asset-light, SLA-driven logistics network that:</p>
 
                 <div class="builders-grid">
                     <div class="builder-card fade-in-up stagger-1">
-                        <div class="builder-card-icon"><i data-lucide="route" style="width:26px;height:26px;"></i></div>
-                        <h3>Route Optimization</h3>
-                        <p>AI-powered routing that minimizes transit time and maximizes vehicle utilization across fragmented rural roads.</p>
+                        <div class="builder-card-icon"><i data-lucide="rotate-ccw" style="width:26px;height:26px;"></i></div>
+                        <h3>Solves Empty Returns</h3>
+                        <p>Backhaul engine pairing corridors (e.g., produce Nashik→Mumbai, packaging Mumbai→Nashik) = 30-50% reduction in empty kilometers</p>
                     </div>
                     <div class="builder-card fade-in-up stagger-2">
-                        <div class="builder-card-icon"><i data-lucide="thermometer" style="width:26px;height:26px;"></i></div>
-                        <h3>Cold Chain Tech</h3>
-                        <p>IoT-enabled temperature monitoring and micro cold storage solutions at farm gate level.</p>
+                        <div class="builder-card-icon"><i data-lucide="layers" style="width:26px;height:26px;"></i></div>
+                        <h3>Creates Embedded Revenue</h3>
+                        <p>Subscription model + fuel/toll payments + cargo insurance + invoice factoring</p>
                     </div>
                     <div class="builder-card fade-in-up stagger-3">
-                        <div class="builder-card-icon"><i data-lucide="handshake" style="width:26px;height:26px;"></i></div>
-                        <h3>SLA-Based Contracts</h3>
-                        <p>Guaranteed pickup times, quality maintenance, and delivery windows with penalty clauses.</p>
+                        <div class="builder-card-icon"><i data-lucide="shield-check" style="width:26px;height:26px;"></i></div>
+                        <h3>Reduces Shrinkage</h3>
+                        <p>Proper handling SOPs + predictable delivery windows = 40% reduction in quality losses</p>
                     </div>
                     <div class="builder-card fade-in-up stagger-4">
-                        <div class="builder-card-icon"><i data-lucide="network" style="width:26px;height:26px;"></i></div>
-                        <h3>Aggregation Platform</h3>
-                        <p>Connect FPOs, transporters, and markets on a single platform with real-time tracking.</p>
+                        <div class="builder-card-icon"><i data-lucide="clock" style="width:26px;height:26px;"></i></div>
+                        <h3>Improves Reliability</h3>
+                        <p>Control tower + GPS tracking + proof-of-delivery = on-time delivery >85%</p>
                     </div>
+                </div>
+
+                <div class="why-works fade-in-up">
+                    <h3>Why This Works:</h3>
+                    <ul>
+                        <li>Start with 1-2 high-value corridors (Nashik-Mumbai, Punjab-Delhi)</li>
+                        <li>Partner with existing fleets (asset-light, not asset-heavy)</li>
+                        <li>Layer SLA premium + recurring revenue (not just freight brokerage)</li>
+                        <li>Anchor demand from organized retail, exporters, food services</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Guarantee Section -->
+        <!-- IF YOU BUILD THE RIGHT SOLUTION, WE GUARANTEE -->
         <section class="guarantee-section section" id="guarantee">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-title">IF YOU BUILD THE RIGHT SOLUTION, <span class="highlight">WE GUARANTEE</span></h2>
+                    <h2 class="section-title">WE DON'T ASK YOU TO BUILD IN A VACUUM</h2>
+                    <p class="section-subtitle center" style="font-size:24px;font-weight:700;color:var(--primary);">IF YOU BUILD THE RIGHT SOLUTION, WE GUARANTEE:</p>
                 </div>
 
                 <div class="guarantee-grid fade-in-up">
                     <div class="guarantee-card">
+                        <div class="guarantee-card-icon"><i data-lucide="truck" style="width:22px;height:22px;"></i></div>
+                        <h3>10,000+</h3>
+                        <p>TRUCKS Worth of Pilot Volume</p>
+                    </div>
+                    <div class="guarantee-card">
                         <div class="guarantee-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
-                        <h3>30,000+</h3>
-                        <p>Farmer network for pilot</p>
+                        <h3>15,000</h3>
+                        <p>Farmer Members</p>
                     </div>
                     <div class="guarantee-card">
-                        <div class="guarantee-card-icon"><i data-lucide="microscope" style="width:22px;height:22px;"></i></div>
-                        <h3>R&amp;D</h3>
-                        <p>Farm access for testing</p>
+                        <div class="guarantee-card-icon"><i data-lucide="package" style="width:22px;height:22px;"></i></div>
+                        <h3>200,000+</h3>
+                        <p>Tons Annually</p>
                     </div>
                     <div class="guarantee-card">
-                        <div class="guarantee-card-icon"><i data-lucide="landmark" style="width:22px;height:22px;"></i></div>
-                        <h3>20-30</h3>
-                        <p>Investors at Demo Day</p>
+                        <div class="guarantee-card-icon"><i data-lucide="calendar-check" style="width:22px;height:22px;"></i></div>
+                        <h3>Daily</h3>
+                        <p>Dispatch Windows</p>
                     </div>
-                    <div class="guarantee-card">
-                        <div class="guarantee-card-icon"><i data-lucide="building-2" style="width:22px;height:22px;"></i></div>
-                        <h3>FPO</h3>
-                        <p>Direct market access</p>
+                </div>
+
+                <div class="pilot-metrics fade-in-up">
+                    <div class="pilot-box">
+                        <h4>Pilot Corridors Ready</h4>
+                        <p>Multi city and multi state corridor ready</p>
                     </div>
-                    <div class="guarantee-card">
-                        <div class="guarantee-card-icon"><i data-lucide="graduation-cap" style="width:22px;height:22px;"></i></div>
-                        <h3>35+</h3>
-                        <p>Practitioner mentors</p>
+                    <div class="pilot-box">
+                        <h4>Success Metrics We'll Track</h4>
+                        <ul>
+                            <li>On-time delivery % &gt;85%</li>
+                            <li>Shrinkage reduction % 30-40%</li>
+                            <li>Empty km reduction % 30-50%</li>
+                            <li>Repeat customer rate &gt;60%</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Beyond the Problem -->
+        <!-- BEYOND THE PROBLEM. BEYOND THE BLUEPRINT. -->
         <section class="beyond-section section" id="beyond">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-title">BEYOND <span class="highlight">THE PROBLEM</span></h2>
-                    <p class="section-subtitle center">When you join the program, you don't just get an opportunity. You get the full stack.</p>
+                    <h2 class="section-title">BEYOND THE PROBLEM. <span class="highlight">BEYOND THE BLUEPRINT.</span></h2>
                 </div>
 
                 <div class="beyond-grid fade-in-up">
                     <div class="beyond-card">
                         <div class="beyond-card-icon"><i data-lucide="file-text" style="width:24px;height:24px;"></i></div>
-                        <h4>Validated Research</h4>
-                        <p>100+ hours of field research already done for you.</p>
-                    </div>
-                    <div class="beyond-card">
-                        <div class="beyond-card-icon"><i data-lucide="user-check" style="width:24px;height:24px;"></i></div>
-                        <h4>Practitioner Mentorship</h4>
-                        <p>35+ mentors who've built ₹2,000+ Cr ventures.</p>
-                    </div>
-                    <div class="beyond-card">
-                        <div class="beyond-card-icon"><i data-lucide="indian-rupee" style="width:24px;height:24px;"></i></div>
-                        <h4>Access to Capital</h4>
-                        <p>Network of investors, grants, and CSR partners.</p>
+                        <h4>Validated Market Research</h4>
+                        <ul>
+                            <li>Market sizing (₹2.1L cr TAM, ₹40-50K cr serviceable)</li>
+                            <li>Competitive landscape analysis</li>
+                            <li>Unit economics framework</li>
+                            <li>Risk mitigation strategies</li>
+                        </ul>
                     </div>
                     <div class="beyond-card">
                         <div class="beyond-card-icon"><i data-lucide="globe" style="width:24px;height:24px;"></i></div>
-                        <h4>Farmer Network</h4>
-                        <p>30,000+ farmer network through Sahyadri Farms.</p>
+                        <h4>Network Access</h4>
+                        <ul>
+                            <li>Anchor customers (retailers, exporters, processors)</li>
+                            <li>Fleet partners (regional transport associations)</li>
+                            <li>Insurance/finance partners for embedded revenue</li>
+                        </ul>
                     </div>
                     <div class="beyond-card">
                         <div class="beyond-card-icon"><i data-lucide="flask-conical" style="width:24px;height:24px;"></i></div>
                         <h4>Pilot Infrastructure</h4>
-                        <p>On-farm R&D labs and co-working space in Nashik.</p>
+                        <ul>
+                            <li>Sahyadri Farms 15,000+ farmer network</li>
+                            <li>12 packhouses with daily operations</li>
+                            <li>Multi-corridor testing ground</li>
+                        </ul>
+                    </div>
+                    <div class="beyond-card">
+                        <div class="beyond-card-icon"><i data-lucide="user-check" style="width:24px;height:24px;"></i></div>
+                        <h4>Mentorship from Operators</h4>
+                        <ul>
+                            <li>35+ practitioner mentors</li>
+                            <li>Domain experts in logistics &amp; agri</li>
+                            <li>Operators who've built ₹2,000+ Cr ventures</li>
+                        </ul>
+                    </div>
+                    <div class="beyond-card">
+                        <div class="beyond-card-icon"><i data-lucide="indian-rupee" style="width:24px;height:24px;"></i></div>
+                        <h4>Capital Access</h4>
+                        <ul>
+                            <li>Potential ₹20-50L direct investment if pilot succeeds</li>
+                            <li>Warm intros to Bharat Innovation Fund, Ankur Capital, Social Alpha</li>
+                            <li>Guidance on blended finance (AIF + equity)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ready to Solve / Timeline -->
-        <section class="timeline-section section-alt" id="timeline">
+        <!-- READY TO SOLVE THIS? -->
+        <section class="ready-section section" id="ready">
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">READY TO <span class="highlight">SOLVE THIS?</span></h2>
-                    <p class="section-subtitle center">Here's how the journey unfolds.</p>
                 </div>
 
+                <div class="ready-grid fade-in-up">
+                    <div class="ready-box">
+                        <h3>You might be:</h3>
+                        <ul>
+                            <li>An engineer who's built logistics tech or marketplace platforms</li>
+                            <li>A supply chain operator who's lived this problem daily</li>
+                            <li>A second-time founder pivoting into agriculture</li>
+                            <li>A domain expert (food science, cold chain, transport optimization)</li>
+                        </ul>
+                    </div>
+                    <div class="ready-box">
+                        <h3>What you need:</h3>
+                        <ul>
+                            <li>Ability to commit 4 months full-time (April-August 2026)</li>
+                            <li>Willingness to get your hands dirty (literally — farm visits, pack house ops)</li>
+                            <li>Bias toward building and testing, not theorizing</li>
+                            <li>Team orientation (you'll find co-founders during the program)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
                 <div class="timeline-wrapper fade-in-up">
                     <div class="timeline-progress"></div>
                     <div class="timeline-item active">
-                        <span class="timeline-date">FEBRUARY-MARCH</span>
+                        <span class="timeline-date">MAR 10</span>
                         <div class="timeline-content">
-                            <h4>Apply for the program</h4>
-                            <p>Submit your application. No fee. We're looking for builders.</p>
+                            <h4>Applications Close</h4>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-date">MID-MARCH</span>
                         <div class="timeline-content">
-                            <h4>Selection<br>Bootcamp</h4>
-                            <p>2 days in Nashik. Real problem solving.</p>
+                            <h4>Selection</h4>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-date">APRIL</span>
                         <div class="timeline-content">
-                            <h4>Residential<br>Bootcamp</h4>
-                            <p>1 month. Fully residential in Nashik. Form teams.</p>
+                            <h4>Bootcamp Starts</h4>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <span class="timeline-date">MAY - JULY</span>
+                        <span class="timeline-date">MAY-JUNE</span>
                         <div class="timeline-content">
-                            <h4>Hybrid<br>Building</h4>
-                            <p>Remote or on-site. Launch pilots with Sahyadri farmers.</p>
+                            <h4>Pilot Launch</h4>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <span class="timeline-date">AUGUST</span>
                         <div class="timeline-content">
-                            <h4>Demo<br>Day</h4>
-                            <p>Pitch to 20-30 investors. Access to capital.</p>
+                            <h4>Demo Day</h4>
                         </div>
+                    </div>
+                </div>
+
+                <div class="apply-dual">
+                    <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary btn-large">APPLY TO BUILD THIS</a>
+                    <a href="#opportunities" class="btn btn-outline btn-large">SEE OTHER OPPORTUNITIES</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGISTICS IS 1 OF 7 VALIDATED OPPORTUNITIES -->
+        <section class="seven-section section" id="opportunities">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">LOGISTICS IS 1 OF <span class="highlight">7 VALIDATED OPPORTUNITIES</span></h2>
+                </div>
+                <p class="seven-lead">Each opportunity comes with the same depth: research, market sizing, solution blueprint, and guaranteed access to pilot customers.</p>
+
+                <div class="seven-grid fade-in-up">
+                    <div class="seven-card">
+                        <h3>Logistics &amp; First-Mile Supply</h3>
+                        <p>₹2.1L cr | 18-22% losses | 10K trucks PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Agricultural Credit and Finance</h3>
+                        <p>₹31.5L cr | 51% farmers digitally invisible | KCC renewal PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Crop and Climate Insurance</h3>
+                        <p>₹1.83L cr claims | 97-day avg settlement | Weather station network PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Waste to Wealth</h3>
+                        <p>₹24-49K cr budget | 4% adoption of resilient varieties | Farm trials PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Affordable Mechanization</h3>
+                        <p>₹1.45L cr market | 68% use manual tools | Equipment sharing PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Responsible Agritourism</h3>
+                        <p>₹22,100 cr by 2030 | 70% investor-owned | Farm stay network PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
+                    </div>
+                    <div class="seven-card">
+                        <h3>Value Chain Integration</h3>
+                        <p>₹40-50K cr | 86% FPOs only aggregate | Processing facility PoC ready</p>
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank" rel="noopener noreferrer" class="btn-sm">APPLY</a>
                     </div>
                 </div>
             </div>
@@ -915,7 +986,7 @@
                         <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
                             rel="noopener noreferrer" class="btn btn-white btn-large">Apply Now</a>
                     </div>
-                    <p class="apply-deadline yellow-text">Applications close: March 15, 2026</p>
+                    <p class="apply-deadline yellow-text">Applications close: March 10, 2026</p>
                 </div>
             </div>
         </section>

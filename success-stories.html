@@ -6,21 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories | Agri Founders Field - Bharat Intelligence</title>
     <meta name="description"
-        content="How a farm labor crisis became a ₹200 billion venture in 100 days. Discover the Bharat Intelligence story from Agri Founders Field.">
-    <meta name="keywords"
-        content="Bharat Intelligence, Success Stories, Agri Founders Field, Farm Labor, Venture Blueprint, Sahyadri Farms, DISQ">
-    <link rel="canonical" href="https://agrifounders.com/success-stories.html">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://agrifounders.com/success-stories.html">
-    <meta property="og:title" content="Success Stories | Agri Founders Field">
-    <meta property="og:description" content="How a farm labor crisis became a ₹200 billion venture in 100 days.">
-    <meta property="og:image" content="https://agrifounders.com/assets/logo.png">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Success Stories | Agri Founders Field">
-    <meta property="twitter:description" content="How a farm labor crisis became a ₹200 billion venture in 100 days.">
-
+        content="How a farm labor crisis became a 200 billion US dollar market size venture in 100 days. The Bharat Intelligence story.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +15,6 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
-        /* Success Stories Page Styles */
         .ss-hero {
             background: linear-gradient(135deg, #006838 0%, #004d2a 50%, #003d20 100%);
             padding: 140px 20px 80px;
@@ -37,19 +22,14 @@
             position: relative;
             overflow: hidden;
         }
-
         .ss-hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 80%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(74, 222, 128, 0.06) 0%, transparent 60%);
+            top: -50%; right: -30%;
+            width: 80%; height: 200%;
+            background: radial-gradient(circle, rgba(74,222,128,0.06) 0%, transparent 60%);
         }
-
         .ss-hero .container { position: relative; z-index: 2; }
-
         .ss-hero-tag {
             display: inline-block;
             background: rgba(255,255,255,0.15);
@@ -63,7 +43,6 @@
             margin-bottom: 30px;
             font-family: var(--font-heading);
         }
-
         .ss-hero h1 {
             color: #fff;
             font-size: clamp(28px, 5vw, 52px);
@@ -74,9 +53,7 @@
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
-
         .ss-hero h1 span { color: #4ade80; }
-
         .ss-hero p {
             color: rgba(255,255,255,0.8);
             font-size: clamp(16px, 2vw, 20px);
@@ -85,39 +62,29 @@
             line-height: 1.6;
         }
 
-        /* Narrative Sections */
-        .narrative-section {
-            padding: 80px 20px;
-            background: #fff;
-        }
-
+        /* Narrative */
+        .narrative-section { padding: 80px 20px; background: #fff; }
         .narrative-section.alt { background: #f4f7f5; }
-
         .narrative-block {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .narrative-block h2 {
-            font-size: clamp(24px, 3.5vw, 38px);
+            font-size: clamp(24px, 3.5vw, 36px);
             font-weight: 800;
             color: #1a1a1a;
             margin-bottom: 24px;
             font-family: var(--font-heading);
             line-height: 1.2;
+            text-transform: uppercase;
         }
-
         .narrative-block h2 span { color: var(--primary); }
-
         .narrative-block p {
             font-size: 18px;
             color: #444;
             line-height: 1.8;
             margin-bottom: 20px;
         }
-
-        .narrative-block p:last-child { margin-bottom: 0; }
-
         .narrative-block .emphasis {
             font-size: 20px;
             font-weight: 600;
@@ -125,37 +92,43 @@
             font-style: italic;
         }
 
-        /* Farm Truths Section */
-        .farm-truths {
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #006838, #004d2a);
-            text-align: center;
-        }
-
+        /* Farm Truths */
+        .farm-truths { padding: 80px 20px; background: linear-gradient(135deg, #006838, #004d2a); text-align: center; }
         .farm-truths h2 {
-            font-size: clamp(24px, 3.5vw, 38px);
+            font-size: clamp(24px, 3.5vw, 36px);
             font-weight: 800;
             color: #fff;
             margin-bottom: 12px;
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
-
         .farm-truths h2 span { color: #4ade80; }
-
         .farm-truths > .container > p {
             color: rgba(255,255,255,0.75);
             font-size: 18px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+        }
+
+        .farm-truths-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.15);
+        }
+        .farm-truths-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .room-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            margin-top: 40px;
+            margin-bottom: 40px;
         }
-
         .room-card {
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
@@ -164,290 +137,254 @@
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
-
         .room-card:hover {
             background: rgba(255,255,255,0.12);
             transform: translateY(-3px);
         }
-
         .room-card-icon {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border-radius: 12px;
             background: rgba(74,222,128,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin: 0 auto 14px;
             color: #4ade80;
         }
-
         .room-card h4 {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 16px; font-weight: 700;
             color: #fff;
             margin-bottom: 4px;
             font-family: var(--font-heading);
         }
+        .room-card p { font-size: 13px; color: rgba(255,255,255,0.6); }
 
-        .room-card p {
-            font-size: 13px;
-            color: rgba(255,255,255,0.6);
+        .did-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .did-box {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: left;
+        }
+        .did-box h4 {
+            font-size: 16px; font-weight: 700;
+            color: #4ade80;
+            margin-bottom: 16px;
+            font-family: var(--font-heading);
+        }
+        .did-box ul { list-style: none; padding: 0; }
+        .did-box li {
+            font-size: 15px; color: rgba(255,255,255,0.8);
+            padding: 6px 0; padding-left: 20px; position: relative;
+        }
+        .did-box.not li::before {
+            content: '✗'; position: absolute; left: 0;
+            color: #ef4444; font-weight: 700;
+        }
+        .did-box.yes li::before {
+            content: '✓'; position: absolute; left: 0;
+            color: #4ade80; font-weight: 700;
         }
 
-        /* Two Column Quotes */
-        .voices-section {
-            padding: 80px 20px;
-            background: #f4f7f5;
-        }
-
+        /* Crisis / Voices */
+        .voices-section { padding: 80px 20px; background: #f4f7f5; }
         .voices-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             margin-top: 50px;
         }
-
         .voices-col h3 {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 20px; font-weight: 700;
             color: #1a1a1a;
             margin-bottom: 24px;
             padding-bottom: 12px;
             border-bottom: 3px solid var(--primary);
             font-family: var(--font-heading);
+            text-transform: uppercase;
         }
-
         .voice-quote {
             background: #fff;
             border-left: 4px solid var(--primary);
             border-radius: 0 12px 12px 0;
-            padding: 20px 24px;
-            margin-bottom: 16px;
+            padding: 18px 22px;
+            margin-bottom: 14px;
             transition: all 0.3s ease;
         }
-
         .voice-quote:hover {
             box-shadow: 0 8px 25px rgba(0,104,56,0.06);
             transform: translateX(4px);
         }
-
         .voice-quote p {
-            font-size: 16px;
-            color: #444;
-            line-height: 1.6;
+            font-size: 15px; color: #444;
+            line-height: 1.6; font-style: italic;
+        }
+
+        .crisis-narrative {
+            max-width: 800px;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+        .crisis-narrative p {
+            font-size: 17px; color: #444;
+            line-height: 1.7; margin-bottom: 16px;
+        }
+        .crisis-narrative .emphasis {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
             font-style: italic;
         }
 
-        .voice-quote .quote-attr {
-            font-style: normal;
-            font-size: 13px;
-            color: var(--primary);
-            font-weight: 600;
-            margin-top: 8px;
-        }
-
-        /* Crisis Section */
-        .crisis-section {
-            padding: 80px 20px;
-            background: #fff;
-        }
-
-        .crisis-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
-        }
-
-        .crisis-stat {
-            background: #f8faf9;
-            border: 2px solid #e8f0ec;
-            border-radius: 16px;
-            padding: 28px 20px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .crisis-stat:hover {
-            border-color: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        .crisis-stat h3 {
-            font-size: clamp(28px, 3vw, 40px);
-            font-weight: 800;
-            color: var(--primary);
-            font-family: var(--font-heading);
-            margin-bottom: 6px;
-        }
-
-        .crisis-stat p {
-            font-size: 14px;
-            color: #666;
-        }
-
         /* Blueprint Section */
-        .blueprint-section {
-            padding: 80px 20px;
-            background: #f4f7f5;
+        .blueprint-section { padding: 80px 20px; background: #fff; }
+        .blueprint-lead {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            text-align: center;
         }
-
+        .blueprint-lead p {
+            font-size: 18px; color: #444;
+            line-height: 1.7; margin-bottom: 12px;
+        }
+        .blueprint-lead .emphasis {
+            font-weight: 700; color: var(--primary);
+        }
         .blueprint-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
-            margin-top: 50px;
         }
-
         .blueprint-card {
-            background: #fff;
+            background: #f8faf9;
             border: 2px solid #e8f0ec;
             border-radius: 16px;
             padding: 32px 24px;
             transition: all 0.3s ease;
         }
-
         .blueprint-card:hover {
             border-color: var(--primary);
             transform: translateY(-4px);
             box-shadow: 0 15px 35px rgba(0,104,56,0.06);
         }
-
         .blueprint-card-icon {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border-radius: 12px;
             background: linear-gradient(135deg, rgba(0,104,56,0.1), rgba(74,222,128,0.1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin-bottom: 16px;
             color: var(--primary);
         }
-
         .blueprint-card h4 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 10px;
+            font-size: 18px; font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 14px;
             font-family: var(--font-heading);
+            text-transform: uppercase;
         }
-
-        .blueprint-card p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
+        .blueprint-card ul { list-style: none; padding: 0; }
+        .blueprint-card li {
+            font-size: 14px; color: #555;
+            line-height: 1.6; padding: 5px 0;
+            padding-left: 18px; position: relative;
+        }
+        .blueprint-card li::before {
+            content: '→'; position: absolute; left: 0;
+            color: var(--primary); font-weight: 700;
         }
 
         /* Founders Speak */
-        .founders-speak {
-            padding: 80px 20px;
-            background: #fff;
-        }
-
+        .founders-speak { padding: 80px 20px; background: #f4f7f5; }
         .testimonial-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-top: 50px;
         }
-
         .testimonial-card {
-            background: #f8faf9;
+            background: #fff;
             border: 2px solid #e8f0ec;
             border-radius: 20px;
             padding: 36px 30px;
-            position: relative;
             transition: all 0.3s ease;
         }
-
         .testimonial-card:hover {
             border-color: var(--primary);
             box-shadow: 0 15px 35px rgba(0,104,56,0.06);
         }
-
         .testimonial-card .quote-icon {
-            font-size: 48px;
-            color: var(--primary);
-            opacity: 0.2;
-            font-family: Georgia, serif;
-            line-height: 1;
-            margin-bottom: 10px;
+            font-size: 48px; color: var(--primary);
+            opacity: 0.2; font-family: Georgia, serif;
+            line-height: 1; margin-bottom: 10px;
         }
-
         .testimonial-card blockquote {
-            font-size: 17px;
-            color: #444;
-            line-height: 1.7;
-            font-style: italic;
+            font-size: 16px; color: #444;
+            line-height: 1.7; font-style: italic;
             margin-bottom: 20px;
         }
-
         .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 14px;
+            display: flex; align-items: center; gap: 14px;
         }
-
         .testimonial-avatar {
-            width: 48px;
-            height: 48px;
+            width: 48px; height: 48px;
             border-radius: 50%;
             background: linear-gradient(135deg, #006838, #4ade80);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: 700;
             font-size: 18px;
             font-family: var(--font-heading);
         }
-
         .testimonial-info h4 {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 16px; font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
         }
+        .testimonial-info p { font-size: 13px; color: #666; }
 
-        .testimonial-info p {
-            font-size: 13px;
-            color: #666;
-        }
-
-        /* Platform Stats / Raised Section */
+        /* Raised */
         .raised-section {
             padding: 80px 20px;
             background: linear-gradient(135deg, #006838, #004d2a);
             text-align: center;
         }
-
         .raised-section h2 {
             font-size: clamp(24px, 4vw, 42px);
-            font-weight: 800;
-            color: #fff;
+            font-weight: 800; color: #fff;
             font-family: var(--font-heading);
             margin-bottom: 12px;
         }
-
         .raised-section h2 span { color: #4ade80; }
-
         .raised-section > .container > p {
             color: rgba(255,255,255,0.75);
-            font-size: 18px;
-            margin-bottom: 50px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 17px; margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto; margin-right: auto;
+        }
+
+        .platform-features {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: left;
+        }
+        .platform-features ul { list-style: none; padding: 0; }
+        .platform-features li {
+            font-size: 16px; color: rgba(255,255,255,0.85);
+            padding: 8px 0; padding-left: 24px; position: relative;
+        }
+        .platform-features li::before {
+            content: '✓'; position: absolute; left: 0;
+            color: #4ade80; font-weight: 700;
         }
 
         .platform-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
         }
-
         .platform-stat {
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
@@ -455,26 +392,44 @@
             padding: 32px 20px;
             backdrop-filter: blur(10px);
         }
-
         .platform-stat h3 {
             font-size: clamp(28px, 3vw, 40px);
-            font-weight: 800;
-            color: #4ade80;
+            font-weight: 800; color: #4ade80;
             font-family: var(--font-heading);
             margin-bottom: 6px;
         }
-
-        .platform-stat p {
-            font-size: 14px;
-            color: rgba(255,255,255,0.8);
+        .platform-stat p { font-size: 14px; color: rgba(255,255,255,0.8); }
+        .platform-stat .stat-sub {
+            font-size: 12px; color: rgba(255,255,255,0.5);
+            margin-top: 4px;
         }
 
-        /* Method Flow */
-        .method-section {
-            padding: 80px 20px;
-            background: #f4f7f5;
+        /* Vision */
+        .vision-section { padding: 80px 20px; background: #fff; }
+        .vision-block {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .vision-block h2 {
+            font-size: clamp(24px, 3.5vw, 36px);
+            font-weight: 800; color: #1a1a1a;
+            margin-bottom: 24px;
+            font-family: var(--font-heading);
+        }
+        .vision-block h2 span { color: var(--primary); }
+        .vision-block ul { list-style: none; padding: 0; }
+        .vision-block li {
+            font-size: 17px; color: #444;
+            line-height: 1.7; padding: 8px 0;
+            padding-left: 24px; position: relative;
+        }
+        .vision-block li::before {
+            content: '→'; position: absolute; left: 0;
+            color: var(--primary); font-weight: 700;
         }
 
+        /* Method */
+        .method-section { padding: 80px 20px; background: #f4f7f5; }
         .method-flow {
             display: flex;
             align-items: center;
@@ -482,8 +437,8 @@
             gap: 12px;
             flex-wrap: wrap;
             margin-top: 50px;
+            margin-bottom: 50px;
         }
-
         .method-step {
             background: #fff;
             border: 2px solid #e8f0ec;
@@ -493,74 +448,48 @@
             min-width: 160px;
             transition: all 0.3s ease;
         }
-
         .method-step:hover {
             border-color: var(--primary);
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0,104,56,0.06);
         }
-
         .method-step-icon {
-            width: 44px;
-            height: 44px;
+            width: 44px; height: 44px;
             border-radius: 50%;
             background: linear-gradient(135deg, #006838, #4ade80);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin: 0 auto 10px;
             color: #fff;
         }
-
         .method-step h4 {
-            font-size: 14px;
-            font-weight: 700;
+            font-size: 13px; font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+        .method-step p {
+            font-size: 12px; color: #666; margin-top: 4px;
+        }
+        .method-arrow { color: var(--primary); font-size: 24px; font-weight: 700; }
+
+        .apply-dual {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
         }
 
-        .method-arrow {
-            color: var(--primary);
-            font-size: 24px;
-            font-weight: 700;
+        @media (max-width: 992px) {
+            .blueprint-cards { grid-template-columns: 1fr; }
+            .did-grid { grid-template-columns: 1fr; }
         }
-
-        /* Vision Section */
-        .vision-section {
-            padding: 80px 20px;
-            background: #fff;
-        }
-
-        .vision-block {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .vision-block h2 {
-            font-size: clamp(24px, 3.5vw, 38px);
-            font-weight: 800;
-            color: #1a1a1a;
-            margin-bottom: 24px;
-            font-family: var(--font-heading);
-        }
-
-        .vision-block h2 span { color: var(--primary); }
-
-        .vision-block p {
-            font-size: 18px;
-            color: #444;
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .voices-grid { grid-template-columns: 1fr; }
             .testimonial-grid { grid-template-columns: 1fr; }
+            .platform-stats { grid-template-columns: 1fr; }
             .method-flow { flex-direction: column; }
             .method-arrow { transform: rotate(90deg); }
             .ss-hero { padding: 120px 20px 60px; }
+            .apply-dual { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -580,7 +509,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="venture-blueprint.html">Ventures</a></li>
+                <li><a href="venture-blueprint.html">Venture Blue Print</a></li>
                 <li><a href="success-stories.html" class="active">Success Stories</a></li>
                 <li><a href="faq.html">FAQs</a></li>
                 <li><a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
@@ -596,193 +525,200 @@
         <!-- Hero -->
         <section class="ss-hero">
             <div class="container">
-                <span class="ss-hero-tag">Success Story</span>
+                <span class="ss-hero-tag">The Venture Blueprint Method</span>
                 <h1>We Don't Start With Ideas.<br><span>We Start With A Blueprint.</span></h1>
-                <p>How a farm labor crisis became a $200 billion market size venture in 100 days.</p>
-                <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-primary-white">APPLY NOW <i data-lucide="arrow-right"></i></a>
+                <p>How a farm labor crisis became a 200 billion US dollar market size venture in 100 days — and what it means for the next builder.</p>
+                <a href="#story" class="btn btn-primary-white">See How It Happened <i data-lucide="arrow-right"></i></a>
             </div>
         </section>
 
-        <!-- The Problem Narrative -->
-        <section class="narrative-section">
+        <!-- EVERYONE KNEW THERE WAS A LABOR PROBLEM -->
+        <section class="narrative-section" id="story">
             <div class="container">
                 <div class="narrative-block fade-in-up">
-                    <h2>Everyone Knew There Was <span>A Labor Problem.</span></h2>
-                    <p>Every farmer in Nashik's grape belt will tell you the same thing: "We can't find workers when we need them."</p>
-                    <p>But when we went to the farms—not to survey, but to listen—we heard something different. The problem wasn't just labor shortage. It was a broken system of matching, trust, and timing that affected everything from harvest quality to farmer income.</p>
-                    <p>We didn't start with a solution. We started with 100+ hours of field conversations across Sahyadri's 15,000+ farmer network.</p>
-                    <p class="emphasis">What we found changed everything.</p>
+                    <h2>Everyone Knew There Was A Labor Problem. <span>Nobody Knew What It Actually Was.</span></h2>
+                    <p>"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture. It's in government reports. It's in newspaper headlines. It's repeated at conferences. But what does it actually mean?</p>
+                    <p>Does it mean not enough workers exist? Or that workers won't come to farms? Or that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
+                    <p>The answer: all of the above. And none of the above.</p>
+                    <p class="emphasis">The real problem wasn't labor shortage. It was invisibility.</p>
+                    <p>We needed ground truth. Not desk research.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Farm Truths Dialogue -->
+        <!-- 60 PEOPLE. ONE ROOM. NO PRESENTATIONS. JUST TRUTH. -->
         <section class="farm-truths">
             <div class="container">
                 <h2>60 People. One Room. <span>No Presentations. Just Truth.</span></h2>
-                <p>We brought together the entire ecosystem—not for a panel, but for a dialogue.</p>
+                <p>In May 2025, DISQ convened what we call a Farm Truths Dialogue — an unconference designed to uncover reality, not validate assumptions.</p>
+
+                <!-- Farm Truths Dialogue Photo -->
+                <div class="farm-truths-image fade-in-up">
+                    <img src="assets/farm-truths-dialogue.jpg" alt="Farm Truths Dialogue - 60 people gathered for an open conversation about farm labor challenges"
+                        onerror="this.parentElement.style.display='none';">
+                </div>
+
+                <h3 style="color:#4ade80;font-size:20px;font-weight:700;margin-bottom:30px;font-family:var(--font-heading);">Who Was In The Room</h3>
 
                 <div class="room-grid fade-in-up">
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="sprout" style="width:24px;height:24px;"></i></div>
                         <h4>50+ Horticulture Farmers</h4>
-                        <p>From Sahyadri network</p>
+                        <p>Grape growers, banana farmers, pomegranate operators.</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
                         <h4>FPO Leaders</h4>
-                        <p>Aggregation experts</p>
+                        <p>Managing thousands of farmers</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="clipboard-check" style="width:24px;height:24px;"></i></div>
                         <h4>Farm Supervisors</h4>
-                        <p>Ground-level operators</p>
+                        <p>Who hire labor daily</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="hard-hat" style="width:24px;height:24px;"></i></div>
                         <h4>Labor Contractors</h4>
-                        <p>Workforce mobilizers</p>
+                        <p>20+ years in the business</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="microscope" style="width:24px;height:24px;"></i></div>
                         <h4>Agronomists</h4>
-                        <p>Crop science experts</p>
+                        <p>Understanding crop cycles</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="truck" style="width:24px;height:24px;"></i></div>
                         <h4>Supply Chain Operators</h4>
-                        <p>Logistics professionals</p>
+                        <p>Downstream impact experts</p>
+                    </div>
+                </div>
+
+                <div class="did-grid fade-in-up">
+                    <div class="did-box not">
+                        <h4>What We Did NOT Do</h4>
+                        <ul>
+                            <li>No keynote speeches</li>
+                            <li>No panel discussions</li>
+                            <li>No PowerPoints</li>
+                        </ul>
+                    </div>
+                    <div class="did-box yes">
+                        <h4>What We Did</h4>
+                        <ul>
+                            <li>Open dialogue</li>
+                            <li>Candid conversations</li>
+                            <li>Pattern recognition</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- What They Told Us -->
-        <section class="voices-section">
+        <!-- THE CRISIS WASN'T WHAT WE THOUGHT IT WAS -->
+        <section class="voices-section" id="crisis">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-title">WHAT THE <span class="highlight">FIELD TOLD US</span></h2>
+                    <h2 class="section-title">THE CRISIS WASN'T <span class="highlight">WHAT WE THOUGHT IT WAS</span></h2>
+                    <p class="section-subtitle center">The problem wasn't "labor shortage." The problem was a broken co-ordination system.</p>
                 </div>
 
                 <div class="voices-grid fade-in-up">
                     <div class="voices-col">
-                        <h3>What Farmers Said</h3>
+                        <h3>What Farmers Told Us</h3>
                         <div class="voice-quote">
-                            <p>"I lost 2 tonnes of grapes last season because workers didn't show up on harvest day."</p>
-                            <div class="quote-attr">— Grape Farmer, Nashik</div>
+                            <p>"I need 50 workers tomorrow for harvesting. I have no idea if they'll show up."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"I pay ₹500/day but the contractor takes ₹200. The worker gets ₹300 and is still unhappy."</p>
-                            <div class="quote-attr">— Pomegranate Farmer</div>
+                            <p>"Contractors promise one wage, workers demand another when they arrive."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"I need 40 workers for 3 days during pruning. I can't find them at any price."</p>
-                            <div class="quote-attr">— Vineyard Owner</div>
+                            <p>"My grapes are ready today. If workers don't come for 3 days, I lose 30% of my crop value."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"The young people in the village don't want to do farm work anymore."</p>
-                            <div class="quote-attr">— FPO Leader</div>
+                            <p>"Good workers from last season? I have no way to find them again."</p>
+                        </div>
+                        <div class="voice-quote">
+                            <p>"Workers get no training, no insurance, no predictability. Why would they stay?"</p>
                         </div>
                     </div>
                     <div class="voices-col">
-                        <h3>What Workers Said</h3>
+                        <h3>What Workers Told Us</h3>
                         <div class="voice-quote">
-                            <p>"I never know if I'll have work tomorrow. Some days nothing, some days three calls."</p>
-                            <div class="quote-attr">— Farm Worker</div>
+                            <p>"We don't know where work is available until the morning."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"The contractor promises ₹400 but gives ₹250 after deductions I don't understand."</p>
-                            <div class="quote-attr">— Seasonal Laborer</div>
+                            <p>"Wage negotiation happens on-site. It's always tense."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"If I knew which farms needed workers next week, I could plan my life better."</p>
-                            <div class="quote-attr">— Migrant Worker</div>
+                            <p>"If we get injured, there's no safety net."</p>
                         </div>
                         <div class="voice-quote">
-                            <p>"I'd do farm work if it was regular and paid fairly. Right now it's neither."</p>
-                            <div class="quote-attr">— Rural Youth</div>
+                            <p>"We want steady work, not day-to-day uncertainty."</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="crisis-narrative fade-in-up">
+                    <p>This wasn't a supply-demand mismatch. This was a trust and coordination failure — invisible to policy, ignored by tech platforms, unsolved by traditional agriculture.</p>
+                    <p>₹thousands lost per farmer per season. Tens of thousands of workers stuck in informal chaos. An entire system running on phone calls and word-of-mouth.</p>
+                    <p class="emphasis">This was a category-defining opportunity hiding in plain sight.</p>
                 </div>
             </div>
         </section>
 
-        <!-- The Crisis -->
-        <section class="crisis-section">
+        <!-- WE DIDN'T JUST FIND A PROBLEM. WE BUILT THE SOLUTION BLUEPRINT -->
+        <section class="blueprint-section" id="blueprint">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-title">THE CRISIS WASN'T <span class="highlight">WHAT WE THOUGHT</span></h2>
-                    <p class="section-subtitle center">It wasn't just about fewer workers. It was a systemic failure of matching, trust, pricing, and timing.</p>
+                    <h2 class="section-title">WE DIDN'T JUST FIND A PROBLEM. <span class="highlight">WE BUILT THE SOLUTION BLUEPRINT BEFORE THE FOUNDERS ARRIVED.</span></h2>
                 </div>
 
-                <div class="crisis-stats fade-in-up">
-                    <div class="crisis-stat">
-                        <h3>$200B+</h3>
-                        <p>Market Size Opportunity</p>
-                    </div>
-                    <div class="crisis-stat">
-                        <h3>60%</h3>
-                        <p>Labor shortage during peak season</p>
-                    </div>
-                    <div class="crisis-stat">
-                        <h3>40%</h3>
-                        <p>Middleman commission on wages</p>
-                    </div>
-                    <div class="crisis-stat">
-                        <h3>0</h3>
-                        <p>Organized platforms for farm labor</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- The Blueprint -->
-        <section class="blueprint-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">WE DIDN'T JUST FIND A PROBLEM. <span class="highlight">WE BUILT THE SOLUTION BLUEPRINT.</span></h2>
-                    <p class="section-subtitle center">The complete venture blueprint was ready before the founders even started coding.</p>
+                <div class="blueprint-lead">
+                    <p>Most accelerators say: "Bring us your idea, and we'll help you validate it." We flipped it.</p>
+                    <p class="emphasis">We validated the opportunity first. Then we found the builders.</p>
+                    <p>After extensive consultations and real user feedback from Farm Truths we had:</p>
                 </div>
 
                 <div class="blueprint-cards fade-in-up">
                     <div class="blueprint-card">
-                        <div class="blueprint-card-icon"><i data-lucide="file-search" style="width:24px;height:24px;"></i></div>
-                        <h4>Problem Validated</h4>
-                        <p>100+ hours of field research. Direct conversations with 1,000+ farmers and workers. Not surveys—dialogues.</p>
+                        <div class="blueprint-card-icon"><i data-lucide="file-text" style="width:24px;height:24px;"></i></div>
+                        <h4>A Complete Venture Blueprint</h4>
+                        <ul>
+                            <li>Vision: A labor intelligence platform that formalizes farm hiring</li>
+                            <li>Market sizing: Maharashtra grapes + bananas = substantial wage pool annually</li>
+                            <li>Unit economics: Take-rate per worker-day + tool rental + embedded finance</li>
+                            <li>Pilot blueprint: Nashik grape farms, 500 worker-days in first month</li>
+                            <li>Risk map: Seasonality, churn, regulatory constraints — and mitigations</li>
+                        </ul>
                     </div>
                     <div class="blueprint-card">
-                        <div class="blueprint-card-icon"><i data-lucide="target" style="width:24px;height:24px;"></i></div>
-                        <h4>Market Sized</h4>
-                        <p>$200B+ total addressable market. Immediate serviceable market in Nashik grape belt alone worth ₹500+ Crore.</p>
-                    </div>
-                    <div class="blueprint-card">
-                        <div class="blueprint-card-icon"><i data-lucide="route" style="width:24px;height:24px;"></i></div>
-                        <h4>Solution Architected</h4>
-                        <p>Platform connecting farmers directly with workers. Real-time matching. Fair pricing. Guaranteed availability.</p>
-                    </div>
-                    <div class="blueprint-card">
-                        <div class="blueprint-card-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="blueprint-card-icon"><i data-lucide="rocket" style="width:24px;height:24px;"></i></div>
                         <h4>Pilot-Ready Access</h4>
-                        <p>15,000+ farmers through Sahyadri. R&D farms for testing. Direct deployment to real users from week one.</p>
+                        <ul>
+                            <li>Sahyadri Farms: 15,000 farmers, immediate testing ground</li>
+                            <li>12 packhouses with daily labor needs</li>
+                            <li>Anchor customers identified before a single line of code</li>
+                        </ul>
+                    </div>
+                    <div class="blueprint-card">
+                        <div class="blueprint-card-icon"><i data-lucide="shield-check" style="width:24px;height:24px;"></i></div>
+                        <h4>The Guarantee</h4>
+                        <ul>
+                            <li>Paid pilots from day 1 (actual revenue, not free trials)</li>
+                            <li>Farmer network access (35,000+ farmers)</li>
+                            <li>Capital pathway (facilitated fundraising with proof)</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Guarantee -->
-        <section class="narrative-section">
-            <div class="container">
-                <div class="narrative-block fade-in-up" style="text-align:center;">
-                    <h2>The <span>Guarantee</span></h2>
-                    <p>We didn't just hand founders a slide deck. We gave them farmer access from Day 1, practitioner mentors who'd built ₹2,000+ Cr businesses, a pilot-ready infrastructure, and a direct path to investors.</p>
-                    <p class="emphasis">The result? From concept to funded venture in 100 days.</p>
+                <div style="text-align:center;margin-top:40px;">
+                    <p style="font-size:20px;font-weight:700;color:var(--primary);font-style:italic;">The blueprint was ready. Now we needed the right builders.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Founders Speak -->
-        <section class="founders-speak">
+        <!-- THE FOUNDERS SPEAK -->
+        <section class="founders-speak" id="founders">
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">THE FOUNDERS <span class="highlight">SPEAK</span></h2>
@@ -791,7 +727,7 @@
                 <div class="testimonial-grid fade-in-up">
                     <div class="testimonial-card">
                         <div class="quote-icon">"</div>
-                        <blockquote>I came in as a tech builder with zero agri experience. The Venture Blueprint gave me clarity I couldn't have found in 2 years of independent research. By Week 2, I was on farms. By Week 6, we had a working product. By Day 100, we had funding.</blockquote>
+                        <blockquote>Sahyadri's domain depth and network gave us instant distribution, live POCs and unforgiving feedback, so we could validate in weeks instead of seasons.</blockquote>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">A</div>
                             <div class="testimonial-info">
@@ -802,7 +738,7 @@
                     </div>
                     <div class="testimonial-card">
                         <div class="quote-icon">"</div>
-                        <blockquote>I've been in agri-tech for years, but this was different. The program didn't just connect us with mentors who give advice—it connected us with operators who pick up the phone and solve problems. The farmer network through Sahyadri was the real unfair advantage.</blockquote>
+                        <blockquote>Access to growers and partners exposed us to real farm workflows, not hypothetical user stories, so we could build for actual constraints and compress our 0→1 learning curve.</blockquote>
                         <div class="testimonial-author">
                             <div class="testimonial-avatar">G</div>
                             <div class="testimonial-info">
@@ -815,77 +751,99 @@
             </div>
         </section>
 
-        <!-- Raised / Platform Stats -->
-        <section class="raised-section">
+        <!-- ₹7 CRORE RAISED -->
+        <section class="raised-section" id="raised">
             <div class="container">
-                <h2>&#8377;7 Crore <span>Raised</span></h2>
-                <p>From concept to funded venture. Here's what Bharat Intelligence has built.</p>
+                <h2>₹7 Crore <span>Raised</span></h2>
+                <p>Sahyadri Farms led. Ecosystem partners joined. Not because of a compelling pitch deck. Because the proof was undeniable.</p>
+
+                <div class="platform-features">
+                    <ul>
+                        <li>Matches workers to farms via mobile app</li>
+                        <li>Provides worker verification and reliability scoring</li>
+                        <li>Offers embedded services (training, insurance, wages)</li>
+                        <li>Gives farmers predictability (book labor 2-3 days in advance)</li>
+                    </ul>
+                </div>
 
                 <div class="platform-stats fade-in-up">
                     <div class="platform-stat">
                         <h3>1000s</h3>
                         <p>Farm Jobs Matched</p>
+                        <div class="stat-sub">Platform operational</div>
                     </div>
                     <div class="platform-stat">
-                        <h3>&#8377;7 Cr</h3>
+                        <h3>₹7 CR</h3>
                         <p>Funding Raised</p>
+                        <div class="stat-sub">September 2025</div>
                     </div>
                     <div class="platform-stat">
                         <h3>15K+</h3>
                         <p>Farmer Network</p>
-                    </div>
-                    <div class="platform-stat">
-                        <h3>100</h3>
-                        <p>Days from Concept to Funded</p>
+                        <div class="stat-sub">Sahyadri ecosystem</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Vision -->
-        <section class="vision-section">
+        <!-- The Vision Ahead -->
+        <section class="vision-section" id="vision">
             <div class="container">
                 <div class="vision-block fade-in-up">
                     <h2>The Vision <span>Ahead</span></h2>
-                    <p>Bharat Intelligence is now scaling beyond Nashik—building India's first organized farm labor marketplace that brings dignity to agricultural work and reliability to farmers who depend on it.</p>
-                    <p>Every grape you eat, every pomegranate that reaches export quality—behind it are workers who were matched, paid fairly, and showed up on time. That's the future Bharat Intelligence is building.</p>
+                    <ul>
+                        <li>Scale across Maharashtra horticulture</li>
+                        <li>Expand to other crops and geographies</li>
+                        <li>Layer skilling, financial services, tool-as-a-service</li>
+                        <li>Build the labor intelligence layer for Indian agriculture</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Method Proves -->
-        <section class="method-section">
+        <!-- BHARAT INTELLIGENCE PROVES THE VENTURE BLUEPRINT WORKS -->
+        <section class="method-section" id="method">
             <div class="container">
                 <div class="section-header text-center">
-                    <h2 class="section-title">BHARAT INTELLIGENCE PROVES <span class="highlight">THE VENTURE BLUEPRINT WORKS</span></h2>
-                    <p class="section-subtitle center">Our 5-step method that turns field friction into funded ventures.</p>
+                    <h2 class="section-title">BHARAT INTELLIGENCE PROVES <span class="highlight">THE VENTURE BLUEPRINT WORKS. WHAT'S NEXT?</span></h2>
                 </div>
 
                 <div class="method-flow fade-in-up">
                     <div class="method-step">
                         <div class="method-step-icon"><i data-lucide="ear" style="width:20px;height:20px;"></i></div>
                         <h4>Listen Deeply</h4>
+                        <p>Farm Truths Dialogues</p>
                     </div>
                     <div class="method-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;"></i></div>
                     <div class="method-step">
                         <div class="method-step-icon"><i data-lucide="map" style="width:20px;height:20px;"></i></div>
                         <h4>Map Friction</h4>
+                        <p>Identify where value is lost</p>
                     </div>
                     <div class="method-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;"></i></div>
                     <div class="method-step">
                         <div class="method-step-icon"><i data-lucide="file-text" style="width:20px;height:20px;"></i></div>
                         <h4>Build Blueprints</h4>
+                        <p>Complete venture design upfront</p>
                     </div>
                     <div class="method-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;"></i></div>
                     <div class="method-step">
                         <div class="method-step-icon"><i data-lucide="key" style="width:20px;height:20px;"></i></div>
                         <h4>Guarantee Access</h4>
+                        <p>Paid pilots, networks, capital from day 1</p>
                     </div>
                     <div class="method-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;"></i></div>
                     <div class="method-step">
                         <div class="method-step-icon"><i data-lucide="trending-up" style="width:20px;height:20px;"></i></div>
                         <h4>Facilitate Funding</h4>
+                        <p>We help you raise</p>
                     </div>
+                </div>
+
+                <div class="apply-dual">
+                    <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary btn-large">APPLY TO BUILD NEXT VENTURE</a>
+                    <a href="venture-blueprint.html" class="btn btn-outline btn-large">SEE OTHER OPPORTUNITIES</a>
                 </div>
             </div>
         </section>
@@ -900,7 +858,7 @@
                         <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
                             rel="noopener noreferrer" class="btn btn-white btn-large">Apply Now</a>
                     </div>
-                    <p class="apply-deadline yellow-text">Applications close: March 15, 2026</p>
+                    <p class="apply-deadline yellow-text">Applications close: March 10, 2026</p>
                 </div>
             </div>
         </section>
