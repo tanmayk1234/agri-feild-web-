@@ -93,18 +93,18 @@
         }
 
         /* Farm Truths */
-        .farm-truths { padding: 80px 20px; background: linear-gradient(135deg, #006838, #004d2a); text-align: center; }
+        .farm-truths { padding: 80px 20px; background: #fff; text-align: center; }
         .farm-truths h2 {
             font-size: clamp(24px, 3.5vw, 36px);
             font-weight: 800;
-            color: #fff;
+            color: var(--primary);
             margin-bottom: 12px;
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
-        .farm-truths h2 span { color: #4ade80; }
+        .farm-truths h2 span { color: #1a1a1a; }
         .farm-truths > .container > p {
-            color: rgba(255,255,255,0.75);
+            color: #555;
             font-size: 18px;
             margin-bottom: 40px;
         }
@@ -115,7 +115,7 @@
             margin: 0 auto 50px;
             border-radius: 16px;
             overflow: hidden;
-            border: 3px solid rgba(255,255,255,0.15);
+            border: 3px solid #e8f0ec;
         }
         .farm-truths-image img {
             width: 100%;
@@ -130,39 +130,39 @@
             margin-bottom: 40px;
         }
         .room-card {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
+            background: #f8faf9;
+            border: 1px solid #e8f0ec;
             border-radius: 16px;
             padding: 28px 20px;
-            backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
         .room-card:hover {
-            background: rgba(255,255,255,0.12);
+            border-color: var(--primary);
             transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,104,56,0.08);
         }
         .room-card-icon {
             width: 48px; height: 48px;
             border-radius: 12px;
-            background: rgba(74,222,128,0.15);
+            background: rgba(0,104,56,0.1);
             display: flex; align-items: center; justify-content: center;
             margin: 0 auto 14px;
-            color: #4ade80;
+            color: var(--primary);
         }
         .room-card h4 {
             font-size: 16px; font-weight: 700;
-            color: #fff;
+            color: var(--primary);
             margin-bottom: 4px;
             font-family: var(--font-heading);
         }
-        .room-card p { font-size: 13px; color: rgba(255,255,255,0.6); }
+        .room-card p { font-size: 13px; color: #666; }
 
         /* Marathi Quote Block */
         .marathi-quote-block {
             max-width: 800px;
             margin: 50px auto 10px;
-            background: rgba(255,255,255,0.06);
-            border-left: 5px solid #4ade80;
+            background: #f8faf9;
+            border-left: 5px solid var(--primary);
             border-radius: 0 16px 16px 0;
             padding: 32px 36px;
             text-align: left;
@@ -170,20 +170,20 @@
         .marathi-quote-block .marathi-text {
             font-size: clamp(18px, 2.5vw, 22px);
             font-weight: 700;
-            color: #4ade80;
+            color: var(--primary);
             line-height: 1.7;
             margin-bottom: 18px;
             font-style: italic;
         }
         .marathi-quote-block .marathi-attribution {
             font-size: 15px;
-            color: rgba(255,255,255,0.7);
+            color: #333;
             font-weight: 500;
             margin-bottom: 4px;
         }
         .marathi-quote-block .marathi-subtitle {
             font-size: 14px;
-            color: rgba(255,255,255,0.5);
+            color: #777;
             font-style: italic;
         }
 
@@ -194,21 +194,21 @@
             margin-top: 40px;
         }
         .did-box {
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.12);
+            background: #f8faf9;
+            border: 1px solid #e8f0ec;
             border-radius: 16px;
             padding: 28px 24px;
             text-align: left;
         }
         .did-box h4 {
             font-size: 16px; font-weight: 700;
-            color: #4ade80;
+            color: var(--primary);
             margin-bottom: 16px;
             font-family: var(--font-heading);
         }
         .did-box ul { list-style: none; padding: 0; }
         .did-box li {
-            font-size: 15px; color: rgba(255,255,255,0.8);
+            font-size: 15px; color: #444;
             padding: 6px 0; padding-left: 20px; position: relative;
         }
         .did-box.not li::before {
@@ -588,7 +588,7 @@
                         onerror="this.parentElement.style.display='none';">
                 </div>
 
-                <h3 style="color:#4ade80;font-size:20px;font-weight:700;margin-bottom:30px;font-family:var(--font-heading);">Who Was In The Room</h3>
+                <h3 style="color:var(--primary);font-size:20px;font-weight:700;margin-bottom:30px;font-family:var(--font-heading);">Who Was In The Room</h3>
 
                 <div class="room-grid fade-in-up">
                     <div class="room-card">
