@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Agri Founders Field - Sahyadri Farms & Digital Impact Square (DISQ)</title>
+    <meta name="description"
+        content="Get answers to common questions about the Agri Founders Field on-farm venture building program by Sahyadri Farms, DISQ, and MSIS for aspiring farmer founders and co-founders.">
+    <meta name="keywords"
+        content="Sahyadri Farms, Digital Impact Square, DISQ, MSIS, Maharashtra State Innovation Society, farmer founders, co-founders, FAQs, venture building program, Agri Founders Field">
+    <link rel="canonical" href="https://agrifounders.com/faq.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agrifounders.com/faq.html">
+    <meta property="og:title" content="FAQs | Agri Founders Field - Sahyadri Farms & Digital Impact Square (DISQ)">
+    <meta property="og:description"
+        content="Common questions about the on-farm venture building program by Sahyadri Farms, DISQ, and MSIS for farmer founders.">
+    <meta property="og:image" content="https://agrifounders.com/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agrifounders.com/faq.html">
+    <meta property="twitter:title" content="FAQs | Agri Founders Field - Sahyadri Farms & Digital Impact Square (DISQ)">
+    <meta property="twitter:description"
+        content="Common questions about the on-farm venture building program by Sahyadri Farms, DISQ, and MSIS for farmer founders.">
+    <meta property="twitter:image" content="https://agrifounders.com/assets/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Agri Founders Field?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Agri Founders Field is India’s only on-farm venture building program. We transform aspiring agricultural entrepreneurs into co-founders of funded, launch-ready ventures within 4 months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the role of Sahyadri Farms, DISQ, and MSIS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Agri Founders Field is a joint initiative by Digital Impact Square (DISQ) - A TCS Foundation Initiative, Sahyadri Farms - India’s largest Farmer Producer Company, and Maharashtra State Innovation Society (MSIS)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I don't have an idea. Can I still apply?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. This is a venture building program, not just an incubator. We provide validated agricultural opportunities and problem statements."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        .program-banner {
+            background: var(--primary);
+            padding: 100px 20px 40px;
+            text-align: center;
+        }
+
+        .program-banner h2 {
+            color: white;
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .faq-layout {
+            display: flex;
+            gap: 60px;
+            margin-top: 60px;
+        }
+
+        .faq-sidebar {
+            width: 320px;
+            position: sticky;
+            top: 120px;
+            flex-shrink: 0;
+            border-right: 2px solid #f0f0f0;
+            padding-right: 40px;
+        }
+
+        .faq-nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .faq-nav-item {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        .faq-nav-item:hover,
+        .faq-nav-item.active {
+            opacity: 1;
+        }
+
+        .faq-nav-item.active {
+            position: relative;
+        }
+
+        .faq-nav-item.active::after {
+            content: '';
+            position: absolute;
+            right: -42px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        .faq-content {
+            flex-grow: 1;
+        }
+
+        .faq-category-group {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .faq-category-group.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Accordion Overrides */
+        .accordion-item {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item.active {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 104, 56, 0.05);
+        }
+
+        .accordion-summary {
+            padding: 24px 30px;
+            background: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .accordion-summary h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .accordion-icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+
+        .accordion-item.active .accordion-icon-circle {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(0deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0 30px;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 800px;
+            padding-bottom: 30px;
+        }
+
+        .accordion-content p,
+        .accordion-content li {
+            font-size: 18px !important;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .accordion-content p {
+            margin-bottom: 16px;
+        }
+
+        .accordion-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Partners Redesign */
+        .partners-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .partners-heading {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .partners-logo-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .partner-img-wrapper {
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .partner-img-wrapper img {
+            max-height: 70px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-img-wrapper img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 992px) {
+            .faq-layout {
+                flex-direction: column;
+                margin-top: 40px;
+                gap: 0;
+            }
+
+            .faq-sidebar {
+                width: 100%;
+                position: sticky;
+                top: 80px;
+                background: white;
+                z-index: 100;
+                border-right: none;
+                border-bottom: 2px solid #f0f0f0;
+                padding: 20px 0;
+                margin-bottom: 30px;
+            }
+
+            .faq-nav-list {
+                flex-direction: row;
+                overflow-x: auto;
+                padding: 0 20px 10px;
+                gap: 24px;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                /* Firefox */
+            }
+
+            .faq-nav-list::-webkit-scrollbar {
+                display: none;
+                /* Chrome/Safari */
+            }
+
+            .faq-nav-item {
+                font-size: 16px;
+                padding-bottom: 4px;
+            }
+
+            .faq-nav-item.active::after {
+                right: 0;
+                bottom: -12px;
+                top: auto;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Agri Founders Field Logo"
+                        style="height: 60px; width: auto; display: block;">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#faq" class="active">FAQs</a></li>
+                <li><a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" class="nav-cta">Apply Now</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="program-banner">
+            <div class="container">
+                <h1>India’s First On-Farm Venture Building Program</h1>
+            </div>
+        </section>
+
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="faq-layout">
+                    <!-- Sidebar Nav -->
+                    <aside class="faq-sidebar">
+                        <nav class="faq-nav-list">
+                            <a href="#vbf" class="faq-nav-item active" data-category="vbf">Agri Founder Field</a>
+                            <a href="#es" class="faq-nav-item" data-category="es">Eligibility & Selection</a>
+                            <a href="#ps" class="faq-nav-item" data-category="ps">Program Structure</a>
+                            <a href="#ce" class="faq-nav-item" data-category="ce">Capital, Equity & Outcomes</a>
+                            <a href="#al" class="faq-nav-item" data-category="al">Application Info</a>
+                            <a href="#cfe" class="faq-nav-item" data-category="cfe">Co-Founder Experience</a>
+                        </nav>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <div class="faq-content">
+                        <!-- Category 1: ABOUT AGRI FOUNDERS FIELD -->
+                        <div id="af" class="faq-category-group active">
+                            <div class="accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-summary">
+                                        <h4>What is Agri Founders Field?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-down"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Agri Founders Field is India’s only on-farm venture building program. We
+                                            transform aspiring agricultural entrepreneurs into co-founders of funded,
+                                            launch-ready ventures within 4 months.</p>
+                                        <p>Unlike accelerators that polish existing startups, we build new agricultural
+                                            businesses from scratch—on actual farms, with actual farmers, solving actual
+                                            problems.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What is the application and program timeline?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <ul>
+                                            <li><strong>Applications Open:</strong> February 12, 2026</li>
+                                            <li><strong>Application Deadline:</strong> March 15, 2026</li>
+                                            <li><strong>Selection Bootcamp:</strong> Mid-March 2026 (2 days)</li>
+                                            <li><strong>Residential Bootcamp:</strong> April 2026 (1 month)</li>
+                                            <li><strong>Hybrid Building Phase:</strong> May-July 2026</li>
+                                            <li><strong>Demo Day:</strong> August 2026</li>
+                                        </ul>
+                                        <p>Intensive period: 1 month residential (April) + 3 months hybrid</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>How is it different from a startup accelerator or incubator?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Accelerators take existing startups and help them grow faster. They assume
+                                            you already have a team, an idea, and some traction.</p>
+                                        <p>Incubators provide workspace and basic resources to early-stage founders.
+                                            They’re mostly passive infrastructure providers.</p>
+                                        <p>Agri Founders Field builds ventures from scratch:</p>
+                                        <ul>
+                                            <li>We provide validated opportunities & blueprint to build venture (you
+                                                don’t need your own idea)</li>
+                                            <li>We match co-founders (you don’t need an existing team)</li>
+                                            <li>We build on actual farms (not in conference rooms)</li>
+                                            <li>We take equity as builder-partners (not as landlords)</li>
+                                            <li>We provide 30,000+ farmer access for testing (not just “mentorship
+                                                calls”)</li>
+                                        </ul>
+                                        <p>We’re venture builders, not accelerators.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Are applications still open?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Applications open February 12, 2026 and close March 15, 2026. We accept
+                                            applications on a rolling basis but recommend applying early as we may close
+                                            applications if we reach capacity.</p>
+                                        <p>Check the website homepage for current status: agrifoundersfield.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 2: ELIGIBILITY & SELECTION -->
+                        <div id="es" class="faq-category-group">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Who can apply?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Anyone committed to building agricultural ventures. We welcome:</p>
+                                        <ul>
+                                            <li>First-time founders with domain expertise or technical skills</li>
+                                            <li>Second-time entrepreneurs seeking impact in agriculture</li>
+                                            <li>Engineers/developers wanting purposeful work</li>
+                                            <li>Farmers/FPO operators ready to scale solutions</li>
+                                            <li>Corporate professionals transitioning to entrepreneurship Domain experts
+                                            </li>
+                                        </ul>
+                                        <p>No age limit. No degree requirement. No prior startup experience required.
+                                        </p>
+                                        <p>What matters: hunger to build, willingness to learn, and 4-month commitment.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do I need a business idea to apply?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>We provide founders with validated opportunities and clear blueprints to
+                                            build ventures across critical agricultural sectors.</p>
+                                        <p>These are not vague problem areas. Each opportunity is grounded in real
+                                            market frictions with quantified demand, clearly identified customers,
+                                            proven pain points, and a defined blueprint for venture creation. Founders
+                                            enter the program to execute, refine, and build.</p>
+                                        <p>You can also bring your own idea if it’s agriculture-focused and addresses a
+                                            real problem. We’ll help you validate it.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I apply if I already have a small, early-stage, or bootstrapped
+                                            business?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes, in two scenarios:</p>
+                                        <p><strong>Scenario 1: You're in agriculture/allied sectors</strong></p>
+                                        <p>If you run a small agri-business, MSME, or SME (farming, agri-inputs, food
+                                            processing, rural services), you're welcome. We work with
+                                            farmer-entrepreneurs, rural service providers, and agri-businesses ready to
+                                            formalize and scale.</p>
+                                        <p><strong>Scenario 2: You're outside agriculture</strong></p>
+                                        <p>If you run a non-agri business (IT, consulting, retail, etc.) but want to
+                                            co-found an agricultural venture, you can apply. Your current business
+                                            provides a runway; you bring transferable skills.</p>
+                                        <p><strong>Case-by-case evaluation:</strong></p>
+                                        <p>If you have a side project, informal farmer tests, or are pivoting
+                                            significantly—apply and explain your situation, traction, and how you'll
+                                            manage the time commitment.</p>
+                                        <p>Bottom line: We're flexible if you're genuinely committed to building in
+                                            agriculture and can dedicate the time.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I apply with a co-founder?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes. Existing co-founder teams are welcome. You’ll both need to apply
+                                            individually and mention each other in your applications.</p>
+                                        <p>Important: We don’t guarantee both co-founders will be selected. We might
+                                            select one and not the other, or suggest team reformation during the program
+                                            based on skill complementarity.</p>
+                                        <p>If you’re accepted as a team, you’ll jointly hold one venture slot (not two
+                                            separate ventures).</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>How selective is it?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Very. Single-digit acceptance rate (~3-6% based on expected volume).</p>
+                                        <p>But we're not looking for perfect resumes. We are looking for evidence of
+                                            building. If you've made something (code, products, teams, solutions), you
+                                            have a real shot. If you can show evidence of making things happen (in any
+                                            domain), you have a real shot.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I re-apply if I’m not selected?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes. We run this program annually. If you’re not selected this year but
+                                            continue building and learning, you’re welcome to reapply next year. Many
+                                            successful founders were rejected multiple times before getting in.</p>
+                                        <p>We keep records of past applicants and note improvements/evolution.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is there an age limit?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No. We’ve considered founders from 18 to 55 in past programs. What matters is
+                                            your ability to commit 4 months and your hunger to build.</p>
+                                        <p>If you’re 18+ and have built impressive projects, welcome. If you’re even 50+
+                                            and pivoting from a corporate career to agriculture, welcome. Age is
+                                            irrelevant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3: PROGRAM STRUCTURE -->
+                        <div id="ps" class="faq-category-group">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>How long is the program? Is it mandatory to stay in-person?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p><strong>Total Duration:</strong> 4 months (April-August)</p>
+                                        <p><strong>Mandatory In-Person:</strong></p>
+                                        <ul>
+                                            <li><strong>April (1 month):</strong> Fully residential in Nashik. No
+                                                exceptions. Accommodation and meals provided.</li>
+                                            <li><strong>May-July (3 months):</strong> Hybrid. You can choose:
+                                                <ul>
+                                                    <li>Option A: Stay in Nashik (free accommodation, free meals, daily
+                                                        workspace access)</li>
+                                                    <li>Option B: Work remotely from your city (online mentoring
+                                                        clinics, weekly check-ins)</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Mandatory for both:</strong> Monthly “Huddles” in Nashik
+                                                (in-person field visits, masterclasses, 2-3 days per month)</li>
+                                        </ul>
+                                        <p>Bottom line: You must be in Nashik full-time for April. May-July is flexible
+                                            but requires periodic in-person attendance.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What happens during the program?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p><strong>April (Residential Bootcamp):</strong></p>
+                                        <ul>
+                                            <li>Week 1: Deep-dive into opportunity areas, farm visits, farmer
+                                                interviews, Flagship Farm truth program</li>
+                                            <li>Week 2: Co-founder matching, team formation exercises, problem selection
+                                            </li>
+                                            <li>Week 3: Prototype development, initial farmer testing, legal entity
+                                                formation</li>
+                                            <li>Week 4: Business model refinement, pitch practice, pilot planning</li>
+                                        </ul>
+                                        <p><strong>May-July (Hybrid Building):</strong></p>
+                                        <ul>
+                                            <li>Launch pilots with farmers</li>
+                                            <li>Test product-market fit</li>
+                                            <li>Iterate based on feedback</li>
+                                            <li>Build initial traction (revenue, users, or partnerships)</li>
+                                            <li>Weekly mentor check-ins</li>
+                                            <li>Monthly in-person Huddles</li>
+                                        </ul>
+                                        <p><strong>August:</strong></p>
+                                        <ul>
+                                            <li>Demo Day preparation</li>
+                                            <li>Investor pitch refinement</li>
+                                            <li>Final presentations</li>
+                                            <li>Fundraising conversations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Where does the program take place?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p><strong>Primary Location:</strong> Sahyadri Farms On-Farm Incubation Center,
+                                            Nashik, Maharashtra</p>
+                                        <p><strong>Facilities:</strong></p>
+                                        <ul>
+                                            <li>17,000 sq ft modern workspace (high-speed internet, V-con rooms,
+                                                presentation spaces)</li>
+                                            <li>20-acre R&D farms for testing</li>
+                                            <li>Soil testing lab, bio labs, tissue culture facilities</li>
+                                            <li>Access to Sahyadri’s pack houses, cold storage, processing units</li>
+                                            <li>Residential accommodation (shared rooms, modern amenities)</li>
+                                            <li>Dining facility (breakfast, lunch, dinner)</li>
+                                        </ul>
+                                        <p>Why Nashik? Short answer: India’s horticulture capital, ₹2000cr FPO
+                                            ecosystem, 30,000+ farmer network, government AgriTech testbed.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What support does Agri Founders Field provide?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p><strong>Infrastructure:</strong></p>
+                                        <ul>
+                                            <li>Workspace + labs + R&D farms</li>
+                                            <li>Accommodation (April free, May-July optional and free)</li>
+                                            <li>Meals (April free, May-July subsidized)</li>
+                                        </ul>
+                                        <p><strong>Access:</strong></p>
+                                        <ul>
+                                            <li>30,000+ farmer network for testing</li>
+                                            <li>Sahyadri’s value chain (pack houses, cold storage, export logistics)
+                                            </li>
+                                            <li>Partner ecosystem (ThinkAg, Social Alpha, Digital Impact Square, A TCS
+                                                Foundation Initiatives)</li>
+                                        </ul>
+                                        <p><strong>Expertise:</strong></p>
+                                        <ul>
+                                            <li>Practitioner mentors (FPO CEOs, supply chain heads, agri-investors)</li>
+                                            <li>One investor mentor per venture (mandatory)</li>
+                                            <li>One domain expert per venture (mandatory)</li>
+                                            <li>One farmer representative per venture (mandatory)</li>
+                                        </ul>
+                                        <p><strong>Services:</strong></p>
+                                        <ul>
+                                            <li>Legal support (company incorporation, compliance)</li>
+                                            <li>Design guidance (branding, product, pitch decks)</li>
+                                            <li>Investor introductions</li>
+                                            <li>Potential ₹50-150L direct investment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do I need technical or coding skills?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Not necessarily. We need diverse skills:</p>
+                                        <ul>
+                                            <li>Technical founders: Build the product/platform</li>
+                                            <li>Domain experts: Ensure relevance and farmer adoption</li>
+                                            <li>Business operators: Drive finance, sales, ops, partnerships</li>
+                                            <li>Designers: Create user experiences</li>
+                                        </ul>
+                                        <p>If you’re non-technical, we’ll help you find technical co-founders during the
+                                            program. The best agricultural ventures blend tech + domain + ops expertise.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>If I don’t bring my own idea, how will I be assigned an opportunity? Will I
+                                            get to choose?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>You’ll choose, not be assigned.</p>
+                                        <p><strong>Process:</strong></p>
+                                        <ul>
+                                            <li>Week 1: We present all validated opportunities in depth (market size,
+                                                frictions, signals, potential solutions)</li>
+                                            <li>Week 1-2: You explore opportunities through farm visits, farmer
+                                                interviews, and mentor sessions</li>
+                                            <li>Week 2: You rank your top 3 preferences based on interest, skill fit,
+                                                and team potential</li>
+                                            <li>Week 2: Co-founder discovery happens based on complementary skills and
+                                                shared opportunity interest</li>
+                                            <li>End of Week 2: Teams form around chosen opportunities</li>
+                                        </ul>
+                                        <p>You have agency. We facilitate, not dictate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 4: CAPITAL, EQUITY & OUTCOMES -->
+                        <!-- Category 4: CAPITAL, EQUITY & OUTCOMES -->
+                        <div id="ce" class="faq-category-group">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>How much equity do co-founders receive?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Co-founders own the majority of their venture. Here’s the typical cap table:
+                                        </p>
+                                        <ul>
+                                            <li>Founders (typically 2-3 co-founders): 70-90%</li>
+                                            <li>Agri Founders Field: 8-10%</li>
+                                            <li>Future investors (if you raise): Remaining equity</li>
+                                        </ul>
+                                        <p>The exact split among co-founders is decided by the team based on
+                                            contribution, role, and agreement. We don’t dictate internal founder splits.
+                                        </p>
+                                        <p>Our 8-10% is common stock (same class as founders), with no liquidation
+                                            preference or blocking rights. We’re aligned with you, not above you.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>How much capital does each venture receive?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>During the program: Zero cash directly. We provide:</p>
+                                        <ul>
+                                            <li>Infrastructure worth ₹50-70L (workspace, labs, farmer access,
+                                                mentorship)</li>
+                                            <li>Accommodation + meals during bootcamp</li>
+                                            <li>Legal and compliance facilitation support</li>
+                                        </ul>
+                                        <p>After the program:</p>
+                                        <ul>
+                                            <li>Access to investor network at Demo Day for fundraising.</li>
+                                        </ul>
+                                        <p>Investment depends on: Traction, team strength, and Execution</p>
+                                        <p>Bottom line: We don’t hand out cash upfront. We provide resources to build.
+                                            Investment comes when execution is demonstrated.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What will I have at the end of the program?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Minimum (every venture):</p>
+                                        <ul>
+                                            <li>Legally incorporated company</li>
+                                            <li>Co-founder team (2-3 people with complementary skills)</li>
+                                            <li>Validated problem and initial solution</li>
+                                            <li>Tested prototype or MVP</li>
+                                            <li>Farmer feedback and iteration learnings</li>
+                                            <li>Initial traction (pilots, pre-orders, partnerships, or early revenue)
+                                            </li>
+                                            <li>Investor-ready pitch deck</li>
+                                            <li>Network of mentors, investors, and farmer partners</li>
+                                        </ul>
+                                        <p>Best case (top ventures):</p>
+                                        <ul>
+                                            <li>Investor commitments from Demo Day</li>
+                                            <li>Paying customers or revenue</li>
+                                            <li>Partnership agreements with FPOs or corporates</li>
+                                            <li>Clear path to scale</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What happens if my venture struggles or fails later?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Failure is part of entrepreneurship. We don’t penalize you for trying.</p>
+                                        <p>If your venture shuts down:</p>
+                                        <ul>
+                                            <li>We don’t claw back our equity (it becomes worthless like yours)</li>
+                                            <li>We don’t sue or demand repayment</li>
+                                            <li>We stay in touch and support your next venture</li>
+                                        </ul>
+                                        <p>Our philosophy: We’re partners in risk. If you fail, we fail together. If you
+                                            succeed, we succeed together. Many successful founders failed multiple times
+                                            before winning. We respect the journey.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What happens after the program ends? Will I need to relocate?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>After August Demo Day:</p>
+                                        <ul>
+                                            <li>You decide where to operate your venture</li>
+                                            <li>If your solution is Nashik-specific (e.g., grape value chain), you might
+                                                stay</li>
+                                            <li>If your solution is pan-India, you might move to Bengaluru, Pune, or
+                                                wherever makes sense</li>
+                                        </ul>
+                                        <p>We don’t require you to:</p>
+                                        <ul>
+                                            <li>Stay in Nashik</li>
+                                            <li>Continue working from our facility</li>
+                                            <li>Report to us regularly</li>
+                                        </ul>
+                                        <p>But we offer:</p>
+                                        <ul>
+                                            <li>Continued mentor access (on-demand)</li>
+                                            <li>Workspace access if you’re in Nashik</li>
+                                            <li>Network introductions as you scale</li>
+                                            <li>Support for follow-on fundraising</li>
+                                        </ul>
+                                        <p>You’re independent. We’re your long-term partners, not your bosses.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 5: APPLICATION INFO -->
+                        <!-- Category 5: APPLICATION INFO -->
+                        <div id="al" class="faq-category-group">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is there a cost to apply?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No. Zero application fee. We don’t charge to review your application.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do I need to pay for the program?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No cash fee. We're offering equity partnership instead.</p>
+                                        <p>Here's how it works:</p>
+                                        <ul>
+                                            <li>You and your co-founders will own 80-90% of the venture we build
+                                                together</li>
+                                            <li>We take 8-10% as your building partner</li>
+                                            <li>The remaining equity is reserved for future investors and team members
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do co-founders receive a stipend?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No. We don’t provide cash stipends.</p>
+                                        <p>What we provide:</p>
+                                        <ul>
+                                            <li>Free accommodation during April</li>
+                                            <li>Free meals during April</li>
+                                            <li>Free/subsidized accommodation + meals during May-July (if staying in
+                                                Nashik)</li>
+                                            <li>Workspace access</li>
+                                        </ul>
+                                        <p>What you need to cover:</p>
+                                        <ul>
+                                            <li>Personal living expenses (if working remotely May-July)</li>
+                                            <li>Travel to/from Nashik</li>
+                                            <li>Any prototype development costs beyond basic support</li>
+                                        </ul>
+                                        <p>Assumption: You have 4 months of personal runway. If not, consider savings,
+                                            part-time remote work (May-July only, not during April), family support, or
+                                            personal loans.</p>
+                                        <p>We’re not paying you to join. You’re investing your time because you believe
+                                            in the opportunity.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do I need to relocate?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>April: Yes, to Nashik for 1 month (accommodation & food provided)</p>
+                                        <p>May-July: Your choice (remote or stay in Nashik)</p>
+                                        <p>After Demo Day: Hybrid / Optional</p>
+                                        <p>For Selection Bootcamp (mid-March, 2 days):</p>
+                                        <ul>
+                                            <li>You need to come to Nashik</li>
+                                            <li>We provide accommodation + meals</li>
+                                            <li>You cover travel costs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Do I need prior funding or investors?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No. In fact, we provide you access to investment during the program.</p>
+                                        <p>Ideal: You’re pre-funding, exploring ideas, ready to build from scratch</p>
+                                        <p>Acceptable: You have angel investors or small grants, but no institutional VC
+                                            funding.</p>
+                                        <p>Not ideal: You’re already Series A funded with a large team. This program is
+                                            for venture formation, not scaling.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What happens after the program ends?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Immediate (August-September):</p>
+                                        <ul>
+                                            <li>Demo Day investor meetings continue</li>
+                                            <li>Partnership discussions finalize</li>
+                                            <li>Funding rounds close (for those who raised)</li>
+                                            <li>Ventures launch publicly or continue pilots</li>
+                                        </ul>
+                                        <p>3-6 months out:</p>
+                                        <ul>
+                                            <li>You’re operating independently</li>
+                                            <li>We stay connected as equity partners</li>
+                                            <li>Continued mentor access</li>
+                                            <li>Network support for hiring, partnerships, follow-on funding</li>
+                                        </ul>
+                                        <p>Long-term:</p>
+                                        <ul>
+                                            <li>We’re on your cap table forever (or until exit/acquisition)</li>
+                                            <li>We participate in future funding rounds (pro-rata rights)</li>
+                                            <li>We celebrate your success or support pivots/shutdowns</li>
+                                            <li>You join our alumni network and mentor future cohorts</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is the program only for Indians?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>No. We accept founders globally.</p>
+                                        <p>BUT:</p>
+                                        <ul>
+                                            <li>You must be able to legally work in India</li>
+                                            <li>You must relocate to Nashik for April (and potentially May-July)</li>
+                                            <li>Your venture must focus on Indian agriculture (we can’t support
+                                                solutions for other markets)</li>
+                                        </ul>
+                                        <p>Visa support: We don’t provide visa sponsorship. If you need a visa, you’re
+                                            responsible for obtaining it.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I leave the program mid-way?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Technically: Yes, there’s no legal lock-in.</p>
+                                        <p>Realistically: It’s highly discouraged.</p>
+                                        <p>If you leave:</p>
+                                        <ul>
+                                            <li>You forfeit any equity structure we set up</li>
+                                            <li>You lose access to resources, mentors, and farmer network</li>
+                                            <li>Your co-founders are left stranded</li>
+                                            <li>You damage your reputation for future programs</li>
+                                        </ul>
+                                        <p>Before applying, ask yourself: Can you commit 4 months full-time (especially
+                                            April)? If the answer is “maybe” or “I’ll see how it goes,” please don’t
+                                            apply. Apply only if you’re all-in.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Will Agri Founders Field help me raise investment after the program?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes. Here’s how:</p>
+                                        <ul>
+                                            <li>During the program: Investor mentor assigned to each venture, Pitch
+                                                refinement with investor lens, Demo Day preparation (August)</li>
+                                            <li>At Demo Day: Pitch to 20-30 investors (VCs, angels, impact funds, CSR
+                                                Grants etc), One-on-one investor meetings, Live Q&A sessions.</li>
+                                            <li>Post Demo Day: Warm introductions to relevant investors, Support for
+                                                follow-on fundraising, Participation in your future rounds (pro-rata),
+                                                Network access to corporate partners and grant programs</li>
+                                        </ul>
+                                        <p>We don’t guarantee funding. But we give you the best shot by connecting you
+                                            to the right investors and helping you tell your story compellingly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category 6: CO-FOUNDER EXPERIENCE -->
+                        <!-- Category 6: CO-FOUNDER EXPERIENCE -->
+                        <div id="cfe" class="faq-category-group">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is it possible to visit home or have my family visit during the program?
+                                        </h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p><strong>April (Residential Month):</strong> We strongly discourage leaving
+                                            Nashik. This month is intensive—you’ll miss critical team-building moments
+                                            if you leave.</p>
+                                        <p>Emergency exceptions: We understand that unforeseen events might happen.
+                                            Family emergencies and health issues will always be treated with empathy and
+                                            flexibility.</p>
+                                        <p>Family visits: Allowed on weekends. They’ll need to arrange their own
+                                            accommodation (we can suggest nearby hotels).</p>
+                                        <p><strong>May-July (Hybrid Period):</strong> Full flexibility. Work remotely,
+                                            visit home, or stay in Nashik—your choice.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I continue my existing startup, consultancy, or part-time roles?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>April: No. Full-time commitment required.</p>
+                                        <p>Our advice: If you can’t go all-in for 4 months, wait until you can.
+                                            Half-commitment leads to half-results.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is Agri Founders Field inclusive of different backgrounds and needs?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes. We actively welcome:</p>
+                                        <ul>
+                                            <li>Women founders (we track gender diversity metrics)</li>
+                                            <li>First-generation entrepreneurs (no family business background required)
+                                            </li>
+                                            <li>Rural founders (farmers, FPO operators, village entrepreneurs)</li>
+                                            <li>Non-English speakers (we provide translation support if needed)</li>
+                                            <li>Different socioeconomic backgrounds (no wealth requirement)</li>
+                                        </ul>
+                                        <p>Accessibility:</p>
+                                        <ul>
+                                            <li>Our facility is wheelchair accessible</li>
+                                            <li>We accommodate dietary restrictions (vegetarian, vegan, allergies)</li>
+                                            <li>We provide mental health support through counselors</li>
+                                        </ul>
+                                        <p>What we don’t tolerate: Discrimination (caste, gender, religion, language),
+                                            Harassment or bullying, Elitism or condescension toward farmers.</p>
+                                        <p>We’re building an inclusive ecosystem. If you’ve faced barriers elsewhere,
+                                            you’re especially welcome here.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>I am applying from outside India. Do you provide visa and logistics support?
+                                        </h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Visa: You’re responsible for obtaining your own visa. We don’t provide visa
+                                            sponsorship or invitation letters (we’re not set up as a legal entity for
+                                            this yet).</p>
+                                        <p>Logistics support: If you’re accepted, we can:</p>
+                                        <ul>
+                                            <li>Suggest immigration lawyers</li>
+                                            <li>Connect you with past international participants (if any)</li>
+                                            <li>Provide program documentation for your visa application</li>
+                                        </ul>
+                                        <p>Recommendation: Apply for a Business Visa or Long-Term Tourist Visa (6-month
+                                            validity).</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What is the campus environment like? Do I have access to essentials?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Accommodation:</p>
+                                        <ul>
+                                            <li>Shared rooms</li>
+                                            <li>AC, Wi-Fi, basic furniture</li>
+                                            <li>Shared bathrooms (clean, modern)</li>
+                                            <li>Laundry facilities</li>
+                                        </ul>
+                                        <p>Workspace:</p>
+                                        <ul>
+                                            <li>17,000 sq ft open layout</li>
+                                            <li>High-speed internet (100 Mbps+)</li>
+                                            <li>V-con rooms for calls</li>
+                                            <li>Meeting rooms, whiteboarding spaces</li>
+                                            <li>24/7 access</li>
+                                        </ul>
+                                        <p>Dining:</p>
+                                        <ul>
+                                            <li>Cafeteria-style meals (breakfast, lunch, dinner)</li>
+                                            <li>Vegetarian options</li>
+                                        </ul>
+                                        <p>Nearby: Grocery stores, pharmacies (2 km), Hospitals (2 km), Nashik city
+                                            center (20 km), Airports (5 km), railway station (30 km).</p>
+                                        <p>Not a resort, not a hostel. Simple clean space made for productivity. Come to
+                                            build, not to take a break.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What medical and wellness support is available on campus?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Medical:</p>
+                                        <ul>
+                                            <li>Fully equipped first-aid kits available across the campus.</li>
+                                            <li>In-house doctor available on campus until 8:00 PM.</li>
+                                            <li>Tie-up with a nearby hospital located within 2 km for consultations and
+                                                emergency care.</li>
+                                            <li>24/7 ambulance service available on campus for immediate emergency
+                                                response.</li>
+                                        </ul>
+                                        <p>Wellness:</p>
+                                        <ul>
+                                            <li>Mental health counselor available (virtual sessions)</li>
+                                            <li>Stress management workshops</li>
+                                            <li>Peer support groups</li>
+                                            <li>Outdoor spaces for walks, exercise, gym within campus, Squash court etc.
+                                            </li>
+                                        </ul>
+                                        <p>Health insurance: Not provided. You’re responsible for your own health
+                                            insurance during the program.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>What happens in case of a personal or family emergency?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>If an emergency occurs:</p>
+                                        <ul>
+                                            <li>Notify program coordinators immediately</li>
+                                            <li>We pause your program participation</li>
+                                            <li>You can leave and return (within reason)</li>
+                                        </ul>
+                                        <p>We accommodate: Family emergencies (hospitalization, death), Personal health
+                                            crises, Unforeseen life events.</p>
+                                        <p>We don’t accommodate: “I changed my mind”, “I got a job offer”, “This is
+                                            harder than I thought”.</p>
+                                        <p>Emergencies are real and unpredictable. Quitting because you’re uncomfortable
+                                            is different. We’ll support the former, not the latter.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Can I participate remotely?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>April (Residential): Very difficult. This month requires in-person, full-time
+                                            presence. If you have caregiving responsibilities, this might not be the
+                                            right time.</p>
+                                        <p>May-July (Hybrid): We strongly encourage participants to co-locate in Nashik
+                                            to be part of the cohort and stay closely connected to the ecosystem. At the
+                                            same time, the program remains hybrid-friendly May onwards, allowing
+                                            founders to continue building remotely.</p>
+                                        <p>Expectations include (Hybrid):</p>
+                                        <ul>
+                                            <li>Weekly mandatory sessions (program reviews, learning blocks, execution
+                                                check-ins)</li>
+                                            <li>Regular mentoring sessions (virtual or in-person, as scheduled)</li>
+                                            <li>Monthly in-person huddles in Nashik for deep work, alignment, and
+                                                ecosystem engagement</li>
+                                        </ul>
+                                        <p>We’re supportive but realistic. Building a venture is demanding. If you’re
+                                            stretched too thin, neither your venture nor your family will get what they
+                                            need.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <div class="accordion-summary">
+                                        <h4>Is there elimination during the program?</h4>
+                                        <div class="accordion-icon-circle"><i data-lucide="chevron-right"></i></div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>Yes. After the first 4 weeks (end of April residential bootcamp), we conduct
+                                            a milestone evaluation.</p>
+                                        <p>Teams are assessed on:</p>
+                                        <ul>
+                                            <li>Co-founder dynamics and team cohesion</li>
+                                            <li>Progress on prototype/MVP</li>
+                                            <li>Farmer validation and market understanding</li>
+                                            <li>Commitment and execution quality</li>
+                                        </ul>
+                                        <p>Expected outcome: 60-80% of teams continue to the hybrid phase (May-July).
+                                            Teams that aren't gaining traction or where founders aren't fully committed
+                                            will exit the program.</p>
+                                        <p>Why: By Week 4, it's clear which teams are working. Better to make honest
+                                            calls early than string founders along. Those who exit get candid feedback
+                                            and can reapply in future cohorts.</p>
+                                        <p>Bottom line: High-intensity program = milestone-based progression. We invest
+                                            deeper in ventures with real potential.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Partners Section -->
+        <section class="partners-section section-alt">
+            <div class="container container-narrow">
+                <div class="section-header text-center">
+                    <h2 class="section-title">PARTNERS</h2>
+                </div>
+                <div class="partners-grid fade-in-up">
+                    <div class="partner-logo">
+                        <img src="assets/SRDF Logo_Final (PNG) 2.png"
+                            alt="Sahyadri Rural Development Foundation - Sahyadri Farms">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="assets/Paani Foundation Logo 1.png" alt="Paani Foundation">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="assets/Social-Alpha-Logo 1.png" alt="Social Alpha">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="assets/ThinkAg Logo 1.png" alt="ThinkAg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply Section -->
+        <section class="apply-section section" id="apply">
+            <div class="container container-narrow">
+                <div class="apply-card improved">
+                    <h2 class="apply-title">Ready to build where it matters?</h2>
+                    <p class="apply-text">Applications for the 2026 cohort are now open.<br>Built on farms, not slides.
+                    </p>
+
+                    <div class="apply-actions">
+                        <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-white btn-large">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <p class="apply-deadline yellow-text">Applications close: March 15, 2026</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-slim">
+            <div class="footer-logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Agri Founders Field Logo"
+                        style="height: 30px; filter: brightness(0) invert(1); opacity: 0.8;"></a>
+            </div>
+            <div class="footer-copy-slim">
+                <p>&copy; 2026. Digital Impact Square</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // FAQ Category Switching Logic
+        const navItems = document.querySelectorAll('.faq-nav-item');
+        const contentGroups = document.querySelectorAll('.faq-category-group');
+
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = item.getAttribute('data-category');
+
+                // Update nav
+                navItems.forEach(nav => nav.classList.remove('active'));
+                item.classList.add('active');
+
+                // Update content
+                contentGroups.forEach(group => {
+                    group.classList.remove('active');
+                    if (group.id === category) {
+                        group.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // Specialized Accordion Logic for FAQ Page (overriding script.js for this page)
+        const faqItems = document.querySelectorAll('.accordion-item');
+        faqItems.forEach(item => {
+            const summary = item.querySelector('.accordion-summary');
+            const icon = item.querySelector('.accordion-icon-circle i');
+
+            summary.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close others in the current group
+                const group = item.closest('.accordion');
+                group.querySelectorAll('.accordion-item').forEach(other => {
+                    other.classList.remove('active');
+                    const otherIcon = other.querySelector('.accordion-icon-circle i');
+                    if (otherIcon) {
+                        otherIcon.setAttribute('data-lucide', 'chevron-right');
+                    }
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    icon.setAttribute('data-lucide', 'chevron-down');
+                } else {
+                    item.classList.remove('active');
+                    icon.setAttribute('data-lucide', 'chevron-right');
+                }
+
+                // Re-create icons to apply changes
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+
+</html>
