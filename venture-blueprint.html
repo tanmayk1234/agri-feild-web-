@@ -518,71 +518,6 @@
         }
         .seven-card .btn-sm:hover { background: #005a2e; }
 
-        @media (max-width: 992px) {
-            .how-cards { grid-template-columns: repeat(2, 1fr); }
-            .broken-grid { grid-template-columns: 1fr; }
-            .guarantee-grid { grid-template-columns: repeat(2, 1fr); }
-            .pilot-metrics { grid-template-columns: 1fr; }
-            .ready-grid { grid-template-columns: 1fr; }
-            .about-grid { grid-template-columns: 1fr; gap: 30px; }
-        }
-        @media (max-width: 768px) {
-            .how-cards { grid-template-columns: 1fr; }
-            .howbig-stats { grid-template-columns: 1fr; }
-            .howbig-descriptions { grid-template-columns: 1fr; }
-            .guarantee-grid { grid-template-columns: 1fr; }
-            .vb-hero { padding: 120px 16px 50px; }
-            .vb-hero h1 { font-size: 26px; }
-            .vb-hero p { font-size: 15px; margin-bottom: 28px; }
-            .apply-dual { flex-direction: column; align-items: center; }
-            .about-grid { grid-template-columns: 1fr; gap: 24px; }
-            .about-highlights { grid-template-columns: 1fr 1fr; gap: 12px; }
-            .seven-grid { grid-template-columns: 1fr; }
-            .beyond-grid { grid-template-columns: 1fr; }
-            .broken-grid { gap: 24px; }
-            .how-section,
-            .example-section,
-            .howbig-section,
-            .builders-section,
-            .guarantee-section,
-            .beyond-section,
-            .ready-section,
-            .seven-section,
-            .about-section { padding: 50px 16px; }
-            .how-card { padding: 24px 20px; }
-            .builder-card { padding: 24px 20px; }
-            .guarantee-card { padding: 24px 16px; }
-            .guarantee-card h3 { font-size: 22px; }
-            .beyond-card { padding: 22px 18px; }
-            .ready-box { padding: 24px 20px; }
-            .ready-box li { font-size: 14px; }
-            .pilot-box { padding: 24px 20px; }
-            .why-works { padding: 24px 20px; }
-            .example-title { font-size: 24px; }
-            .example-subtitle { font-size: 15px; margin-bottom: 30px; }
-            .broken-item p { font-size: 14px; }
-            .howbig-stat { padding: 24px 18px; }
-            .seven-card { padding: 22px 18px; }
-            .seven-card h3 { font-size: 16px; }
-            .builders-lead { font-size: 16px; margin-bottom: 30px; }
-            .guarantee-lead { font-size: 15px; margin-bottom: 30px; }
-            .how-section .lead-text { font-size: 15px; margin-bottom: 30px; }
-            .seven-lead { font-size: 15px; margin-bottom: 30px; }
-        }
-        @media (max-width: 480px) {
-            .vb-hero { padding: 110px 14px 40px; }
-            .vb-hero h1 { font-size: 22px; line-height: 1.2; }
-            .vb-hero p { font-size: 14px; }
-            .vb-hero-tag { font-size: 11px; padding: 6px 16px; letter-spacing: 1.5px; }
-            .about-highlights { grid-template-columns: 1fr; gap: 12px; }
-            .how-card-icon { width: 48px; height: 48px; }
-            .guarantee-card h3 { font-size: 20px; }
-            .broken-col h3 { font-size: 18px; }
-            .ready-box h3 { font-size: 17px; }
-            .section-title { font-size: 20px !important; }
-            .section-subtitle { font-size: 18px !important; }
-        }
-
         /* About Section */
         .about-section {
             padding: 80px 20px;
@@ -638,6 +573,74 @@
             font-size: 13px;
             color: #666;
             line-height: 1.5;
+        }
+
+        /* ===== RESPONSIVE - must be after all base styles ===== */
+        @media (max-width: 992px) {
+            .how-cards { grid-template-columns: repeat(2, 1fr); }
+            .broken-grid { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: repeat(2, 1fr); }
+            .pilot-metrics { grid-template-columns: 1fr; }
+            .ready-grid { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; gap: 30px; }
+        }
+        @media (max-width: 768px) {
+            .how-cards { grid-template-columns: 1fr; }
+            .howbig-stats { grid-template-columns: 1fr; }
+            .howbig-descriptions { grid-template-columns: 1fr; }
+            .guarantee-grid { grid-template-columns: 1fr; }
+            .vb-hero { padding: 120px 16px 50px; }
+            .vb-hero h1 { font-size: 26px; }
+            .vb-hero p { font-size: 15px; margin-bottom: 28px; }
+            .apply-dual { flex-direction: column; align-items: center; }
+            .about-grid { grid-template-columns: 1fr; gap: 24px; }
+            .about-highlights { grid-template-columns: 1fr 1fr; gap: 12px; }
+            .seven-grid { grid-template-columns: 1fr; }
+            .beyond-grid { grid-template-columns: 1fr; }
+            .broken-grid { gap: 24px; }
+            .how-section,
+            .example-section,
+            .howbig-section,
+            .builders-section,
+            .guarantee-section,
+            .beyond-section,
+            .ready-section,
+            .seven-section,
+            .about-section { padding: 50px 16px; }
+            .how-card { padding: 24px 20px; }
+            .builder-card { padding: 24px 20px; }
+            .guarantee-card { padding: 24px 16px; }
+            .guarantee-card h3 { font-size: 22px; }
+            .beyond-card { padding: 22px 18px; }
+            .ready-box { padding: 24px 20px; }
+            .ready-box li { font-size: 14px; }
+            .pilot-box { padding: 24px 20px; }
+            .why-works { padding: 24px 20px; }
+            .example-title { font-size: 24px; }
+            .example-subtitle { font-size: 15px; margin-bottom: 30px; }
+            .broken-item p { font-size: 14px; }
+            .howbig-stat { padding: 24px 18px; }
+            .seven-card { padding: 22px 18px; }
+            .seven-card h3 { font-size: 16px; }
+            .builders-lead { font-size: 16px; margin-bottom: 30px; }
+            .guarantee-lead { font-size: 15px; margin-bottom: 30px; }
+            .how-section .lead-text { font-size: 15px; margin-bottom: 30px; }
+            .seven-lead { font-size: 15px; margin-bottom: 30px; }
+            .about-text p { font-size: 15px; }
+        }
+        @media (max-width: 480px) {
+            .vb-hero { padding: 110px 14px 40px; }
+            .vb-hero h1 { font-size: 22px; line-height: 1.2; }
+            .vb-hero p { font-size: 14px; }
+            .vb-hero-tag { font-size: 11px; padding: 6px 16px; letter-spacing: 1.5px; }
+            .about-highlights { grid-template-columns: 1fr; gap: 12px; }
+            .how-card-icon { width: 48px; height: 48px; }
+            .guarantee-card h3 { font-size: 20px; }
+            .broken-col h3 { font-size: 18px; }
+            .ready-box h3 { font-size: 17px; }
+            .section-title { font-size: 20px !important; }
+            .section-subtitle { font-size: 18px !important; }
+            .about-text p { font-size: 14px; line-height: 1.7; }
         }
     </style>
 </head>
