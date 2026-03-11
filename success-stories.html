@@ -157,66 +157,53 @@
             color: #1B6B38;
         }
 
-        /* ===== UNDERSTANDING THE GAP - GREEN SQUARE ===== */
-        .gap-section-green {
-            background: #1B6B38;
-            padding: 60px 40px;
-            max-width: 900px;
+        /* ===== CONTENT CARD (white rounded card) ===== */
+        .content-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 40px 40px 32px;
+            max-width: 800px;
             margin: 0 auto;
-            text-align: center;
         }
 
-        .gap-section-green h2 {
-            font-size: clamp(24px, 3.5vw, 36px);
-            font-weight: 600;
-            color: #fff;
-            font-family: var(--font-heading);
-            text-transform: uppercase;
-            line-height: 1.2;
-            margin-bottom: 8px;
-        }
-
-        .gap-section-green h3 {
+        .content-card h3 {
             font-size: 20px;
-            font-weight: 600;
-            color: #fff;
+            font-weight: 700;
+            color: #1B6B38;
             font-family: var(--font-heading);
-            margin-bottom: 0;
+            margin: 0 0 24px;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
 
         /* ===== LABOUR SHORTAGE TEXT ===== */
-        .labor-text-block {
-            max-width: 800px;
-            margin: 40px auto;
-            text-align: left;
-        }
-
         .labor-text-block p {
-            font-size: 16px;
-            color: #1a1a1a;
-            line-height: 1.8;
-            margin-bottom: 16px;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.7;
+            margin-bottom: 12px;
             font-weight: 400;
         }
 
         .labor-text-block p.bold-text {
-            font-weight: 600;
-            color: #1a1a1a;
+            font-weight: 700;
+            color: #111;
+            margin-top: 20px;
         }
 
         /* ===== GREEN BOX - INVISIBILITY ===== */
         .invisibility-box {
-            background: #1B6B38;
-            padding: 24px 32px;
-            max-width: 800px;
-            margin: 24px auto;
+            background: linear-gradient(135deg, #1B6B38 0%, #2d8a4e 100%);
+            padding: 20px 28px;
+            border-radius: 12px;
+            margin: 20px 0;
         }
 
         .invisibility-box p {
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 700;
+            font-style: italic;
             color: #fff;
             margin: 0;
             line-height: 1.5;
@@ -227,20 +214,17 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            justify-content: center;
-            max-width: 800px;
-            margin: 30px auto;
+            margin: 20px 0 0;
         }
 
         .keyword-box {
-            background: #e8f5e9;
-            color: #1B6B38;
+            background: #a3b18a;
+            color: #fff;
             padding: 10px 20px;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-family: var(--font-heading);
+            border-radius: 8px;
+            font-family: var(--font-body);
         }
 
         /* ===== DIVERSE PEOPLE BANNER ===== */
@@ -1314,8 +1298,8 @@
                 align-items: center;
             }
 
-            .gap-section-green {
-                padding: 40px 20px;
+            .content-card {
+                padding: 24px 20px 20px;
             }
         }
     </style>
@@ -1370,36 +1354,27 @@
                 <div class="intro-headline fade-in-up">
                     <h2>Everyone Knew There Was A Labor Problem.<br><span class="green-line">Nobody Knew What It Actually Was</span></h2>
                 </div>
-                <div class="gap-section-green fade-in-up">
+                <div class="content-card fade-in-up">
                     <h3>Understanding the Gap</h3>
-                </div>
-
-                <!-- Labour shortage paragraph -->
-                <div class="labor-text-block fade-in-up">
-                    <p>"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture.
-                        It's in government reports. It's in newspaper headlines. It's repeated at conferences.</p>
-                    <p>But what does it actually mean?</p>
-                    <p>Does it mean not enough workers exist? Or that workers won't come to farms? Or
-                        that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
-                    <p class="bold-text">The answer: all of the above. And none of the above.</p>
+                    <div class="labor-text-block">
+                        <p>"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture. It's in government reports.
+                            It's in newspaper headlines. It's repeated at conferences. But what does it actually mean?
+                            Does it mean not enough workers exist? Or that workers won't come to farms? Or that wages are too
+                            high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
+                        <p class="bold-text">The answer: all of the above. And none of the above.</p>
+                    </div>
 
                     <!-- Green box with white text -->
                     <div class="invisibility-box">
                         <p>The real problem wasn't labor shortage. It was invisibility.</p>
                     </div>
 
-                    <!-- Small light green keyword boxes -->
+                    <!-- Keyword boxes -->
                     <div class="problem-keywords">
-                        <span class="keyword-box">Worker shortage</span>
-                        <span class="keyword-box">COORDINATION</span>
-                        <span class="keyword-box">TRUST</span>
-                        <span class="keyword-box">RELIABILITY</span>
-                        <span class="keyword-box">VISIBILITY</span>
-                        <span class="keyword-box">LINKAGE</span>
-                        <span class="keyword-box">DISCOVERY</span>
-                        <span class="keyword-box">Wage mismatch</span>
-                        <span class="keyword-box">Hiring chaos</span>
-                        <span class="keyword-box">Retention failure</span>
+                        <span class="keyword-box">Worker shortage?</span>
+                        <span class="keyword-box">Wage mismatch?</span>
+                        <span class="keyword-box">Hiring chaos?</span>
+                        <span class="keyword-box">Retention failure?</span>
                     </div>
                 </div>
             </div>
