@@ -17,6 +17,9 @@
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
+        /* ===== REMOVE GREEN BLOBS ON THIS PAGE ===== */
+        .blob { display: none !important; }
+
         /* ===== HERO ===== */
         .ss-hero {
             position: relative;
@@ -78,7 +81,7 @@
             line-height: 1.1;
             max-width: 900px;
             margin: 0 auto 24px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
@@ -93,7 +96,7 @@
             max-width: 700px;
             margin: 0 auto 36px;
             line-height: 1.7;
-            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
         }
 
         .ss-hero .see-link {
@@ -110,9 +113,9 @@
             color: #4ade80;
         }
 
-        /* ===== SECTION TITLE STYLES ===== */
+        /* ===== SECTION STYLES ===== */
         .ss-section {
-            padding: 80px 20px;
+            padding: 50px 20px;
         }
 
         .ss-section.white-bg {
@@ -120,7 +123,7 @@
         }
 
         .ss-section.light-bg {
-            background: #f8faf6;
+            background: #fff;
         }
 
         .ss-section.green-bg {
@@ -145,7 +148,7 @@
             text-transform: uppercase;
             text-align: center;
             line-height: 1.2;
-            margin-bottom: 32px;
+            margin-bottom: 8px;
         }
 
         .gap-title .green {
@@ -153,30 +156,33 @@
         }
 
         .gap-subtitle {
-            font-size: clamp(18px, 2.5vw, 24px);
-            font-weight: 700;
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             text-align: center;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
 
         .gap-text {
-            font-size: 17px;
+            font-size: 15px;
             color: #444;
-            line-height: 1.8;
-            margin-bottom: 16px;
+            line-height: 1.7;
+            margin-bottom: 12px;
         }
 
         .green-quote {
-            border-left: 5px solid var(--primary);
-            padding: 16px 24px;
-            margin: 32px 0;
+            border-left: 4px solid var(--primary);
+            padding: 12px 20px;
+            margin: 24px 0;
+            background: #f0f7ec;
         }
 
         .green-quote p {
-            font-size: clamp(18px, 2.5vw, 24px);
-            font-weight: 600;
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 700;
             color: var(--primary);
             font-style: italic;
             line-height: 1.4;
@@ -187,149 +193,173 @@
         .problem-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
-            margin: 28px 0 0;
+            margin: 24px 0 0;
         }
 
         .problem-tag {
-            background: #f0f7ec;
-            border: 1px solid #d4e8c8;
-            border-radius: 8px;
-            padding: 10px 22px;
+            background: #fff;
+            border: 2px solid #1a1a1a;
+            border-radius: 6px;
+            padding: 10px 20px;
             font-size: 14px;
-            font-weight: 600;
-            color: #333;
-            font-family: var(--font-body);
-        }
-
-        /* ===== DIVERSE PEOPLE BANNER ===== */
-        .diverse-block {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 32px;
-        }
-
-        .diverse-block h2 {
-            font-size: clamp(32px, 5vw, 52px);
-            font-weight: 800;
+            font-weight: 700;
             color: #1a1a1a;
+            font-family: var(--font-heading);
+        }
+
+        /* ===== DIVERSE PEOPLE BANNER - ON IMAGE ===== */
+        .diverse-banner {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .diverse-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            min-height: 350px;
+            object-fit: cover;
+        }
+
+        .diverse-banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .diverse-banner-overlay h2 {
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 800;
+            color: #fff;
             font-family: var(--font-heading);
             text-transform: uppercase;
             line-height: 1.15;
-            margin-bottom: 0;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-        .diverse-block h2 .green-italic {
-            color: var(--primary);
+        .diverse-banner-overlay h2 .green-italic {
+            color: #fff;
             font-style: italic;
             text-decoration: underline;
             text-underline-offset: 6px;
             text-decoration-thickness: 3px;
         }
 
-        .diverse-desc {
-            text-align: center;
-            font-size: 16px;
-            color: #444;
-            line-height: 1.7;
-            max-width: 650px;
-            margin: 24px auto 0;
+        .diverse-banner-overlay .diverse-desc {
+            color: #fff;
+            font-size: clamp(13px, 1.5vw, 16px);
+            max-width: 600px;
+            line-height: 1.6;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+            margin-top: 16px;
         }
 
-        .diverse-desc strong {
-            color: #1a1a1a;
+        .diverse-banner-overlay .diverse-desc strong {
+            color: #fff;
         }
 
         /* ===== WHO WAS IN THE ROOM ===== */
         .room-heading {
-            text-align: center;
-            font-size: clamp(22px, 3vw, 32px);
+            text-align: left;
+            font-size: clamp(20px, 2.5vw, 28px);
             font-family: var(--font-heading);
             font-weight: 800;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             color: #1a1a1a;
         }
 
         .room-sub {
-            text-align: center;
+            text-align: left;
             max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 15px;
+            margin: 0 0 24px;
+            font-size: 14px;
             color: #555;
             line-height: 1.6;
         }
 
-        .room-grid {
+        .room-layout {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
             max-width: 800px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
+        }
+
+        .room-left-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
 
         .room-chip {
             background: #fff;
-            border: 1px solid #e5ebe5;
-            border-radius: 10px;
-            padding: 18px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 14px 12px;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .room-chip:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 104, 56, 0.08);
         }
 
         .room-chip-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
             background: rgba(0, 104, 56, 0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 10px;
+            margin: 0 auto 6px;
             color: var(--primary);
         }
 
         .room-chip h4 {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
             margin-bottom: 2px;
+            text-transform: capitalize;
         }
 
         .room-chip p {
-            font-size: 12px;
+            font-size: 11px;
             color: #888;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
-        /* Did / Did NOT grids */
-        .did-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 650px;
-            margin: 0 auto 40px;
-        }
-
+        /* Did / Did NOT cards */
         .did-card {
-            background: #eef5e8;
-            border-radius: 12px;
-            padding: 22px 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 18px 16px;
         }
 
         .did-card h4 {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 12px;
+            color: #d32f2f;
+            margin-bottom: 10px;
             font-family: var(--font-heading);
+        }
+
+        .did-card.yes-do h4 {
+            color: var(--primary);
         }
 
         .did-card ul {
@@ -339,9 +369,9 @@
         }
 
         .did-card li {
-            font-size: 14px;
+            font-size: 13px;
             color: #333;
-            padding: 4px 0 4px 22px;
+            padding: 3px 0 3px 20px;
             position: relative;
             line-height: 1.5;
         }
@@ -366,9 +396,27 @@
         .marathi-block {
             background: var(--primary);
             border-radius: 12px;
-            padding: 32px 36px;
+            padding: 28px 32px;
             max-width: 800px;
-            margin: 0 auto 16px;
+            margin: 0 auto 12px;
+            position: relative;
+        }
+
+        .marathi-block .marathi-quote-mark {
+            font-size: 60px;
+            color: rgba(255, 255, 255, 0.3);
+            font-family: Georgia, serif;
+            line-height: 1;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .marathi-block .marathi-quote-mark.end {
+            left: auto;
+            right: 20px;
+            bottom: 10px;
+            top: auto;
         }
 
         .marathi-block .marathi-text {
@@ -378,12 +426,18 @@
             line-height: 1.6;
             margin-bottom: 10px;
             font-style: italic;
+            position: relative;
+            z-index: 1;
+            padding: 0 30px;
         }
 
         .marathi-block .marathi-attr {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.8);
             font-weight: 600;
+            position: relative;
+            z-index: 1;
+            padding-left: 30px;
         }
 
         .marathi-note {
@@ -399,20 +453,20 @@
         .told-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 20px;
             max-width: 800px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
         }
 
         .told-card {
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 0;
             overflow: hidden;
         }
 
         .told-card-img {
             width: 100%;
-            height: 220px;
+            height: 240px;
             overflow: hidden;
         }
 
@@ -420,10 +474,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top center;
         }
 
         .told-card-body {
-            padding: 22px 20px;
+            padding: 18px 16px;
         }
 
         .told-card.farmers-card {
@@ -435,10 +490,10 @@
         }
 
         .told-card h3 {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
             color: #fff;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
@@ -446,15 +501,15 @@
         .told-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
         }
 
         .told-tag {
             background: rgba(255, 255, 255, 0.18);
             color: #fff;
-            padding: 8px 14px;
-            border-radius: 8px;
-            font-size: 12px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -462,21 +517,20 @@
 
         /* ===== INSIGHT BOX ===== */
         .insight-box {
-            background: #f4f8f0;
-            border-radius: 14px;
-            padding: 36px 32px;
             max-width: 800px;
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
+            padding: 24px 0;
+            border-top: 2px solid #eee;
         }
 
         .insight-box h3 {
-            font-size: clamp(18px, 2.5vw, 24px);
+            font-size: clamp(20px, 2.5vw, 26px);
             font-weight: 800;
             font-style: italic;
             color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .insight-box h3 .green {
@@ -485,38 +539,10 @@
 
         .insight-box p {
             font-size: 16px;
-            color: #444;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .keyword-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .keyword-tag {
-            padding: 9px 18px;
-            border-radius: 8px;
-            font-size: 12px;
             font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.6;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .keyword-tag.solid {
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .keyword-tag.outline {
-            background: rgba(0, 104, 56, 0.1);
-            color: var(--primary);
         }
 
         /* ===== VENTURE BLUEPRINT ===== */
@@ -527,7 +553,7 @@
             color: #1a1a1a;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            margin-bottom: 36px;
+            margin-bottom: 28px;
         }
 
         .vb-heading .green {
@@ -537,34 +563,37 @@
         .vb-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 28px;
+            gap: 24px;
             max-width: 900px;
             margin: 0 auto;
         }
 
         .vb-col {
-            background: #f8faf6;
-            border-radius: 14px;
-            padding: 28px 24px;
+            background: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px 20px;
         }
 
         .vb-col-label {
             font-size: 12px;
             font-weight: 700;
-            color: var(--primary);
+            color: #1a1a1a;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             font-family: var(--font-heading);
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
         }
 
         /* Left col: numbered items */
         .vb-numbered {
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             background: #fff;
             border-left: 4px solid var(--primary);
-            border-radius: 0 10px 10px 0;
-            padding: 16px 18px;
+            border-radius: 0 8px 8px 0;
+            padding: 12px 14px;
         }
 
         .vb-numbered:last-child {
@@ -572,39 +601,39 @@
         }
 
         .vb-num {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 800;
             color: var(--primary);
             font-family: var(--font-heading);
             line-height: 1;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .vb-numbered h4 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .vb-numbered p {
-            font-size: 13px;
+            font-size: 12px;
             color: #666;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         /* Right col: access items */
         .vb-access {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             background: #fff;
-            border: 1px solid #e5ebe5;
-            border-radius: 10px;
-            padding: 16px 18px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 12px 14px;
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
         }
 
         .vb-access:last-child {
@@ -612,9 +641,9 @@
         }
 
         .vb-access-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
             background: rgba(0, 104, 56, 0.08);
             display: flex;
             align-items: center;
@@ -624,7 +653,7 @@
         }
 
         .vb-access h4 {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -632,14 +661,14 @@
         }
 
         .vb-access p {
-            font-size: 12px;
+            font-size: 11px;
             color: #888;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         .vb-market-label {
             text-align: right;
-            margin-top: 14px;
+            margin-top: 12px;
         }
 
         .vb-market-label span {
@@ -662,12 +691,12 @@
         }
 
         .insight2-block h3 {
-            font-size: clamp(22px, 3vw, 32px);
+            font-size: clamp(22px, 3vw, 28px);
             font-weight: 800;
             font-style: italic;
             color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         .insight2-block h3 .green {
@@ -675,48 +704,84 @@
         }
 
         .insight2-block p {
-            font-size: 16px;
+            font-size: 15px;
             color: #444;
             line-height: 1.7;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
+        }
+
+        .insight2-block p strong {
+            color: #1a1a1a;
+            font-weight: 800;
+        }
+
+        .keyword-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .keyword-tag {
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .keyword-tag.solid {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .keyword-tag.outline {
+            background: rgba(0, 104, 56, 0.1);
+            color: var(--primary);
         }
 
         /* ===== FOUNDERS ===== */
+        .founders-section {
+            background: #fff;
+            padding: 50px 20px;
+        }
+
         .founders-heading {
             text-align: center;
-            font-size: clamp(20px, 3vw, 30px);
+            font-size: clamp(18px, 2.5vw, 26px);
             font-weight: 800;
-            color: #fff;
+            color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
 
         .founders-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 28px;
+            gap: 24px;
             max-width: 900px;
-            margin: 0 auto 36px;
+            margin: 0 auto 30px;
         }
 
         .founder-card {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 16px;
-            padding: 28px 24px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 14px;
+            padding: 24px 20px;
         }
 
         .founder-avatar {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
+            background: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             overflow: hidden;
-            border: 3px solid rgba(255, 255, 255, 0.2);
+            border: 3px solid #e0e0e0;
         }
 
         .founder-avatar img {
@@ -726,42 +791,42 @@
         }
 
         .founder-name {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
-            color: #fff;
+            color: #1a1a1a;
             font-family: var(--font-heading);
             margin-bottom: 2px;
         }
 
         .founder-role {
             font-size: 13px;
-            color: #4ade80;
+            color: var(--primary);
             font-weight: 600;
             margin-bottom: 4px;
         }
 
         .founder-cohort {
             font-size: 11px;
-            color: rgba(255, 255, 255, 0.5);
+            color: #999;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .founder-bio {
             font-size: 13px;
-            color: rgba(255, 255, 255, 0.8);
+            color: #555;
             line-height: 1.7;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .founder-quote {
-            font-size: 14px;
-            color: #fff;
+            font-size: 13px;
+            color: #333;
             line-height: 1.7;
             font-style: italic;
-            border-left: 3px solid #4ade80;
+            border-left: 3px solid var(--primary);
             padding-left: 14px;
         }
 
@@ -771,8 +836,8 @@
 
         .press-btn {
             display: inline-block;
-            background: #fff;
-            color: var(--primary);
+            background: var(--primary);
+            color: #fff;
             padding: 12px 28px;
             border-radius: 50px;
             font-size: 14px;
@@ -783,11 +848,16 @@
         }
 
         .press-btn:hover {
-            background: #4ade80;
-            color: #006838;
+            background: #005a2f;
         }
 
         /* ===== RAISED ===== */
+        .raised-section {
+            background: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
         .raised-inner {
             max-width: 800px;
             margin: 0 auto;
@@ -795,16 +865,16 @@
         }
 
         .raised-inner h2 {
-            font-size: clamp(36px, 6vw, 60px);
+            font-size: clamp(36px, 6vw, 56px);
             font-weight: 800;
-            color: #fff;
+            color: var(--primary);
             font-family: var(--font-heading);
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
 
         .raised-inner .raised-desc {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 17px;
+            color: #555;
+            font-size: 16px;
             line-height: 1.7;
             max-width: 550px;
             margin: 0 auto;
@@ -818,16 +888,16 @@
         }
 
         .today-inner h2 {
-            font-size: clamp(24px, 4vw, 40px);
+            font-size: clamp(22px, 3.5vw, 36px);
             font-weight: 800;
             color: #1a1a1a;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .today-inner .today-sub {
-            font-size: 16px;
+            font-size: 15px;
             color: #555;
             font-style: italic;
         }
@@ -836,16 +906,16 @@
         .vision-block {
             max-width: 800px;
             margin: 0 auto;
-            border-left: 5px solid var(--primary);
-            padding-left: 24px;
+            border-left: 4px solid var(--primary);
+            padding-left: 20px;
         }
 
         .vision-block h3 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .vision-block ul {
@@ -855,10 +925,10 @@
         }
 
         .vision-block li {
-            font-size: 15px;
+            font-size: 14px;
             color: #444;
             line-height: 1.7;
-            padding: 4px 0 4px 20px;
+            padding: 3px 0 3px 18px;
             position: relative;
         }
 
@@ -874,11 +944,11 @@
         .method-heading {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
         }
 
         .method-heading h2 {
-            font-size: clamp(22px, 3.5vw, 34px);
+            font-size: clamp(20px, 3vw, 30px);
             font-weight: 800;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -894,56 +964,54 @@
             display: flex;
             align-items: stretch;
             justify-content: center;
-            gap: 14px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         .method-step {
             background: #fff;
-            border: 1px solid #e5ebe5;
-            border-radius: 12px;
-            padding: 22px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 18px 14px;
             text-align: center;
-            min-width: 145px;
+            min-width: 130px;
             flex: 1;
-            max-width: 190px;
-            transition: all 0.3s ease;
-        }
-
-        .method-step:hover {
-            border-color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 104, 56, 0.08);
+            max-width: 175px;
         }
 
         .method-step-icon {
-            width: 36px;
-            height: 36px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 8px;
+            margin: 0 auto 6px;
             color: var(--primary);
         }
 
         .method-step h4 {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
-            color: #1a1a1a;
+            color: var(--primary);
             font-family: var(--font-heading);
             text-transform: uppercase;
             margin-bottom: 3px;
         }
 
         .method-step p {
-            font-size: 11px;
+            font-size: 10px;
             color: #888;
             line-height: 1.4;
             font-style: italic;
         }
 
         /* ===== CTA ===== */
+        .cta-section {
+            background: #fff;
+            padding: 50px 20px;
+        }
+
         .cta-block {
             text-align: center;
             max-width: 700px;
@@ -951,18 +1019,18 @@
         }
 
         .cta-block h2 {
-            font-size: clamp(24px, 4vw, 40px);
+            font-size: clamp(22px, 3.5vw, 36px);
             font-weight: 800;
-            color: #fff;
+            color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .cta-block p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 16px;
+            color: #555;
+            font-size: 15px;
             line-height: 1.7;
-            margin-bottom: 36px;
+            margin-bottom: 28px;
         }
 
         .apply-row {
@@ -976,11 +1044,11 @@
         .opp-heading {
             text-align: center;
             max-width: 700px;
-            margin: 0 auto 44px;
+            margin: 0 auto 32px;
         }
 
         .opp-heading h2 {
-            font-size: clamp(22px, 3.5vw, 34px);
+            font-size: clamp(20px, 3vw, 30px);
             font-weight: 800;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -995,63 +1063,57 @@
         .opp-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
+            gap: 16px;
             max-width: 960px;
             margin: 0 auto;
         }
 
         .opp-card {
-            background: #f8faf6;
-            border: 1px solid #e5ebe5;
-            border-radius: 14px;
-            padding: 24px 20px;
-            transition: all 0.3s ease;
-        }
-
-        .opp-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 28px rgba(0, 104, 56, 0.1);
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px 16px;
+            text-align: center;
         }
 
         .opp-card-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
             background: rgba(0, 104, 56, 0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 14px;
+            margin: 0 auto 12px;
             color: var(--primary);
         }
 
         .opp-card h4 {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 700;
             color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             line-height: 1.3;
         }
 
         .opp-card p {
             font-size: 12px;
             color: #666;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .opp-card .opp-stat {
-            font-size: 12px;
+            font-size: 13px;
             color: var(--primary);
             font-weight: 700;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 992px) {
-            .room-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .room-layout {
+                grid-template-columns: 1fr;
             }
 
             .vb-layout {
@@ -1072,11 +1134,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .did-row {
-                grid-template-columns: 1fr;
-            }
-
-            .room-grid {
+            .room-left-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1176,97 +1234,98 @@
             </div>
         </section>
 
-        <!-- ========== 3. DIVERSE PEOPLE / ONE ROOM ========== -->
-        <section class="ss-section light-bg">
+        <!-- ========== 3. DIVERSE PEOPLE / ONE ROOM - TEXT ON IMAGE ========== -->
+        <section class="ss-section white-bg" style="padding-top: 0;">
             <div class="container">
-                <div class="diverse-block fade-in-up">
-                    <h2>Diverse people<br>ONE ROOM<br>NO PRESENTATION<br><span class="green-italic">JUST
-                            TRUTH</span></h2>
-                </div>
-                <p class="diverse-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths
-                        Dialogue</strong> &mdash; an unconference designed to uncover reality, not validate assumptions.
-                </p>
-
-                <!-- Farm Truths Dialogue Photo -->
-                <div style="max-width:800px; margin:40px auto 0; border-radius:12px; overflow:hidden;">
-                    <img src="assets/image 23.png" alt="Farm Truths Dialogue - stakeholders gathered for open conversation" style="width:100%; height:auto; display:block;">
+                <div class="diverse-banner fade-in-up">
+                    <img src="assets/image 23.png" alt="Farm Truths Dialogue - stakeholders gathered for open conversation">
+                    <div class="diverse-banner-overlay">
+                        <h2>Diverse people<br>ONE ROOM<br>NO PRESENTATION<br><span class="green-italic">JUST TRUTH</span></h2>
+                        <p class="diverse-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths
+                                Dialogue</strong> &mdash; an unconference designed to uncover reality, not validate assumptions.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ========== 4. WHO WAS IN THE ROOM ========== -->
-        <section class="ss-section white-bg" id="room">
+        <section class="ss-section white-bg" id="room" style="padding-top: 0;">
             <div class="container">
-                <h3 class="room-heading">Who Was In The Room.</h3>
-                <p class="room-sub">We bring together the most critical stakeholders in the agricultural ecosystem to
-                    validate problems before we write a single line of code.</p>
+                <div style="max-width:800px; margin:0 auto;">
+                    <h3 class="room-heading">Who Was In The Room.</h3>
+                    <p class="room-sub">We bring together the most critical stakeholders in the agricultural ecosystem to
+                        validate problems before we write a single line of code.</p>
 
-                <div class="room-grid fade-in-up">
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="sprout" style="width:20px;height:20px;"></i></div>
-                        <h4>Horticulture Farmers</h4>
-                        <p>understanding crop cycles</p>
-                    </div>
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="users" style="width:20px;height:20px;"></i></div>
-                        <h4>FPO Leaders</h4>
-                        <p>Managing thousands of farmers</p>
-                    </div>
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="clipboard-check"
-                                style="width:20px;height:20px;"></i></div>
-                        <h4>farm supervisors</h4>
-                        <p>Who hire labor daily</p>
-                    </div>
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="hard-hat" style="width:20px;height:20px;"></i></div>
-                        <h4>labor contractors</h4>
-                        <p>20+ years in the business</p>
-                    </div>
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="flask-conical"
-                                style="width:20px;height:20px;"></i></div>
-                        <h4>agronomists</h4>
-                        <p>Crop science experts</p>
-                    </div>
-                    <div class="room-chip">
-                        <div class="room-chip-icon"><i data-lucide="truck" style="width:20px;height:20px;"></i></div>
-                        <h4>Supply Chain Operators</h4>
-                        <p>Downstream impact experts</p>
-                    </div>
-                </div>
+                    <div class="room-layout fade-in-up">
+                        <!-- Left: 6 chips in 2x3 grid -->
+                        <div class="room-left-grid">
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="sprout" style="width:18px;height:18px;"></i></div>
+                                <h4>Horticulture Farmers</h4>
+                                <p>understanding crop cycles</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="users" style="width:18px;height:18px;"></i></div>
+                                <h4>FPO Leaders</h4>
+                                <p>Managing thousands of farmers</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="clipboard-check" style="width:18px;height:18px;"></i></div>
+                                <h4>Farm Supervisors</h4>
+                                <p>Who hire labor daily</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="hard-hat" style="width:18px;height:18px;"></i></div>
+                                <h4>Labor Contractors</h4>
+                                <p>20+ years in the business</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="flask-conical" style="width:18px;height:18px;"></i></div>
+                                <h4>Agronomists</h4>
+                                <p>Crop science experts</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="truck" style="width:18px;height:18px;"></i></div>
+                                <h4>Supply Chain Operators</h4>
+                                <p>Downstream impact experts</p>
+                            </div>
+                        </div>
 
-                <!-- What We Did / Did NOT Do -->
-                <div class="did-row fade-in-up">
-                    <div class="did-card not-do">
-                        <h4>What We Did NOT Do</h4>
-                        <ul>
-                            <li>No keynote speeches</li>
-                            <li>No panel discussions</li>
-                            <li>No PowerPoints</li>
-                        </ul>
+                        <!-- Right: What We Did / Did NOT Do -->
+                        <div>
+                            <div class="did-card not-do" style="margin-bottom: 12px;">
+                                <h4>What We Did NOT Do</h4>
+                                <ul>
+                                    <li>No keynote speeches</li>
+                                    <li>No panel discussions</li>
+                                    <li>No PowerPoints</li>
+                                </ul>
+                            </div>
+                            <div class="did-card yes-do">
+                                <h4>What We Did</h4>
+                                <ul>
+                                    <li>Open Dialogue</li>
+                                    <li>Candid Conversations</li>
+                                    <li>Pattern Recognition</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="did-card yes-do">
-                        <h4>What We Did</h4>
-                        <ul>
-                            <li>Open Dialogue</li>
-                            <li>Candid Conversations</li>
-                            <li>Pattern Recognition</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <!-- Marathi Quote -->
-                <div class="marathi-block fade-in-up">
-                    <p class="marathi-text">"जर हा मजुरांचा प्रश्न सुटला नाही, तर आम्हाला शेती सोडावी लागेल."</p>
-                    <p class="marathi-attr">– रामदास पाटील, शेतकरी</p>
+                    <!-- Marathi Quote -->
+                    <div class="marathi-block fade-in-up">
+                        <span class="marathi-quote-mark">&ldquo;</span>
+                        <span class="marathi-quote-mark end">&rdquo;</span>
+                        <p class="marathi-text">जर हा मजुरांचा प्रश्न सुटला नाही, तर आम्हाला शेती सोडावी लागेल.</p>
+                        <p class="marathi-attr">&ndash; रामदास पाटील, शेतकरी</p>
+                    </div>
+                    <p class="marathi-note">This wasn't hyperbole. It was desperation.</p>
                 </div>
-                <p class="marathi-note">This wasn't hyperbole. It was desperation.</p>
             </div>
         </section>
 
         <!-- ========== 5. WHAT FARMERS / LABORS TOLD US ========== -->
-        <section class="ss-section white-bg" id="told">
+        <section class="ss-section white-bg" id="told" style="padding-top: 0;">
             <div class="container">
                 <div class="told-grid fade-in-up">
                     <div class="told-card farmers-card">
@@ -1277,7 +1336,7 @@
                             <h3>What Farmers Told Us</h3>
                             <div class="told-tags">
                                 <span class="told-tag">UNCERTAINITY</span>
-                                <span class="told-tag">unpredictability</span>
+                                <span class="told-tag">UNPREDICTABILITY</span>
                                 <span class="told-tag">INSTABILITY</span>
                                 <span class="told-tag">COORDINATION</span>
                                 <span class="told-tag">TRUST</span>
@@ -1289,7 +1348,7 @@
                             <img src="assets/image 33.png" alt="Farm labor worker">
                         </div>
                         <div class="told-card-body">
-                            <h3>What labors Told Us</h3>
+                            <h3>What Labors Told Us</h3>
                             <div class="told-tags">
                                 <span class="told-tag">VOLATILITY</span>
                                 <span class="told-tag">FRAGILITY</span>
@@ -1311,7 +1370,7 @@
         </section>
 
         <!-- ========== 6. THE VENTURE BLUEPRINT ========== -->
-        <section class="ss-section white-bg" id="blueprint">
+        <section class="ss-section white-bg" id="blueprint" style="padding-top: 0;">
             <div class="container">
                 <h2 class="vb-heading">The <span class="green">Venture Blueprint</span></h2>
 
@@ -1351,7 +1410,7 @@
                         <p class="vb-col-label">PILOT READY ACCESS</p>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="land-plot"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>50K Acre farm</h4>
                                 <p>Daily Labor Needs</p>
@@ -1359,7 +1418,7 @@
                         </div>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="building"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>Anchor Customer Identified</h4>
                                 <p>Single line of code</p>
@@ -1367,7 +1426,7 @@
                         </div>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="network"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>30K+ Farmer Network</h4>
                                 <p>Sahyadri ecosystem</p>
@@ -1375,7 +1434,7 @@
                         </div>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="banknote"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>Paid pilots From Day 1</h4>
                                 <p>Actual revenue, not free trials</p>
@@ -1383,7 +1442,7 @@
                         </div>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="trending-up"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>Capital Pathway</h4>
                                 <p>Facilitated fundraising with proof</p>
@@ -1391,7 +1450,7 @@
                         </div>
                         <div class="vb-access">
                             <div class="vb-access-icon"><i data-lucide="users"
-                                    style="width:20px;height:20px;"></i></div>
+                                    style="width:18px;height:18px;"></i></div>
                             <div>
                                 <h4>30K+ Farmer Network</h4>
                                 <p>Sahyadri ecosystem</p>
@@ -1406,7 +1465,7 @@
         </section>
 
         <!-- ========== 7. THE INSIGHT (Supply / Demand / Trust) ========== -->
-        <section class="ss-section light-bg">
+        <section class="ss-section white-bg" style="padding-top: 0;">
             <div class="container">
                 <div class="insight2-block fade-in-up">
                     <h3>The <span class="green">Insight.</span></h3>
@@ -1426,9 +1485,9 @@
         </section>
 
         <!-- ========== 8. VISIONARY BUILDERS / FOUNDERS ========== -->
-        <section class="ss-section green-bg" id="founders">
+        <section class="founders-section" id="founders">
             <div class="container">
-                <h2 class="founders-heading">The blueprint was ready. Now we needed the Visionary Builders</h2>
+                <h2 class="founders-heading">The blueprint was ready. Now we needed the <span style="color: var(--primary);">Visionary Builders</span></h2>
 
                 <div class="founders-row fade-in-up">
                     <div class="founder-card">
@@ -1445,7 +1504,7 @@
                         <p class="founder-quote">"Sahyadri's domain depth and network gave us instant distribution, live
                             POCs and unforgiving feedback, so we could validate in weeks instead of seasons. Access to
                             growers and partners exposed us to real farm workflows, not hypothetical user stories, so we
-                            could build for actual constraints and compress our 0‑1 learning curve."</p>
+                            could build for actual constraints and compress our 0-1 learning curve."</p>
                     </div>
                     <div class="founder-card">
                         <div class="founder-avatar">
@@ -1469,9 +1528,8 @@
             </div>
         </section>
 
-        <!-- ========== 9. ₹7 CRORE RAISED ========== -->
-        <section class="ss-section green-bg" id="raised"
-            style="padding-top:0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <!-- ========== 9. 7 CRORE RAISED ========== -->
+        <section class="raised-section" id="raised">
             <div class="container">
                 <div class="raised-inner">
                     <h2>&#8377;7 CRORE RAISED</h2>
@@ -1482,7 +1540,7 @@
         </section>
 
         <!-- ========== 10. TODAY, HUNDREDS OF JOBS ========== -->
-        <section class="ss-section white-bg">
+        <section class="ss-section white-bg" style="padding-top: 0;">
             <div class="container">
                 <div class="today-inner fade-in-up">
                     <h2>TODAY, HUNDREDS OF JOBS. TOMORROW, THOUSANDS.</h2>
@@ -1507,7 +1565,7 @@
         </section>
 
         <!-- ========== 12. BHARAT INTELLIGENCE PROVES... WHAT'S NEXT ========== -->
-        <section class="ss-section white-bg" id="method">
+        <section class="ss-section white-bg" id="method" style="padding-top: 0;">
             <div class="container">
                 <div class="method-heading">
                     <h2>BHARAT INTELLIGENCE PROVES THE VENTURE BLUEPRINT WORKS. <span class="green">WHAT'S
@@ -1548,14 +1606,14 @@
         </section>
 
         <!-- ========== 13. READY TO BUILD CTA ========== -->
-        <section class="ss-section green-bg">
+        <section class="cta-section">
             <div class="container">
                 <div class="cta-block">
                     <h2>Ready to build the future of Indian agriculture?</h2>
                     <p>We've done it once. We're doing it again. The next category-defining venture could be yours.</p>
                     <div class="apply-row">
                         <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-primary-white btn-large">APPLY TO BUILD NEXT
+                            rel="noopener noreferrer" class="btn btn-primary btn-large">APPLY TO BUILD NEXT
                             VENTURE</a>
                         <a href="venture-blueprint.html" class="btn btn-outline-pro btn-large">SEE OTHER
                             OPPORTUNITIES</a>
