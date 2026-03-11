@@ -624,7 +624,7 @@
 
         /* ===== VENTURE BLUEPRINT ===== */
         .vb-section {
-            background: linear-gradient(135deg, #1B6B38 0%, #145a2e 100%);
+            background: linear-gradient(135deg, #1a5e30 0%, #0f4422 100%);
             padding: 60px 20px;
         }
 
@@ -675,6 +675,17 @@
             display: flex;
             gap: 12px;
             align-items: flex-start;
+            position: relative;
+        }
+
+        .vb-numbered:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 38px;
+            bottom: -12px;
+            width: 2px;
+            background: rgba(163, 181, 74, 0.4);
         }
 
         .vb-numbered:last-child {
@@ -686,9 +697,9 @@
             height: 38px;
             min-width: 38px;
             border-radius: 50%;
-            background: #c8f5d0;
+            background: #a3b54a;
             border: none;
-            color: #000;
+            color: #1a1a1a;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -718,6 +729,7 @@
             padding: 14px 16px;
             background: #fff;
             border-radius: 10px;
+            border-left: 4px solid #a3b54a;
         }
 
         .vb-access:last-child {
