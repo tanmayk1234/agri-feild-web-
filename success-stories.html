@@ -99,6 +99,11 @@
             text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
+        .ss-hero .hero-desc .green-highlight {
+            color: #4ade80;
+            font-weight: 600;
+        }
+
         .ss-hero .see-link {
             color: #fff;
             font-size: 16px;
@@ -123,7 +128,7 @@
         }
 
         .ss-section.light-bg {
-            background: #fff;
+            background: #f9f9f9;
         }
 
         .ss-section.green-bg {
@@ -139,83 +144,98 @@
             margin: 0 auto;
         }
 
-        /* ===== UNDERSTANDING THE GAP ===== */
-        .gap-title {
-            font-size: clamp(22px, 3.5vw, 36px);
+        /* ===== UNDERSTANDING THE GAP - GREEN SQUARE ===== */
+        .gap-section-green {
+            background: #1B6B38;
+            padding: 60px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .gap-section-green h2 {
+            font-size: clamp(24px, 3.5vw, 36px);
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            text-align: center;
             line-height: 1.2;
             margin-bottom: 8px;
         }
 
-        .gap-title .green {
-            color: var(--primary);
-        }
-
-        .gap-subtitle {
-            font-size: clamp(16px, 2vw, 20px);
+        .gap-section-green h3 {
+            font-size: 20px;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             font-family: var(--font-heading);
-            margin-bottom: 20px;
-            text-align: center;
+            margin-bottom: 0;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
 
-        .gap-text {
-            font-size: 15px;
-            color: #444;
-            line-height: 1.7;
-            margin-bottom: 12px;
+        /* ===== LABOUR SHORTAGE TEXT ===== */
+        .labor-text-block {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
         }
 
-        .green-quote {
-            border-left: 4px solid var(--primary);
-            padding: 12px 20px;
-            margin: 24px 0;
-            background: #f0f7ec;
+        .labor-text-block p {
+            font-size: 16px;
+            color: #1a1a1a;
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-weight: 400;
         }
 
-        .green-quote p {
-            font-size: clamp(16px, 2vw, 20px);
+        .labor-text-block p.bold-text {
             font-weight: 600;
-            color: var(--primary);
-            font-style: italic;
-            line-height: 1.4;
-            margin: 0;
+            color: #1a1a1a;
         }
 
-        /* Problem Tags Row */
-        .problem-tags {
+        /* ===== GREEN BOX - INVISIBILITY ===== */
+        .invisibility-box {
+            background: #1B6B38;
+            padding: 24px 32px;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+
+        .invisibility-box p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* ===== PROBLEM KEYWORD BOXES ===== */
+        .problem-keywords {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
-            margin: 24px 0 0;
+            max-width: 800px;
+            margin: 30px auto;
         }
 
-        .problem-tag {
-            background: #fff;
-            border: 2px solid #1a1a1a;
-            border-radius: 6px;
+        .keyword-box {
+            background: #e8f5e9;
+            color: #1B6B38;
             padding: 10px 20px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
-            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             font-family: var(--font-heading);
         }
 
-        /* ===== DIVERSE PEOPLE BANNER - ON IMAGE ===== */
+        /* ===== DIVERSE PEOPLE BANNER ===== */
         .diverse-banner {
             position: relative;
             width: 100%;
             max-width: 900px;
             margin: 0 auto;
-            border-radius: 12px;
             overflow: hidden;
         }
 
@@ -223,51 +243,44 @@
             width: 100%;
             height: auto;
             display: block;
-            min-height: 350px;
+            min-height: 400px;
             object-fit: cover;
         }
 
         .diverse-banner-overlay {
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
+            right: 0;
+            width: 50%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.45);
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            padding: 30px 20px;
-            text-align: center;
+            padding: 30px;
+            text-align: left;
         }
 
         .diverse-banner-overlay h2 {
-            font-size: clamp(28px, 5vw, 48px);
+            font-size: clamp(18px, 3vw, 28px);
             font-weight: 600;
             color: #fff;
             font-family: var(--font-heading);
             text-transform: uppercase;
-            line-height: 1.15;
+            line-height: 1.2;
             margin-bottom: 8px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
         }
 
-        .diverse-banner-overlay h2 .green-italic {
-            color: #fff;
-            font-style: italic;
-            text-decoration: underline;
-            text-underline-offset: 6px;
-            text-decoration-thickness: 3px;
+        .diverse-banner-overlay h2 .green-text {
+            color: #4ade80;
         }
 
         .diverse-banner-overlay .diverse-desc {
             color: #fff;
-            font-size: clamp(13px, 1.5vw, 16px);
-            max-width: 600px;
+            font-size: clamp(12px, 1.3vw, 14px);
             line-height: 1.6;
-            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
-            margin-top: 16px;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+            margin-top: 12px;
         }
 
         .diverse-banner-overlay .diverse-desc strong {
@@ -275,18 +288,27 @@
         }
 
         /* ===== WHO WAS IN THE ROOM ===== */
+        .room-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .room-heading {
             text-align: left;
-            font-size: clamp(20px, 2.5vw, 28px);
+            font-size: clamp(22px, 2.5vw, 30px);
             font-family: var(--font-heading);
             font-weight: 600;
             margin-bottom: 6px;
             color: #1a1a1a;
         }
 
+        .room-heading .green {
+            color: #1B6B38;
+        }
+
         .room-sub {
             text-align: left;
-            max-width: 700px;
+            max-width: 500px;
             margin: 0 0 24px;
             font-size: 14px;
             color: #555;
@@ -297,8 +319,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 24px;
-            max-width: 800px;
-            margin: 0 auto 30px;
+            margin-bottom: 30px;
         }
 
         .room-left-grid {
@@ -308,97 +329,131 @@
         }
 
         .room-chip {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background: #f0f7f4;
+            border: 1px solid #d4e8dc;
+            border-radius: 10px;
             padding: 14px 12px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .room-chip-icon {
             width: 32px;
             height: 32px;
             border-radius: 6px;
-            background: rgba(0, 104, 56, 0.08);
+            background: rgba(27, 107, 56, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1B6B38;
+            flex-shrink: 0;
+        }
+
+        .room-chip h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1B6B38;
+            font-family: var(--font-heading);
+            margin: 0;
+        }
+
+        /* Right: What We Did / Did NOT cards */
+        .did-not-card {
+            background: #1B6B38;
+            border-radius: 12px;
+            padding: 24px;
+            color: #fff;
+        }
+
+        .did-not-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            margin-bottom: 14px;
+            color: #fff;
+        }
+
+        .did-not-card h4 .not-bold {
+            font-weight: 600;
+        }
+
+        .did-not-items {
+            display: flex;
+            gap: 16px;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .did-not-item {
+            text-align: center;
+        }
+
+        .did-not-item .check-circle {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 6px;
-            color: var(--primary);
+            color: #fff;
         }
 
-        .room-chip h4 {
-            font-size: 12px;
-            font-weight: 600;
-            color: #1a1a1a;
-            font-family: var(--font-heading);
-            margin-bottom: 2px;
-            text-transform: capitalize;
-        }
-
-        .room-chip p {
+        .did-not-item p {
             font-size: 11px;
-            color: #888;
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.3;
+            font-weight: 500;
         }
 
-        /* Did / Did NOT cards */
-        .did-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 18px 16px;
+        .did-card-separator {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 16px 0;
         }
 
-        .did-card h4 {
-            font-size: 14px;
-            font-weight: 600;
-            color: #d32f2f;
-            margin-bottom: 10px;
-            font-family: var(--font-heading);
+        .did-yes h4 {
+            color: #fff;
         }
 
-        .did-card.yes-do h4 {
-            color: var(--primary);
+        .did-yes-items {
+            display: flex;
+            gap: 16px;
+            justify-content: space-around;
         }
 
-        .did-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .did-yes-item {
+            text-align: center;
         }
 
-        .did-card li {
-            font-size: 13px;
-            color: #333;
-            padding: 3px 0 3px 20px;
-            position: relative;
-            line-height: 1.5;
+        .did-yes-item .icon-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 6px;
+            color: #fff;
         }
 
-        .did-card.not-do li::before {
-            content: '\2717';
-            position: absolute;
-            left: 0;
-            color: #d32f2f;
-            font-weight: 600;
-        }
-
-        .did-card.yes-do li::before {
-            content: '\2713';
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: 600;
+        .did-yes-item p {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.3;
+            font-weight: 500;
         }
 
         /* ===== MARATHI QUOTE ===== */
         .marathi-block {
-            background: var(--primary);
+            background: #1B6B38;
             border-radius: 12px;
             padding: 28px 32px;
-            max-width: 800px;
-            margin: 0 auto 12px;
+            max-width: 900px;
+            margin: 30px auto 12px;
             position: relative;
         }
 
@@ -420,11 +475,11 @@
         }
 
         .marathi-block .marathi-text {
-            font-size: clamp(18px, 2.5vw, 24px);
+            font-size: clamp(20px, 2.5vw, 28px);
             font-weight: 600;
             color: #fff;
-            line-height: 1.6;
-            margin-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 8px;
             font-style: italic;
             position: relative;
             z-index: 1;
@@ -443,10 +498,11 @@
         .marathi-note {
             text-align: center;
             font-size: 14px;
-            color: #666;
-            font-style: italic;
-            max-width: 800px;
+            color: #fff;
+            font-weight: 500;
+            max-width: 900px;
             margin: 0 auto;
+            padding: 12px 0;
         }
 
         /* ===== WHAT FARMERS / LABORS TOLD US ===== */
@@ -460,14 +516,14 @@
 
         .told-card {
             border-radius: 12px;
-            padding: 0;
             overflow: hidden;
+            position: relative;
         }
 
         .told-card-img {
             width: 100%;
-            height: 240px;
-            overflow: hidden;
+            height: 280px;
+            position: relative;
         }
 
         .told-card-img img {
@@ -477,25 +533,28 @@
             object-position: top center;
         }
 
-        .told-card-body {
-            padding: 18px 16px;
+        .told-card-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
         }
 
-        .told-card.farmers-card {
-            background: var(--primary);
-        }
-
-        .told-card.labors-card {
-            background: #7ab648;
+        .told-card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 2;
         }
 
         .told-card h3 {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 600;
             color: #fff;
             margin-bottom: 12px;
             font-family: var(--font-heading);
-            text-transform: uppercase;
         }
 
         .told-tags {
@@ -505,10 +564,10 @@
         }
 
         .told-tag {
-            background: rgba(255, 255, 255, 0.18);
+            background: rgba(74, 222, 128, 0.7);
             color: #fff;
-            padding: 6px 12px;
-            border-radius: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
             font-size: 11px;
             font-weight: 600;
             text-transform: uppercase;
@@ -521,7 +580,6 @@
             margin: 0 auto;
             text-align: left;
             padding: 24px 0;
-            border-top: 2px solid #eee;
         }
 
         .insight-box h3 {
@@ -534,30 +592,33 @@
         }
 
         .insight-box h3 .green {
-            color: var(--primary);
+            color: #1B6B38;
         }
 
-        .insight-box p {
+        .insight-box .insight-statement {
             font-size: 16px;
             font-weight: 600;
             color: #1a1a1a;
             line-height: 1.6;
             text-transform: uppercase;
+            border-left: 4px solid #1B6B38;
+            padding-left: 16px;
         }
 
         /* ===== VENTURE BLUEPRINT ===== */
-        .vb-heading {
-            text-align: center;
-            font-size: clamp(22px, 3vw, 32px);
-            font-weight: 600;
-            color: #1a1a1a;
-            font-family: var(--font-heading);
-            text-transform: uppercase;
-            margin-bottom: 28px;
+        .vb-section {
+            background: linear-gradient(135deg, #1B6B38 0%, #0f4a25 100%);
+            padding: 60px 20px;
         }
 
-        .vb-heading .green {
-            color: var(--primary);
+        .vb-heading {
+            text-align: left;
+            font-size: clamp(22px, 3vw, 30px);
+            font-weight: 600;
+            color: #fff;
+            font-family: var(--font-heading);
+            font-style: italic;
+            margin-bottom: 28px;
         }
 
         .vb-layout {
@@ -569,8 +630,8 @@
         }
 
         .vb-col {
-            background: #f8f8f8;
-            border: 1px solid #e0e0e0;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 12px;
             padding: 24px 20px;
         }
@@ -578,22 +639,21 @@
         .vb-col-label {
             font-size: 12px;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             margin-bottom: 16px;
             font-family: var(--font-heading);
-            border-bottom: 2px solid #ddd;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             padding-bottom: 10px;
+            text-align: center;
         }
 
-        /* Left col: numbered items */
         .vb-numbered {
             margin-bottom: 12px;
-            background: #fff;
-            border-left: 4px solid var(--primary);
-            border-radius: 0 8px 8px 0;
-            padding: 12px 14px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
         }
 
         .vb-numbered:last-child {
@@ -601,39 +661,44 @@
         }
 
         .vb-num {
-            font-size: 18px;
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
             font-weight: 600;
-            color: var(--primary);
             font-family: var(--font-heading);
-            line-height: 1;
-            margin-bottom: 2px;
         }
 
-        .vb-numbered h4 {
-            font-size: 13px;
+        .vb-numbered-text h4 {
+            font-size: 14px;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             font-family: var(--font-heading);
             text-transform: uppercase;
             margin-bottom: 2px;
         }
 
-        .vb-numbered p {
+        .vb-numbered-text p {
             font-size: 12px;
-            color: #666;
+            color: rgba(255, 255, 255, 0.7);
             line-height: 1.4;
         }
 
         /* Right col: access items */
         .vb-access {
             margin-bottom: 10px;
-            background: #fff;
-            border: 1px solid #e5e5e5;
-            border-radius: 8px;
-            padding: 12px 14px;
             display: flex;
             align-items: center;
             gap: 12px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
         }
 
         .vb-access:last-child {
@@ -643,44 +708,44 @@
         .vb-access-icon {
             width: 36px;
             height: 36px;
-            border-radius: 6px;
-            background: rgba(0, 104, 56, 0.08);
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary);
+            color: #fff;
             flex-shrink: 0;
         }
 
         .vb-access h4 {
             font-size: 13px;
             font-weight: 600;
-            color: #1a1a1a;
+            color: #fff;
             font-family: var(--font-heading);
             margin-bottom: 1px;
         }
 
         .vb-access p {
             font-size: 11px;
-            color: #888;
+            color: rgba(255, 255, 255, 0.6);
             line-height: 1.3;
         }
 
         .vb-market-label {
-            text-align: right;
-            margin-top: 12px;
+            margin-top: 16px;
+            text-align: center;
         }
 
         .vb-market-label span {
             display: inline-block;
-            background: var(--primary);
+            background: rgba(255, 255, 255, 0.15);
             color: #fff;
             font-size: 11px;
             font-weight: 600;
-            padding: 6px 14px;
+            padding: 8px 16px;
             border-radius: 6px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         /* ===== SECOND INSIGHT ===== */
@@ -691,28 +756,34 @@
         }
 
         .insight2-block h3 {
-            font-size: clamp(22px, 3vw, 28px);
+            font-size: clamp(20px, 2.5vw, 26px);
             font-weight: 600;
             font-style: italic;
             color: #1a1a1a;
             font-family: var(--font-heading);
             margin-bottom: 12px;
+            text-align: left;
         }
 
         .insight2-block h3 .green {
-            color: var(--primary);
+            color: #1B6B38;
         }
 
-        .insight2-block p {
+        .insight2-block .insight2-bold {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+        .insight2-block .insight2-body {
             font-size: 15px;
             color: #444;
             line-height: 1.7;
             margin-bottom: 20px;
-        }
-
-        .insight2-block p strong {
-            color: #1a1a1a;
-            font-weight: 600;
+            text-align: left;
         }
 
         .keyword-tags {
@@ -723,22 +794,22 @@
         }
 
         .keyword-tag {
-            padding: 9px 18px;
+            padding: 10px 20px;
             border-radius: 6px;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .keyword-tag.solid {
-            background: var(--primary);
+            background: #1B6B38;
             color: #fff;
         }
 
         .keyword-tag.outline {
-            background: rgba(0, 104, 56, 0.1);
-            color: var(--primary);
+            background: #e8f5e9;
+            color: #1B6B38;
         }
 
         /* ===== FOUNDERS ===== */
@@ -749,11 +820,24 @@
 
         .founders-heading {
             text-align: center;
-            font-size: clamp(18px, 2.5vw, 26px);
+            font-size: clamp(18px, 2.5vw, 24px);
+            font-weight: 600;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            margin-bottom: 8px;
+        }
+
+        .founders-subheading {
+            text-align: center;
+            font-size: clamp(22px, 3vw, 30px);
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
             margin-bottom: 30px;
+        }
+
+        .founders-subheading .green {
+            color: #1B6B38;
         }
 
         .founders-row {
@@ -769,19 +853,20 @@
             border: 1px solid #e0e0e0;
             border-radius: 14px;
             padding: 24px 20px;
+            text-align: center;
         }
 
         .founder-avatar {
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             background: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 12px;
+            margin: 0 auto 12px;
             overflow: hidden;
-            border: 3px solid #e0e0e0;
+            border: 3px solid #1B6B38;
         }
 
         .founder-avatar img {
@@ -791,7 +876,7 @@
         }
 
         .founder-name {
-            font-size: 17px;
+            font-size: 18px;
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -800,7 +885,7 @@
 
         .founder-role {
             font-size: 13px;
-            color: var(--primary);
+            color: #1B6B38;
             font-weight: 600;
             margin-bottom: 4px;
         }
@@ -811,7 +896,11 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
+            display: inline-block;
+            background: #f0f7f4;
+            padding: 4px 12px;
+            border-radius: 20px;
         }
 
         .founder-bio {
@@ -819,6 +908,7 @@
             color: #555;
             line-height: 1.7;
             margin-bottom: 14px;
+            text-align: left;
         }
 
         .founder-quote {
@@ -826,8 +916,9 @@
             color: #333;
             line-height: 1.7;
             font-style: italic;
-            border-left: 3px solid var(--primary);
+            border-left: 3px solid #1B6B38;
             padding-left: 14px;
+            text-align: left;
         }
 
         .press-center {
@@ -836,10 +927,11 @@
 
         .press-btn {
             display: inline-block;
-            background: var(--primary);
-            color: #fff;
+            background: #fff;
+            color: #1B6B38;
             padding: 12px 28px;
-            border-radius: 50px;
+            border: 2px solid #1B6B38;
+            border-radius: 6px;
             font-size: 14px;
             font-weight: 600;
             font-family: var(--font-heading);
@@ -848,36 +940,53 @@
         }
 
         .press-btn:hover {
-            background: #005a2f;
+            background: #1B6B38;
+            color: #fff;
+        }
+
+        /* ===== BLUEPRINT MEETS FOUNDERS ===== */
+        .meets-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .meets-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+        }
+
+        .meets-section h3 .green {
+            color: #1B6B38;
         }
 
         /* ===== RAISED ===== */
         .raised-section {
-            background: #fff;
+            background: #1B6B38;
             padding: 40px 20px;
-            text-align: center;
         }
 
         .raised-inner {
             max-width: 800px;
             margin: 0 auto;
-            text-align: center;
         }
 
         .raised-inner h2 {
-            font-size: clamp(36px, 6vw, 56px);
+            font-size: clamp(36px, 6vw, 52px);
             font-weight: 600;
-            color: var(--primary);
+            color: #fff;
             font-family: var(--font-heading);
             margin-bottom: 10px;
         }
 
         .raised-inner .raised-desc {
-            color: #555;
+            color: rgba(255, 255, 255, 0.9);
             font-size: 16px;
             line-height: 1.7;
             max-width: 550px;
-            margin: 0 auto;
         }
 
         /* ===== TODAY SECTION ===== */
@@ -888,7 +997,7 @@
         }
 
         .today-inner h2 {
-            font-size: clamp(22px, 3.5vw, 36px);
+            font-size: clamp(22px, 3.5vw, 32px);
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -902,12 +1011,18 @@
             font-style: italic;
         }
 
+        .today-inner .today-sub .green {
+            color: #1B6B38;
+            font-weight: 600;
+        }
+
         /* ===== VISION ===== */
         .vision-block {
             max-width: 800px;
             margin: 0 auto;
-            border-left: 4px solid var(--primary);
-            padding-left: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
         }
 
         .vision-block h3 {
@@ -916,6 +1031,7 @@
             color: #1a1a1a;
             font-family: var(--font-heading);
             margin-bottom: 12px;
+            font-style: italic;
         }
 
         .vision-block ul {
@@ -936,7 +1052,7 @@
             content: '\2022';
             position: absolute;
             left: 0;
-            color: var(--primary);
+            color: #1B6B38;
             font-weight: 600;
         }
 
@@ -948,7 +1064,7 @@
         }
 
         .method-heading h2 {
-            font-size: clamp(20px, 3vw, 30px);
+            font-size: clamp(20px, 3vw, 28px);
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -957,7 +1073,7 @@
         }
 
         .method-heading h2 .green {
-            color: var(--primary);
+            color: #1B6B38;
         }
 
         .method-flow {
@@ -987,13 +1103,13 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 6px;
-            color: var(--primary);
+            color: #1B6B38;
         }
 
         .method-step h4 {
             font-size: 11px;
             font-weight: 600;
-            color: var(--primary);
+            color: #1B6B38;
             font-family: var(--font-heading);
             text-transform: uppercase;
             margin-bottom: 3px;
@@ -1019,7 +1135,7 @@
         }
 
         .cta-block h2 {
-            font-size: clamp(22px, 3.5vw, 36px);
+            font-size: clamp(22px, 3.5vw, 32px);
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -1040,6 +1156,26 @@
             flex-wrap: wrap;
         }
 
+        .btn-outline-green {
+            display: inline-block;
+            background: #fff;
+            color: #1B6B38;
+            padding: 16px 36px;
+            border: 2px solid #1B6B38;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: var(--font-heading);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-green:hover {
+            background: #1B6B38;
+            color: #fff;
+        }
+
         /* ===== UNLOCK OPPORTUNITIES ===== */
         .opp-heading {
             text-align: center;
@@ -1048,7 +1184,7 @@
         }
 
         .opp-heading h2 {
-            font-size: clamp(20px, 3vw, 30px);
+            font-size: clamp(20px, 3vw, 28px);
             font-weight: 600;
             color: #1a1a1a;
             font-family: var(--font-heading);
@@ -1057,7 +1193,7 @@
         }
 
         .opp-heading h2 .green {
-            color: var(--primary);
+            color: #1B6B38;
         }
 
         .opp-grid {
@@ -1073,19 +1209,18 @@
             border: 1px solid #e0e0e0;
             border-radius: 12px;
             padding: 20px 16px;
-            text-align: center;
         }
 
         .opp-card-icon {
             width: 40px;
             height: 40px;
             border-radius: 8px;
-            background: rgba(0, 104, 56, 0.08);
+            background: rgba(27, 107, 56, 0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 12px;
-            color: var(--primary);
+            margin-bottom: 12px;
+            color: #1B6B38;
         }
 
         .opp-card h4 {
@@ -1095,19 +1230,22 @@
             font-family: var(--font-heading);
             margin-bottom: 6px;
             line-height: 1.3;
+            text-align: left;
         }
 
         .opp-card p {
             font-size: 12px;
             color: #666;
             line-height: 1.5;
+            text-align: left;
         }
 
         .opp-card .opp-stat {
             font-size: 13px;
-            color: var(--primary);
+            color: #1B6B38;
             font-weight: 600;
             margin-top: 8px;
+            text-align: left;
         }
 
         /* ===== RESPONSIVE ===== */
@@ -1155,6 +1293,17 @@
             .opp-grid {
                 grid-template-columns: 1fr;
             }
+
+            .diverse-banner-overlay {
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                text-align: center;
+                align-items: center;
+            }
+
+            .gap-section-green {
+                padding: 40px 20px;
+            }
         }
     </style>
 </head>
@@ -1164,7 +1313,7 @@
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
-    <!-- ===== HEADER (same as other pages) ===== -->
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <nav class="container nav">
             <div class="logo">
@@ -1176,7 +1325,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="success-stories.html" class="active">Success Stories</a></li>
-                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
                         rel="noopener noreferrer" class="nav-cta">Apply Now</a></li>
             </ul>
@@ -1196,50 +1345,58 @@
             <div class="container">
                 <span class="ss-hero-tag">The Venture Blueprint Method</span>
                 <h1>We Don't Start With Ideas.<br><span>We Start With A Blueprint.</span></h1>
-                <p class="hero-desc">How a farm labor crisis became a 200&nbsp;billion&nbsp;US&nbsp;dollar market size
-                    venture in 100 days and what it means for the next builder.</p>
+                <p class="hero-desc">How a farm labor crisis became a <span class="green-highlight">200&nbsp;billion&nbsp;US&nbsp;dollar</span> market size
+                    venture in <span class="green-highlight">100 days</span> and what it means for the next builder.</p>
                 <a href="#story" class="see-link">See How It Happened</a>
             </div>
         </section>
 
-        <!-- ========== 2. EVERYONE KNEW / UNDERSTANDING THE GAP ========== -->
+        <!-- ========== 2. UNDERSTANDING THE GAP - GREEN SQUARE ========== -->
         <section class="ss-section white-bg" id="story">
             <div class="container">
-                <div class="ss-center fade-in-up">
-                    <h2 class="gap-title">Everyone Knew There Was A Labor Problem.<br><span class="green">Nobody Knew
-                            What It Actually Was</span></h2>
+                <div class="gap-section-green fade-in-up">
+                    <h2>Everyone Knew There Was A Labor Problem.<br>Nobody Knew What It Actually Was</h2>
+                    <h3>Understanding the Gap</h3>
+                </div>
 
-                    <h3 class="gap-subtitle">Understanding the Gap</h3>
-
-                    <p class="gap-text">"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture.
+                <!-- Labour shortage paragraph -->
+                <div class="labor-text-block fade-in-up">
+                    <p>"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture.
                         It's in government reports. It's in newspaper headlines. It's repeated at conferences.</p>
-                    <p class="gap-text">But what does it actually mean?</p>
-                    <p class="gap-text">Does it mean not enough workers exist? Or that workers won't come to farms? Or
-                        that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?
-                    </p>
-                    <p class="gap-text">The answer: all of the above. And none of the above.</p>
+                    <p>But what does it actually mean?</p>
+                    <p>Does it mean not enough workers exist? Or that workers won't come to farms? Or
+                        that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
+                    <p class="bold-text">The answer: all of the above. And none of the above.</p>
 
-                    <div class="green-quote">
+                    <!-- Green box with white text -->
+                    <div class="invisibility-box">
                         <p>The real problem wasn't labor shortage. It was invisibility.</p>
                     </div>
 
-                    <div class="problem-tags">
-                        <span class="problem-tag">Worker shortage?</span>
-                        <span class="problem-tag">Wage mismatch?</span>
-                        <span class="problem-tag">Hiring chaos?</span>
-                        <span class="problem-tag">Retention failure?</span>
+                    <!-- Small light green keyword boxes -->
+                    <div class="problem-keywords">
+                        <span class="keyword-box">Worker shortage</span>
+                        <span class="keyword-box">COORDINATION</span>
+                        <span class="keyword-box">TRUST</span>
+                        <span class="keyword-box">RELIABILITY</span>
+                        <span class="keyword-box">VISIBILITY</span>
+                        <span class="keyword-box">LINKAGE</span>
+                        <span class="keyword-box">DISCOVERY</span>
+                        <span class="keyword-box">Wage mismatch</span>
+                        <span class="keyword-box">Hiring chaos</span>
+                        <span class="keyword-box">Retention failure</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== 3. DIVERSE PEOPLE / ONE ROOM - TEXT ON IMAGE ========== -->
+        <!-- ========== 3. DIVERSE PEOPLE / ONE ROOM ========== -->
         <section class="ss-section white-bg" style="padding-top: 0;">
             <div class="container">
                 <div class="diverse-banner fade-in-up">
                     <img src="assets/image 23.png" alt="Farm Truths Dialogue - stakeholders gathered for open conversation">
                     <div class="diverse-banner-overlay">
-                        <h2>Diverse people<br>ONE ROOM<br>NO PRESENTATION<br><span class="green-italic">JUST TRUTH</span></h2>
+                        <h2>Diverse people<br>ONE ROOM<br>NO PRESENTATION<br><span class="green-text">JUST TRUTH</span></h2>
                         <p class="diverse-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths
                                 Dialogue</strong> &mdash; an unconference designed to uncover reality, not validate assumptions.</p>
                     </div>
@@ -1250,63 +1407,74 @@
         <!-- ========== 4. WHO WAS IN THE ROOM ========== -->
         <section class="ss-section white-bg" id="room" style="padding-top: 0;">
             <div class="container">
-                <div style="max-width:800px; margin:0 auto;">
-                    <h3 class="room-heading">Who Was In The Room.</h3>
+                <div class="room-section">
+                    <h3 class="room-heading">Who Was In <span class="green">The Room.</span></h3>
                     <p class="room-sub">We bring together the most critical stakeholders in the agricultural ecosystem to
                         validate problems before we write a single line of code.</p>
 
                     <div class="room-layout fade-in-up">
-                        <!-- Left: 6 chips in 2x3 grid -->
+                        <!-- Left: 6 chips -->
                         <div class="room-left-grid">
                             <div class="room-chip">
                                 <div class="room-chip-icon"><i data-lucide="sprout" style="width:18px;height:18px;"></i></div>
                                 <h4>Horticulture Farmers</h4>
-                                <p>understanding crop cycles</p>
                             </div>
                             <div class="room-chip">
                                 <div class="room-chip-icon"><i data-lucide="users" style="width:18px;height:18px;"></i></div>
                                 <h4>FPO Leaders</h4>
-                                <p>Managing thousands of farmers</p>
+                            </div>
+                            <div class="room-chip">
+                                <div class="room-chip-icon"><i data-lucide="leaf" style="width:18px;height:18px;"></i></div>
+                                <h4>Understanding Crop Cycles</h4>
                             </div>
                             <div class="room-chip">
                                 <div class="room-chip-icon"><i data-lucide="clipboard-check" style="width:18px;height:18px;"></i></div>
                                 <h4>Farm Supervisors</h4>
-                                <p>Who hire labor daily</p>
                             </div>
                             <div class="room-chip">
                                 <div class="room-chip-icon"><i data-lucide="hard-hat" style="width:18px;height:18px;"></i></div>
                                 <h4>Labor Contractors</h4>
-                                <p>20+ years in the business</p>
                             </div>
                             <div class="room-chip">
                                 <div class="room-chip-icon"><i data-lucide="flask-conical" style="width:18px;height:18px;"></i></div>
                                 <h4>Agronomists</h4>
-                                <p>Crop science experts</p>
-                            </div>
-                            <div class="room-chip">
-                                <div class="room-chip-icon"><i data-lucide="truck" style="width:18px;height:18px;"></i></div>
-                                <h4>Supply Chain Operators</h4>
-                                <p>Downstream impact experts</p>
                             </div>
                         </div>
 
-                        <!-- Right: What We Did / Did NOT Do -->
-                        <div>
-                            <div class="did-card not-do" style="margin-bottom: 12px;">
-                                <h4>What We Did NOT Do</h4>
-                                <ul>
-                                    <li>No keynote speeches</li>
-                                    <li>No panel discussions</li>
-                                    <li>No PowerPoints</li>
-                                </ul>
+                        <!-- Right: What We Did NOT Do / What We Did -->
+                        <div class="did-not-card">
+                            <h4>What We Did <span class="not-bold">NOT</span> Do</h4>
+                            <div class="did-not-items">
+                                <div class="did-not-item">
+                                    <div class="check-circle"><i data-lucide="check" style="width:14px;height:14px;"></i></div>
+                                    <p>No Keynote<br>Speeches</p>
+                                </div>
+                                <div class="did-not-item">
+                                    <div class="check-circle"><i data-lucide="check" style="width:14px;height:14px;"></i></div>
+                                    <p>No Panel<br>Discussions</p>
+                                </div>
+                                <div class="did-not-item">
+                                    <div class="check-circle"><i data-lucide="check" style="width:14px;height:14px;"></i></div>
+                                    <p>No<br>PowerPoints</p>
+                                </div>
                             </div>
-                            <div class="did-card yes-do">
-                                <h4>What We Did</h4>
-                                <ul>
-                                    <li>Open Dialogue</li>
-                                    <li>Candid Conversations</li>
-                                    <li>Pattern Recognition</li>
-                                </ul>
+                            <hr class="did-card-separator">
+                            <div class="did-yes">
+                                <h4>What <span class="not-bold">We</span> Did</h4>
+                                <div class="did-yes-items">
+                                    <div class="did-yes-item">
+                                        <div class="icon-circle"><i data-lucide="message-circle" style="width:16px;height:16px;"></i></div>
+                                        <p>Open<br>Dialogue</p>
+                                    </div>
+                                    <div class="did-yes-item">
+                                        <div class="icon-circle"><i data-lucide="message-circle" style="width:16px;height:16px;"></i></div>
+                                        <p>Candid<br>Conversations</p>
+                                    </div>
+                                    <div class="did-yes-item">
+                                        <div class="icon-circle"><i data-lucide="message-circle" style="width:16px;height:16px;"></i></div>
+                                        <p>Pattern<br>Recognition</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1327,11 +1495,11 @@
         <section class="ss-section white-bg" id="told" style="padding-top: 0;">
             <div class="container">
                 <div class="told-grid fade-in-up">
-                    <div class="told-card farmers-card">
+                    <div class="told-card">
                         <div class="told-card-img">
                             <img src="assets/image 31.png" alt="Indian farmer in field">
                         </div>
-                        <div class="told-card-body">
+                        <div class="told-card-content">
                             <h3>What Farmers Told Us</h3>
                             <div class="told-tags">
                                 <span class="told-tag">UNCERTAINITY</span>
@@ -1342,18 +1510,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="told-card labors-card">
+                    <div class="told-card">
                         <div class="told-card-img">
                             <img src="assets/image 33.png" alt="Farm labor worker">
                         </div>
-                        <div class="told-card-body">
+                        <div class="told-card-content">
                             <h3>What Labors Told Us</h3>
                             <div class="told-tags">
                                 <span class="told-tag">VOLATILITY</span>
                                 <span class="told-tag">FRAGILITY</span>
+                                <span class="told-tag">EXPOSURE</span>
                                 <span class="told-tag">DISCONNECTION</span>
                                 <span class="told-tag">INFORMALITY</span>
-                                <span class="told-tag">EXPOSURE</span>
                             </div>
                         </div>
                     </div>
@@ -1362,101 +1530,108 @@
                 <!-- The Insight -->
                 <div class="insight-box fade-in-up">
                     <h3>The <span class="green">Insight.</span></h3>
-                    <p>THE ISSUE WASN'T LABOUR SCARCITY, BUT THE ABSENCE OF A RELIABLE SYSTEM CONNECTING WORKERS WITH
+                    <p class="insight-statement">THE ISSUE WASN'T LABOUR SCARCITY, BUT THE ABSENCE OF A RELIABLE SYSTEM CONNECTING WORKERS WITH
                         FARMS.</p>
                 </div>
             </div>
         </section>
 
         <!-- ========== 6. THE VENTURE BLUEPRINT ========== -->
-        <section class="ss-section white-bg" id="blueprint" style="padding-top: 0;">
+        <section class="vb-section" id="blueprint">
             <div class="container">
-                <h2 class="vb-heading">The <span class="green">Venture Blueprint</span></h2>
+                <h2 class="vb-heading">The Venture Blueprint</h2>
 
                 <div class="vb-layout fade-in-up">
                     <!-- Left: PROBLEM TO PILOT -->
                     <div class="vb-col">
                         <p class="vb-col-label">PROBLEM TO PILOT</p>
                         <div class="vb-numbered">
-                            <p class="vb-num">01</p>
-                            <h4>VISION</h4>
-                            <p>A labor intelligence platform that formalizes farm hiring</p>
+                            <div class="vb-num">01</div>
+                            <div class="vb-numbered-text">
+                                <h4>VISION</h4>
+                                <p>A labor intelligence platform that formalizes farm hiring</p>
+                            </div>
                         </div>
                         <div class="vb-numbered">
-                            <p class="vb-num">02</p>
-                            <h4>MARKET SIZING</h4>
-                            <p>Maharashtra grapes + bananas = substantial wage pool annually</p>
+                            <div class="vb-num">02</div>
+                            <div class="vb-numbered-text">
+                                <h4>MARKET SIZING</h4>
+                                <p>Maharashtra grapes + bananas = substantial wage pool annually</p>
+                            </div>
                         </div>
                         <div class="vb-numbered">
-                            <p class="vb-num">03</p>
-                            <h4>UNIT ECONOMICS</h4>
-                            <p>Take-rate per worker day + tool rental + embedded finance</p>
+                            <div class="vb-num">03</div>
+                            <div class="vb-numbered-text">
+                                <h4>UNIT ECONOMICS</h4>
+                                <p>Take-rate per worker day + tool rental + embedded finance</p>
+                            </div>
                         </div>
                         <div class="vb-numbered">
-                            <p class="vb-num">04</p>
-                            <h4>PILOT OPPORTUNITY</h4>
-                            <p>Nashik grape farms, 500 worker days in first month</p>
+                            <div class="vb-num">04</div>
+                            <div class="vb-numbered-text">
+                                <h4>PILOT OPPORTUNITY</h4>
+                                <p>Nashik grape farms, 500 worker days in first month</p>
+                            </div>
                         </div>
                         <div class="vb-numbered">
-                            <p class="vb-num">05</p>
-                            <h4>RISK MAP</h4>
-                            <p>Seasonality, churn, regulatory constraints and mitigations</p>
+                            <div class="vb-num">05</div>
+                            <div class="vb-numbered-text">
+                                <h4>RISK MAP</h4>
+                                <p>Seasonality, churn, regulatory constraints and mitigations</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Right: PILOT READY ACCESS -->
-                    <div class="vb-col">
-                        <p class="vb-col-label">PILOT READY ACCESS</p>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="land-plot"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>50K Acre farm</h4>
-                                <p>Daily Labor Needs</p>
+                    <!-- Right: PILOT READY ACCESS + MARKET IMPACT -->
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="vb-col">
+                            <p class="vb-col-label">PILOT READY ACCESS</p>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="land-plot" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>50K Acre farm</h4>
+                                    <p>Daily Labor Needs</p>
+                                </div>
+                            </div>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="building" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>Anchor Customer Identified</h4>
+                                    <p>Single line of code</p>
+                                </div>
+                            </div>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="network" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>30K+ Farmer Network</h4>
+                                    <p>Sahyadri ecosystem</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="building"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>Anchor Customer Identified</h4>
-                                <p>Single line of code</p>
+
+                        <div class="vb-col">
+                            <p class="vb-col-label">MARKET IMPACT</p>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="banknote" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>Paid pilots From Day 1</h4>
+                                    <p>Actual revenue, not free trials</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="network"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>30K+ Farmer Network</h4>
-                                <p>Sahyadri ecosystem</p>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="trending-up" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>Capital Pathway</h4>
+                                    <p>Facilitated fundraising with proof</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="banknote"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>Paid pilots From Day 1</h4>
-                                <p>Actual revenue, not free trials</p>
+                            <div class="vb-access">
+                                <div class="vb-access-icon"><i data-lucide="users" style="width:16px;height:16px;"></i></div>
+                                <div>
+                                    <h4>30K+ Farmer Network</h4>
+                                    <p>Sahyadri ecosystem</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="trending-up"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>Capital Pathway</h4>
-                                <p>Facilitated fundraising with proof</p>
-                            </div>
-                        </div>
-                        <div class="vb-access">
-                            <div class="vb-access-icon"><i data-lucide="users"
-                                    style="width:18px;height:18px;"></i></div>
-                            <div>
-                                <h4>30K+ Farmer Network</h4>
-                                <p>Sahyadri ecosystem</p>
-                            </div>
-                        </div>
-                        <div class="vb-market-label">
-                            <span>MARKET IMPACT</span>
                         </div>
                     </div>
                 </div>
@@ -1464,12 +1639,12 @@
         </section>
 
         <!-- ========== 7. THE INSIGHT (Supply / Demand / Trust) ========== -->
-        <section class="ss-section white-bg" style="padding-top: 0;">
+        <section class="ss-section white-bg">
             <div class="container">
                 <div class="insight2-block fade-in-up">
                     <h3>The <span class="green">Insight.</span></h3>
-                    <p><strong>SUPPLY EXISTED. DEMAND EXISTED. TRUST DIDN'T.</strong></p>
-                    <p>Thousands lost each season. Workers uncertain of tomorrow's work. An industry running on phone
+                    <p class="insight2-bold">SUPPLY EXISTED. DEMAND EXISTED. TRUST DIDN'T.</p>
+                    <p class="insight2-body">Thousands lost each season. Workers uncertain of tomorrow's work. An industry running on phone
                         calls and handshakes. In that accepted chaos sat a venture waiting to be built.</p>
                     <div class="keyword-tags">
                         <span class="keyword-tag solid">COORDINATION</span>
@@ -1486,7 +1661,8 @@
         <!-- ========== 8. VISIONARY BUILDERS / FOUNDERS ========== -->
         <section class="founders-section" id="founders">
             <div class="container">
-                <h2 class="founders-heading">The blueprint was ready. Now we needed the <span style="color: var(--primary);">Visionary Builders</span></h2>
+                <p class="founders-heading">The blueprint was ready. Now we needed the</p>
+                <h2 class="founders-subheading"><span class="green">Visionary Builders</span></h2>
 
                 <div class="founders-row fade-in-up">
                     <div class="founder-card">
@@ -1516,13 +1692,22 @@
                             BodhiAI and later served as Technical Director at urban-tech VC firm Utopia, working with
                             founders across emerging cities in Asia, Africa, and Latin America. His work focused on
                             applying AI and machine learning to solve real-world problems.</p>
-                        <p class="founder-quote">"The issue wasn't labour scarcity, but the absence of a reliable system
-                            connecting workers with farms."</p>
+                        <p class="founder-quote">"Access to growers and partners exposed us to real farm workflows, not hypothetical user stories, so we
+                            could build for actual constraints and compress our 0-1 learning curve."</p>
                     </div>
                 </div>
 
                 <div class="press-center">
                     <a href="#" class="press-btn">Check the press release here</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BLUEPRINT MEETS FOUNDERS ========== -->
+        <section class="ss-section white-bg" style="padding-top: 0;">
+            <div class="container">
+                <div class="meets-section">
+                    <h3>This is what happens when a <span class="green">blueprint</span> meets the right founders</h3>
                 </div>
             </div>
         </section>
@@ -1539,11 +1724,10 @@
         </section>
 
         <!-- ========== 10. TODAY, HUNDREDS OF JOBS ========== -->
-        <section class="ss-section white-bg" style="padding-top: 0;">
+        <section class="ss-section white-bg">
             <div class="container">
                 <div class="today-inner fade-in-up">
                     <h2>TODAY, HUNDREDS OF JOBS. TOMORROW, THOUSANDS.</h2>
-                    <p class="today-sub">This is what happens when a blueprint meets the right founders</p>
                 </div>
             </div>
         </section>
@@ -1583,20 +1767,17 @@
                         <p>Identify where value is lost</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="file-text" style="width:22px;height:22px;"></i>
-                        </div>
+                        <div class="method-step-icon"><i data-lucide="file-text" style="width:22px;height:22px;"></i></div>
                         <h4>BUILD BLUEPRINTS</h4>
                         <p>Complete venture design upfront</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="shield-check"
-                                style="width:22px;height:22px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="shield-check" style="width:22px;height:22px;"></i></div>
                         <h4>GUARANTEE ACCESS</h4>
                         <p>Paid pilots, networks, capital from day 1</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="hand-coins" style="width:22px;height:22px;"></i>
-                        </div>
+                        <div class="method-step-icon"><i data-lucide="hand-coins" style="width:22px;height:22px;"></i></div>
                         <h4>FACILITATE FUNDING</h4>
                         <p>We help you raise</p>
                     </div>
@@ -1608,14 +1789,13 @@
         <section class="cta-section">
             <div class="container">
                 <div class="cta-block">
-                    <h2>Ready to build the future of Indian agriculture?</h2>
-                    <p>We've done it once. We're doing it again. The next category-defining venture could be yours.</p>
+                    <h2>Ready to build the future of<br>Indian agriculture?</h2>
+                    <p>We've done it once. We're doing it again.<br>The next category-defining venture could be yours.</p>
                     <div class="apply-row">
                         <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
                             rel="noopener noreferrer" class="btn btn-primary btn-large">APPLY TO BUILD NEXT
                             VENTURE</a>
-                        <a href="#opportunities" class="btn btn-outline-pro btn-large">SEE OTHER
-                            OPPORTUNITIES</a>
+                        <a href="#opportunities" class="btn-outline-green">SEE OTHER OPPORTUNITIES</a>
                     </div>
                 </div>
             </div>
@@ -1633,26 +1813,25 @@
                         <div class="opp-card-icon"><i data-lucide="landmark" style="width:22px;height:22px;"></i></div>
                         <h4>Agricultural Credit and Finance</h4>
                         <p>51% farmers digitally invisible | KCC renewal PoC ready</p>
-                        <p class="opp-stat">&#8377;31.5L cr</p>
+                        <p class="opp-stat">&#8377;31.5L cr / 70% smallholders excluded</p>
                     </div>
                     <div class="opp-card">
                         <div class="opp-card-icon"><i data-lucide="truck" style="width:22px;height:22px;"></i></div>
                         <h4>Building Logistic Ecosystem</h4>
                         <p>18-22% losses | 10K trucks PoC ready</p>
-                        <p class="opp-stat">&#8377;2.1L cr</p>
+                        <p class="opp-stat">&#8377;53L cr / 18-22% losses, perishable DFC ready</p>
                     </div>
                     <div class="opp-card">
                         <div class="opp-card-icon"><i data-lucide="wrench" style="width:22px;height:22px;"></i></div>
                         <h4>Affordable Mechanization</h4>
                         <p>68% use manual tools | Equipment sharing PoC ready</p>
-                        <p class="opp-stat">&#8377;1.45L cr market</p>
+                        <p class="opp-stat">&#8377;1.45L cr market / 68% manual, Equipment / Day model PoC ready</p>
                     </div>
                     <div class="opp-card">
-                        <div class="opp-card-icon"><i data-lucide="mountain-snow"
-                                style="width:22px;height:22px;"></i></div>
-                        <h4>Responsible Agritourism</h4>
-                        <p>70% investor-owned | Farm stay network PoC ready</p>
-                        <p class="opp-stat">&#8377;22,100 cr by 2030</p>
+                        <div class="opp-card-icon"><i data-lucide="link" style="width:22px;height:22px;"></i></div>
+                        <h4>Value Chain Integration</h4>
+                        <p>86% FPOs only aggregate | Processing facility PoC ready</p>
+                        <p class="opp-stat">&#8377;40-50K cr / 86% FPOs aggregators only, processing link PoC ready</p>
                     </div>
                     <div class="opp-card">
                         <div class="opp-card-icon"><i data-lucide="recycle" style="width:22px;height:22px;"></i></div>
@@ -1661,10 +1840,10 @@
                         <p class="opp-stat">&#8377;24-49K cr budget</p>
                     </div>
                     <div class="opp-card">
-                        <div class="opp-card-icon"><i data-lucide="link" style="width:22px;height:22px;"></i></div>
-                        <h4>Value Chain Integration</h4>
-                        <p>86% FPOs only aggregate | Processing facility PoC ready</p>
-                        <p class="opp-stat">&#8377;40-50K cr</p>
+                        <div class="opp-card-icon"><i data-lucide="mountain-snow" style="width:22px;height:22px;"></i></div>
+                        <h4>Responsible Agritourism</h4>
+                        <p>70% investor-owned | Farm stay network PoC ready</p>
+                        <p class="opp-stat">&#8377;22,100 cr by 2030 | 91% rural job multiplier</p>
                     </div>
                 </div>
             </div>
@@ -1672,7 +1851,7 @@
 
     </main>
 
-    <!-- ===== FOOTER (matching other pages) ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container footer-slim">
             <div class="footer-logo">
