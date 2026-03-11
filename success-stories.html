@@ -740,9 +740,10 @@
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            border: 1px solid #e5e7eb;
+            border: none;
             border-radius: 16px;
             padding: 36px 36px 32px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
         }
 
         .insight2-block h3 {
@@ -778,10 +779,9 @@
         }
 
         .keyword-tags {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            justify-content: center;
         }
 
         .keyword-tag {
@@ -793,6 +793,7 @@
             letter-spacing: 0.5px;
             background: #1B6B38;
             color: #fff;
+            text-align: center;
         }
 
         /* ===== FOUNDERS ===== */
