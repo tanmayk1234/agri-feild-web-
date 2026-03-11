@@ -17,7 +17,8 @@
     <style>
         /* ===== HERO ===== */
         .ss-hero {
-            background: linear-gradient(135deg, #006838 0%, #004d2a 50%, #003d20 100%);
+            background: linear-gradient(135deg, rgba(0,104,56,0.85) 0%, rgba(0,77,42,0.9) 50%, rgba(0,61,32,0.95) 100%),
+                        url('assets/farm-truths-dialogue.jpg') center/cover no-repeat;
             padding: 140px 20px 80px;
             text-align: center;
             position: relative;
@@ -39,14 +40,13 @@
             border-radius: 50px;
             font-size: 14px;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 30px;
-            font-family: var(--font-heading);
+            margin-bottom: 24px;
         }
         .ss-hero h1 {
-            color: #fff;
             font-size: clamp(28px, 5vw, 52px);
+            color: #fff;
             font-weight: 800;
             line-height: 1.15;
             max-width: 900px;
@@ -113,7 +113,66 @@
             margin: 0;
         }
 
-        /* ===== 60 PEOPLE / FARM TRUTHS ===== */
+        /* Problem tags */
+        .problem-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+        .problem-tag {
+            background: #f0f7ec;
+            border: 1px solid #d4e8c8;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+        .problem-tag.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* ===== DIVERSE PEOPLE SECTION ===== */
+        .diverse-section {
+            padding: 80px 20px;
+            background: #f8faf6;
+            text-align: center;
+        }
+        .diverse-banner {
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        .diverse-banner h2 {
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 800;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        .diverse-banner .highlight {
+            color: var(--primary);
+            font-style: italic;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 3px;
+        }
+        .diverse-desc {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            font-size: 17px;
+            color: #444;
+            line-height: 1.7;
+        }
+        .diverse-desc strong { color: #1a1a1a; }
+
+        /* ===== FARM TRUTHS ===== */
         .farm-truths {
             padding: 80px 20px;
             background: #fff;
@@ -160,10 +219,18 @@
             text-align: center;
             font-size: clamp(22px, 3vw, 32px);
             font-family: var(--font-heading);
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             color: #1a1a1a;
         }
         .room-title span { font-weight: 800; }
+        .room-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
 
         .room-grid {
             display: grid;
@@ -230,11 +297,11 @@
             line-height: 1.5;
         }
         .did-box.not li::before {
-            content: '✗'; position: absolute; left: 0;
+            content: '\2717'; position: absolute; left: 0;
             color: #d32f2f; font-weight: 700;
         }
         .did-box.yes li::before {
-            content: '✓'; position: absolute; left: 0;
+            content: '\2713'; position: absolute; left: 0;
             color: var(--primary); font-weight: 700;
         }
 
@@ -322,46 +389,65 @@
             font-family: var(--font-heading);
             text-transform: uppercase;
         }
-        .voice-item {
-            border-radius: 10px;
-            padding: 14px 16px;
-            margin-bottom: 10px;
+        .voice-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
         }
-        .voice-card.farmers .voice-item {
-            background: rgba(255,255,255,0.1);
-        }
-        .voice-card.workers .voice-item {
+        .voice-tag {
             background: rgba(255,255,255,0.18);
-        }
-        .voice-item:last-child { margin-bottom: 0; }
-        .voice-item p {
-            font-size: 14px;
             color: #fff;
-            line-height: 1.5;
-            font-style: italic;
-            margin: 0;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        /* Trust Box */
-        .trust-box {
+        /* Insight Box */
+        .insight-box {
             background: #edf5e5;
-            border-radius: 12px;
-            padding: 30px 32px;
+            border-radius: 16px;
+            padding: 40px 36px;
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
-        .trust-box p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-        .trust-box p:last-child { margin-bottom: 0; }
-        .trust-box .emphasis {
-            font-weight: 600;
-            color: var(--primary);
+        .insight-box h3 {
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 800;
             font-style: italic;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            margin-bottom: 24px;
+        }
+        .insight-box h3 .green { color: var(--primary); }
+        .insight-box p {
             font-size: 17px;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        .insight-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+        .insight-tag {
+            background: var(--primary);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .insight-tag.alt {
+            background: rgba(0,104,56,0.12);
+            color: var(--primary);
         }
 
         /* ===== BLUEPRINT SECTION ===== */
@@ -372,7 +458,7 @@
         .blueprint-heading {
             text-align: center;
             max-width: 900px;
-            margin: 0 auto 24px;
+            margin: 0 auto 40px;
         }
         .blueprint-heading h2 {
             font-size: clamp(24px, 3.5vw, 36px);
@@ -383,47 +469,86 @@
             line-height: 1.2;
         }
         .blueprint-heading h2 .green { color: var(--primary); }
-        .blueprint-lead {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            text-align: center;
-        }
-        .blueprint-lead p {
-            font-size: 17px; color: #444;
-            line-height: 1.7; margin-bottom: 12px;
-        }
 
-        /* Blueprint Cards - stacked vertically */
-        .blueprint-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 800px;
+        /* Two-column blueprint layout */
+        .blueprint-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 900px;
             margin: 0 auto 40px;
         }
-        .blueprint-card {
-            background: #edf5e5;
-            border-left: 5px solid var(--primary);
-            border-radius: 0 12px 12px 0;
-            padding: 28px 28px;
+        .blueprint-col {
+            background: #f8faf6;
+            border-radius: 16px;
+            padding: 30px 28px;
         }
-        .blueprint-card h4 {
-            font-size: 16px; font-weight: 700;
+        .blueprint-col-title {
+            font-size: 14px;
+            font-weight: 700;
             color: var(--primary);
-            margin-bottom: 14px;
-            font-family: var(--font-heading);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            font-family: var(--font-heading);
         }
-        .blueprint-card ul { list-style: none; padding: 0; margin: 0; }
-        .blueprint-card li {
-            font-size: 14px; color: #333;
-            line-height: 1.6; padding: 4px 0;
-            padding-left: 18px; position: relative;
+        .blueprint-item {
+            background: #fff;
+            border-left: 4px solid var(--primary);
+            border-radius: 0 10px 10px 0;
+            padding: 18px 20px;
+            margin-bottom: 14px;
         }
-        .blueprint-card li::before {
-            content: '•'; position: absolute; left: 0;
-            color: #333; font-weight: 700;
+        .blueprint-item:last-child { margin-bottom: 0; }
+        .blueprint-item .bp-number {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            margin-bottom: 4px;
+        }
+        .blueprint-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+            font-family: var(--font-heading);
+        }
+        .blueprint-item p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .blueprint-access-item {
+            background: #fff;
+            border: 1px solid #e0e8e3;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .blueprint-access-item:last-child { margin-bottom: 0; }
+        .blueprint-access-icon {
+            width: 44px; height: 44px;
+            border-radius: 10px;
+            background: rgba(0,104,56,0.08);
+            display: flex; align-items: center; justify-content: center;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        .blueprint-access-item h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+            font-family: var(--font-heading);
+        }
+        .blueprint-access-item p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
         }
 
         .blueprint-ready {
@@ -437,7 +562,33 @@
             font-style: italic;
         }
 
-        /* ===== FOUNDERS SPEAK ===== */
+        /* ===== SECOND INSIGHT ===== */
+        .insight-section {
+            padding: 80px 20px;
+            background: #f8faf6;
+        }
+        .insight-section .insight-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .insight-section h3 {
+            font-size: clamp(22px, 3vw, 32px);
+            font-weight: 800;
+            font-style: italic;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            margin-bottom: 20px;
+        }
+        .insight-section h3 .green { color: var(--primary); }
+        .insight-section p {
+            font-size: 17px;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* ===== FOUNDERS SECTION ===== */
         .founders-section {
             padding: 80px 20px;
             background: linear-gradient(135deg, #006838 0%, #004d2a 100%);
@@ -466,23 +617,39 @@
             border-radius: 16px;
             padding: 30px 26px;
         }
+        .founder-card .founder-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            font-family: var(--font-heading);
+            margin-bottom: 4px;
+        }
+        .founder-card .founder-role {
+            font-size: 14px;
+            color: #4ade80;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .founder-card .founder-cohort {
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .founder-card .founder-bio {
+            font-size: 14px;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
         .founder-card blockquote {
             font-size: 15px;
             color: #fff;
             line-height: 1.7;
             font-style: italic;
-            margin-bottom: 20px;
-        }
-        .founder-card .founder-name {
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-            font-family: var(--font-heading);
-        }
-        .founder-card .founder-role {
-            font-size: 13px;
-            color: rgba(255,255,255,0.7);
-            font-weight: 600;
+            margin-bottom: 0;
+            border-left: 3px solid #4ade80;
+            padding-left: 16px;
         }
         .press-link {
             text-align: center;
@@ -510,14 +677,14 @@
         .raised-section {
             padding: 80px 20px;
             background: linear-gradient(135deg, #006838 0%, #004d2a 100%);
-            text-align: left;
+            text-align: center;
         }
         .raised-section .raised-inner {
             max-width: 800px;
             margin: 0 auto;
         }
         .raised-section h2 {
-            font-size: clamp(28px, 4vw, 44px);
+            font-size: clamp(32px, 5vw, 52px);
             font-weight: 800;
             color: #fff;
             font-family: var(--font-heading);
@@ -528,72 +695,29 @@
             font-size: 17px;
             line-height: 1.7;
             max-width: 600px;
+            margin: 0 auto;
         }
 
-        /* ===== PLATFORM SECTION ===== */
-        .platform-section {
+        /* ===== TODAY HUNDREDS ===== */
+        .today-section {
             padding: 80px 20px;
             background: #fff;
+            text-align: center;
         }
-        .platform-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            max-width: 900px;
-            margin: 0 auto;
-            align-items: start;
-        }
-        .platform-card {
-            background: #fff;
-            border: 1px solid #e0e8e3;
-            border-radius: 16px;
-            padding: 32px 28px;
-        }
-        .platform-card h3 {
-            font-size: 22px;
-            font-weight: 700;
-            color: #1a1a1a;
-            font-family: var(--font-heading);
-            margin-bottom: 20px;
-        }
-        .platform-card ul { list-style: none; padding: 0; margin: 0; }
-        .platform-card li {
-            font-size: 15px; color: #444;
-            line-height: 1.6; padding: 6px 0;
-            padding-left: 20px; position: relative;
-        }
-        .platform-card li::before {
-            content: '•'; position: absolute; left: 0;
-            color: #333; font-weight: 700;
-        }
-
-        .stat-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        .stat-card {
-            background: #fff;
-            border: 1px solid #e0e8e3;
-            border-left: 4px solid var(--primary);
-            border-radius: 0 12px 12px 0;
-            padding: 20px 22px;
-        }
-        .stat-card h3 {
-            font-size: 24px;
+        .today-section h2 {
+            font-size: clamp(24px, 3.5vw, 40px);
             font-weight: 800;
-            color: var(--primary);
-            font-family: var(--font-heading);
-            margin-bottom: 2px;
-        }
-        .stat-card .stat-label {
-            font-size: 15px;
-            font-weight: 700;
             color: #1a1a1a;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            margin-bottom: 12px;
         }
-        .stat-card .stat-sub {
-            font-size: 13px;
-            color: #888;
+        .today-section .today-sub {
+            font-size: 17px;
+            color: #555;
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* ===== VISION SECTION ===== */
@@ -621,7 +745,7 @@
             padding-left: 20px; position: relative;
         }
         .vision-block li::before {
-            content: '•'; position: absolute; left: 0;
+            content: '\2022'; position: absolute; left: 0;
             color: #333; font-weight: 700;
         }
 
@@ -689,16 +813,108 @@
             font-style: italic;
         }
 
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #006838 0%, #004d2a 100%);
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: clamp(24px, 3.5vw, 40px);
+            font-weight: 800;
+            color: #fff;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
         .apply-dual {
             display: flex;
             gap: 16px;
             justify-content: center;
         }
 
+        /* ===== UNLOCK OPPORTUNITIES ===== */
+        .opportunities-section {
+            padding: 80px 20px;
+            background: #fff;
+        }
+        .opportunities-heading {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+        .opportunities-heading h2 {
+            font-size: clamp(24px, 3.5vw, 36px);
+            font-weight: 800;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+        .opportunities-heading h2 .green { color: var(--primary); }
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .opportunity-card {
+            background: #f8faf6;
+            border: 1px solid #e0e8e3;
+            border-radius: 16px;
+            padding: 28px 24px;
+            transition: all 0.3s ease;
+        }
+        .opportunity-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,104,56,0.1);
+        }
+        .opportunity-card-icon {
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            background: rgba(0,104,56,0.08);
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        .opportunity-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            font-family: var(--font-heading);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .opportunity-card p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .opportunity-card .opp-stat {
+            font-size: 12px;
+            color: var(--primary);
+            font-weight: 700;
+            margin-top: 12px;
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 992px) {
             .room-grid { grid-template-columns: repeat(2, 1fr); }
-            .platform-grid { grid-template-columns: 1fr; }
+            .blueprint-two-col { grid-template-columns: 1fr; }
+            .opportunities-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
             .voices-grid { grid-template-columns: 1fr; }
@@ -708,6 +924,8 @@
             .method-flow { flex-direction: column; align-items: center; }
             .ss-hero { padding: 120px 20px 60px; }
             .apply-dual { flex-direction: column; align-items: center; }
+            .opportunities-grid { grid-template-columns: 1fr; }
+            .problem-tags { gap: 8px; }
         }
     </style>
 </head>
@@ -745,7 +963,7 @@
             <div class="container">
                 <span class="ss-hero-tag">The Venture Blueprint Method</span>
                 <h1>We Don't Start With Ideas.<br><span>We Start With A Blueprint.</span></h1>
-                <p>How a farm labor crisis became a 200 billion US dollar market size venture in 100 days — and what it means for the next builder.</p>
+                <p>How a farm labor crisis became a 200 billion US dollar market size venture in 100 days and what it means for the next builder.</p>
                 <a href="#story" class="see-link">See How It Happened</a>
             </div>
         </section>
@@ -756,6 +974,8 @@
                 <div class="narrative-block fade-in-up">
                     <h2>Everyone Knew There Was A Labor Problem.<br><span class="green">Nobody Knew What It Actually Was</span></h2>
 
+                    <h3 style="text-align:center; font-size:clamp(18px,2.5vw,24px); font-weight:700; color:#1a1a1a; font-family:var(--font-heading); margin-bottom:24px;">Understanding the Gap</h3>
+
                     <p>"Farm labor shortage" is a phrase you hear everywhere in Indian agriculture. It's in government reports. It's in newspaper headlines. It's repeated at conferences.</p>
                     <p>But what does it actually mean?</p>
                     <p>Does it mean not enough workers exist? Or that workers won't come to farms? Or that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
@@ -765,32 +985,38 @@
                         <p>The real problem wasn't labor shortage. It was invisibility.</p>
                     </div>
 
-                    <p>Does it mean not enough workers exist? Or that workers won't come to farms? Or that wages are too high? Or too low? Or that hiring is chaotic? Or that retention is impossible?</p>
-                    <p>We needed ground truth. Not desk research.</p>
+                    <div class="problem-tags">
+                        <span class="problem-tag">Worker shortage?</span>
+                        <span class="problem-tag">Wage mismatch?</span>
+                        <span class="problem-tag">Hiring chaos?</span>
+                        <span class="problem-tag">Retention failure?</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== 60 PEOPLE. ONE ROOM. NO PRESENTATIONS. JUST TRUTH. ===== -->
-        <section class="farm-truths" id="farm-truths">
+        <!-- ===== DIVERSE PEOPLE. ONE ROOM. ===== -->
+        <section class="diverse-section">
             <div class="container">
-                <h2>60 People. One Room. No Presentations. <span class="green-underline">Just Truth.</span></h2>
-
-                <!-- Farm Truths Dialogue Photo -->
-                <div class="farm-truths-image fade-in-up">
-                    <img src="assets/farm-truths-dialogue.jpg" alt="Farm Truths Dialogue - 60 people gathered for an open conversation about farm labor challenges">
+                <div class="diverse-banner fade-in-up">
+                    <h2>Diverse People<br>One Room<br>No Presentation<br><span class="highlight">Just Truth</span></h2>
                 </div>
 
-                <p class="farm-truths-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths Dialogue</strong> — an unconference designed to uncover reality, not validate assumptions.</p>
+                <p class="diverse-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths Dialogue</strong> &mdash; an unconference designed to uncover reality, not validate assumptions.</p>
+            </div>
+        </section>
 
-                <!-- Who Was In The Room -->
+        <!-- ===== WHO WAS IN THE ROOM ===== -->
+        <section class="farm-truths" id="farm-truths">
+            <div class="container">
                 <h3 class="room-title">Who Was In <span>The Room.</span></h3>
+                <p class="room-subtitle">We bring together the most critical stakeholders in the agricultural ecosystem to validate problems before we write a single line of code.</p>
 
                 <div class="room-grid fade-in-up">
                     <div class="room-card">
-                        <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
-                        <h4>50+ Horticulture Farmers</h4>
-                        <p>Grape growers, banana farmers, pomegranate operators.</p>
+                        <div class="room-card-icon"><i data-lucide="sprout" style="width:22px;height:22px;"></i></div>
+                        <h4>Horticulture Farmers</h4>
+                        <p>Understanding crop cycles</p>
                     </div>
                     <div class="room-card">
                         <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
@@ -798,22 +1024,22 @@
                         <p>Managing thousands of farmers</p>
                     </div>
                     <div class="room-card">
-                        <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+                        <div class="room-card-icon"><i data-lucide="clipboard-check" style="width:22px;height:22px;"></i></div>
                         <h4>Farm Supervisors</h4>
                         <p>Who hire labor daily</p>
                     </div>
                     <div class="room-card">
-                        <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+                        <div class="room-card-icon"><i data-lucide="hard-hat" style="width:22px;height:22px;"></i></div>
                         <h4>Labor Contractors</h4>
                         <p>20+ years in the business</p>
                     </div>
                     <div class="room-card">
-                        <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+                        <div class="room-card-icon"><i data-lucide="flask-conical" style="width:22px;height:22px;"></i></div>
                         <h4>Agronomists</h4>
                         <p>Understanding crop cycles</p>
                     </div>
                     <div class="room-card">
-                        <div class="room-card-icon"><i data-lucide="users" style="width:22px;height:22px;"></i></div>
+                        <div class="room-card-icon"><i data-lucide="truck" style="width:22px;height:22px;"></i></div>
                         <h4>Supply Chain Operators</h4>
                         <p>Downstream impact experts</p>
                     </div>
@@ -832,153 +1058,183 @@
                     <div class="did-box yes">
                         <h4>What We Did</h4>
                         <ul>
-                            <li>Open dialogue</li>
-                            <li>Candid conversations</li>
-                            <li>Pattern recognition</li>
+                            <li>Open Dialogue</li>
+                            <li>Candid Conversations</li>
+                            <li>Pattern Recognition</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- MARATHI TEXT: You can edit the Marathi text below -->
+                <!-- MARATHI QUOTE -->
                 <div class="marathi-quote-block fade-in-up">
-                    <!-- MARATHI_TEXT_START: Edit the Marathi quote text below -->
                     <p class="marathi-text">"जर हा मजुरांचा प्रश्न सुटला नाही, तर आम्हाला शेती सोडावी लागेल."</p>
                     <p class="marathi-attribution">– रामदास पाटील, शेतकरी</p>
-                    <!-- MARATHI_TEXT_END -->
                 </div>
                 <p class="marathi-subtitle">This wasn't hyperbole. It was desperation.</p>
             </div>
         </section>
 
-        <!-- ===== THE CRISIS WASN'T WHAT WE THOUGHT IT WAS ===== -->
+        <!-- ===== WHAT FARMERS / WORKERS TOLD US ===== -->
         <section class="crisis-section" id="crisis">
             <div class="container">
-                <div class="section-heading">
-                    <h2>The Crisis Wasn't What We Thought It Was.</h2>
-                </div>
-                <p class="section-sub">After careful reflection and consolidation of the Farm Truths conversations, the patterns became clear:</p>
-
-                <div class="green-blockquote" style="max-width:800px;margin:0 auto 40px;">
-                    <p>The problem wasn't 'labor shortage.' The problem was a broken co-ordination system.</p>
-                </div>
-
-                <!-- Farmer / Worker Voices -->
                 <div class="voices-grid fade-in-up">
                     <div class="voice-card farmers">
                         <h3>What Farmers Told Us</h3>
-                        <div class="voice-item">
-                            <p>"I need 50 workers tomorrow for harvesting. I have no idea if they'll show up."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"Contractors promise one wage, workers demand another when they arrive."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"My grapes are ready today. If workers don't come for 3 days, I lose 30% of my crop value."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"Good workers from last season? I have no way to find them again."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"Workers get no training, no insurance, no predictability. Why would they stay?"</p>
+                        <div class="voice-tags">
+                            <span class="voice-tag">Uncertainty</span>
+                            <span class="voice-tag">Unpredictability</span>
+                            <span class="voice-tag">Instability</span>
+                            <span class="voice-tag">Coordination</span>
+                            <span class="voice-tag">Trust</span>
                         </div>
                     </div>
                     <div class="voice-card workers">
-                        <h3>What Workers Told Us</h3>
-                        <div class="voice-item">
-                            <p>"We don't know where work is available until the morning."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"Wage negotiation happens on-site. It's always tense."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"If we get injured, there's no safety net."</p>
-                        </div>
-                        <div class="voice-item">
-                            <p>"We want steady work, not day-to-day uncertainty."</p>
+                        <h3>What Labors Told Us</h3>
+                        <div class="voice-tags">
+                            <span class="voice-tag">Volatility</span>
+                            <span class="voice-tag">Fragility</span>
+                            <span class="voice-tag">Disconnection</span>
+                            <span class="voice-tag">Informality</span>
+                            <span class="voice-tag">Exposure</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Trust / Coordination Failure Box -->
-                <div class="trust-box fade-in-up">
-                    <p>This wasn't a supply-demand mismatch. This was a trust and coordination failure — invisible to policy, ignored by tech platforms, unsolved by traditional agriculture. ₹thousands lost per farmer per season. Tens of thousands of workers stuck in informal chaos. An entire system running on phone calls and word-of-mouth.</p>
-                    <p class="emphasis">This was a category-defining opportunity hiding in plain sight.</p>
+                <!-- The Insight -->
+                <div class="insight-box fade-in-up" style="margin-top:40px;">
+                    <h3>The <span class="green">Insight.</span></h3>
+                    <p>The issue wasn't labour scarcity, but the absence of a reliable system connecting workers with farms.</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">Coordination</span>
+                        <span class="insight-tag">Reliability</span>
+                        <span class="insight-tag">Linkage</span>
+                        <span class="insight-tag alt">Trust</span>
+                        <span class="insight-tag alt">Visibility</span>
+                        <span class="insight-tag alt">Discovery</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== WE DIDN'T JUST FIND A PROBLEM ===== -->
+        <!-- ===== THE VENTURE BLUEPRINT ===== -->
         <section class="blueprint-section" id="blueprint">
             <div class="container">
                 <div class="blueprint-heading">
-                    <h2>We Didn't Just Find A Problem. <span class="green">We Built The Solution Blueprint Before The Founders Arrived.</span></h2>
+                    <h2>The <span class="green">Venture Blueprint</span></h2>
                 </div>
 
-                <div class="blueprint-lead">
-                    <p>Most accelerators say: "Bring us your idea, and we'll help you validate it." We flipped it.</p>
-                </div>
-
-                <div class="green-blockquote" style="max-width:800px;margin:0 auto 30px;">
-                    <p>We validated the opportunity first. Then we found the builders.</p>
-                </div>
-
-                <div class="blueprint-lead">
-                    <p>After extensive consultations and real user feedback from Farm Truths we had:</p>
-                </div>
-
-                <!-- Blueprint Cards - stacked vertically -->
-                <div class="blueprint-cards fade-in-up">
-                    <div class="blueprint-card">
-                        <h4>A Complete Venture Blueprint</h4>
-                        <ul>
-                            <li>Vision: A labor intelligence platform that formalizes farm hiring</li>
-                            <li>Market sizing: Maharashtra grapes + bananas = substantial wage pool annually</li>
-                            <li>Unit economics: Take-rate per worker-day + tool rental + embedded finance</li>
-                            <li>Pilot blueprint: Nashik grape farms, 500 worker-days in first month</li>
-                            <li>Risk map: Seasonality, churn, regulatory constraints — and mitigations</li>
-                        </ul>
+                <div class="blueprint-two-col fade-in-up">
+                    <!-- Left Column: Problem to Pilot -->
+                    <div class="blueprint-col">
+                        <p class="blueprint-col-title">Problem to Pilot</p>
+                        <div class="blueprint-item">
+                            <p class="bp-number">01</p>
+                            <h4>Vision</h4>
+                            <p>A labor intelligence platform that formalizes farm hiring</p>
+                        </div>
+                        <div class="blueprint-item">
+                            <p class="bp-number">02</p>
+                            <h4>Market Sizing</h4>
+                            <p>Maharashtra grapes + bananas = substantial wage pool annually</p>
+                        </div>
+                        <div class="blueprint-item">
+                            <p class="bp-number">03</p>
+                            <h4>Unit Economics</h4>
+                            <p>Take-rate per worker day + tool rental + embedded finance</p>
+                        </div>
+                        <div class="blueprint-item">
+                            <p class="bp-number">04</p>
+                            <h4>Pilot Opportunity</h4>
+                            <p>Nashik grape farms, 500 worker days in first month</p>
+                        </div>
+                        <div class="blueprint-item">
+                            <p class="bp-number">05</p>
+                            <h4>Risk Map</h4>
+                            <p>Seasonality, churn, regulatory constraints and mitigations</p>
+                        </div>
                     </div>
-                    <div class="blueprint-card">
-                        <h4>Pilot-Ready Access</h4>
-                        <ul>
-                            <li>Sahyadri Farms: 15,000 farmers, immediate testing ground</li>
-                            <li>12 packhouses with daily labor needs</li>
-                            <li>Anchor customers identified before a single line of code</li>
-                        </ul>
-                    </div>
-                    <div class="blueprint-card">
-                        <h4>The Guarantee</h4>
-                        <ul>
-                            <li>Paid pilots from day 1 (actual revenue, not free trials)</li>
-                            <li>Farmer network access (35,000+ farmers)</li>
-                            <li>Capital pathway (facilitated fundraising with proof)</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="blueprint-ready">
-                    <p>The blueprint was ready. Now we needed the right builders.</p>
+                    <!-- Right Column: Pilot Ready Access -->
+                    <div class="blueprint-col">
+                        <p class="blueprint-col-title">Pilot Ready Access</p>
+                        <div class="blueprint-access-item">
+                            <div class="blueprint-access-icon"><i data-lucide="land-plot" style="width:22px;height:22px;"></i></div>
+                            <div>
+                                <h4>50K Acre Farm</h4>
+                                <p>Daily labor needs</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-access-item">
+                            <div class="blueprint-access-icon"><i data-lucide="building" style="width:22px;height:22px;"></i></div>
+                            <div>
+                                <h4>Anchor Customer Identified</h4>
+                                <p>Single line of code</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-access-item">
+                            <div class="blueprint-access-icon"><i data-lucide="network" style="width:22px;height:22px;"></i></div>
+                            <div>
+                                <h4>30K+ Farmer Network</h4>
+                                <p>Sahyadri ecosystem</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-access-item">
+                            <div class="blueprint-access-icon"><i data-lucide="banknote" style="width:22px;height:22px;"></i></div>
+                            <div>
+                                <h4>Paid Pilots From Day 1</h4>
+                                <p>Actual revenue, not free trials</p>
+                            </div>
+                        </div>
+                        <div class="blueprint-access-item">
+                            <div class="blueprint-access-icon"><i data-lucide="trending-up" style="width:22px;height:22px;"></i></div>
+                            <div>
+                                <h4>Capital Pathway</h4>
+                                <p>Facilitated fundraising with proof</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ===== THE FOUNDERS SPEAK ===== -->
+        <!-- ===== THE INSIGHT - SUPPLY / DEMAND / TRUST ===== -->
+        <section class="insight-section">
+            <div class="insight-inner fade-in-up">
+                <h3>The <span class="green">Insight.</span></h3>
+                <p>Supply existed. Demand existed. Trust didn't.</p>
+                <p>Thousands lost each season. Workers uncertain of tomorrow's work. An industry running on phone calls and handshakes. In that accepted chaos sat a venture waiting to be built.</p>
+                <div class="insight-tags">
+                    <span class="insight-tag">Coordination</span>
+                    <span class="insight-tag">Reliability</span>
+                    <span class="insight-tag">Linkage</span>
+                    <span class="insight-tag alt">Trust</span>
+                    <span class="insight-tag alt">Visibility</span>
+                    <span class="insight-tag alt">Discovery</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== THE BLUEPRINT WAS READY. NOW WE NEEDED THE VISIONARY BUILDERS ===== -->
         <section class="founders-section" id="founders">
             <div class="container">
                 <div class="section-heading">
-                    <h2>The Founders Speak</h2>
+                    <h2>The blueprint was ready. Now we needed the Visionary Builders</h2>
                 </div>
 
                 <div class="founders-grid fade-in-up">
                     <div class="founder-card">
-                        <blockquote>"Sahyadri's domain depth and network gave us instant distribution, live POCs and unforgiving feedback, so we could validate in weeks instead of seasons."</blockquote>
-                        <p class="founder-name">Azhaan</p>
-                        <p class="founder-role">Co-Founder, Bharat Intelligence</p>
+                        <p class="founder-name">Azhaan Merchant</p>
+                        <p class="founder-role">Resilient Founder</p>
+                        <p class="founder-cohort">DISQ Cohort 2025</p>
+                        <p class="founder-bio">Azhaan is a global operator and investor who managed a $500M venture fund and held leadership roles across AI and technology companies before founding Bharat Intelligence. He previously served as SVP Strategy &amp; Business Development at Deep North and founded the networking app NamastHey at Emory University.</p>
+                        <blockquote>"Sahyadri's domain depth and network gave us instant distribution, live POCs and unforgiving feedback, so we could validate in weeks instead of seasons. Access to growers and partners exposed us to real farm workflows, not hypothetical user stories, so we could build for actual constraints and compress our 0-1 learning curve."</blockquote>
                     </div>
                     <div class="founder-card">
-                        <blockquote>"Access to growers and partners exposed us to real farm workflows, not hypothetical user stories, so we could build for actual constraints and compress our 0-1 learning curve."</blockquote>
-                        <p class="founder-name">Gaurav</p>
-                        <p class="founder-role">Co-Founder, Bharat Intelligence</p>
+                        <p class="founder-name">Gaurav Sanghai</p>
+                        <p class="founder-role">Tech Visionary</p>
+                        <p class="founder-cohort">DISQ Cohort 2025</p>
+                        <p class="founder-bio">Gourav built and scaled AI-led products as Co-Founder of edtech startup BodhiAI and later served as Technical Director at urban-tech VC firm Utopia, working with founders across emerging cities in Asia, Africa, and Latin America. His work focused on applying AI and machine learning to solve real-world problems.</p>
+                        <blockquote>"The issue wasn't labour scarcity, but the absence of a reliable system connecting workers with farms."</blockquote>
                     </div>
                 </div>
 
@@ -988,47 +1244,21 @@
             </div>
         </section>
 
-        <!-- ===== ₹7 CRORE RAISED ===== -->
+        <!-- ===== 7 CRORE RAISED ===== -->
         <section class="raised-section" id="raised">
             <div class="container">
                 <div class="raised-inner">
-                    <h2>₹7 CRORE RAISED</h2>
+                    <h2>&#8377;7 CRORE RAISED</h2>
                     <p class="raised-desc">Sahyadri Farms led. Ecosystem partners joined. Not because of a compelling pitch deck. Because the proof was undeniable.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ===== PLATFORM + STATS ===== -->
-        <section class="platform-section" id="platform">
+        <!-- ===== TODAY, HUNDREDS OF JOBS ===== -->
+        <section class="today-section">
             <div class="container">
-                <div class="platform-grid">
-                    <div class="platform-card">
-                        <h3>The Platform</h3>
-                        <ul>
-                            <li>Matches workers to farms via mobile app</li>
-                            <li>Provides worker verification and reliability scoring</li>
-                            <li>Offers embedded services (training, insurance, wages)</li>
-                            <li>Gives farmers predictability (book labor 2–3 days in advance)</li>
-                        </ul>
-                    </div>
-                    <div class="stat-cards">
-                        <div class="stat-card">
-                            <h3>1000s</h3>
-                            <p class="stat-label">Farm Jobs Matched</p>
-                            <p class="stat-sub">Platform operational</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>₹7 CR</h3>
-                            <p class="stat-label">Funding Raised</p>
-                            <p class="stat-sub">September 2025</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>15K+</h3>
-                            <p class="stat-label">Farmer Network</p>
-                            <p class="stat-sub">Sahyadri ecosystem</p>
-                        </div>
-                    </div>
-                </div>
+                <h2>Today, Hundreds Of Jobs. Tomorrow, Thousands.</h2>
+                <p class="today-sub">This is what happens when a blueprint meets the right founders</p>
             </div>
         </section>
 
@@ -1056,32 +1286,39 @@
 
                 <div class="method-flow fade-in-up">
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="ear" style="width:24px;height:24px;"></i></div>
                         <h4>Listen Deeply</h4>
                         <p>Farm Truths Dialogues</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="map" style="width:24px;height:24px;"></i></div>
                         <h4>Map Friction</h4>
                         <p>Identify where value is lost</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="file-text" style="width:24px;height:24px;"></i></div>
                         <h4>Build Blueprints</h4>
                         <p>Complete venture design upfront</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="shield-check" style="width:24px;height:24px;"></i></div>
                         <h4>Guarantee Access</h4>
                         <p>Paid pilots, networks, capital from day 1</p>
                     </div>
                     <div class="method-step">
-                        <div class="method-step-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+                        <div class="method-step-icon"><i data-lucide="hand-coins" style="width:24px;height:24px;"></i></div>
                         <h4>Facilitate Funding</h4>
                         <p>We help you raise</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <!-- ===== READY TO BUILD CTA ===== -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to build the future of Indian agriculture?</h2>
+                <p>We've done it once. We're doing it again. The next category-defining venture could be yours.</p>
                 <div class="apply-dual">
                     <a href="https://kumbhathon.accubate.app/ext/form/21446/1/apply" target="_blank"
                         rel="noopener noreferrer" class="btn btn-primary btn-large">APPLY TO BUILD NEXT VENTURE</a>
@@ -1089,10 +1326,63 @@
                 </div>
             </div>
         </section>
+
+        <!-- ===== UNLOCK OPPORTUNITIES WORTH BILLIONS ===== -->
+        <section class="opportunities-section" id="opportunities">
+            <div class="container">
+                <div class="opportunities-heading">
+                    <h2>Unlock Opportunities <span class="green">Worth Billions</span></h2>
+                </div>
+
+                <div class="opportunities-grid fade-in-up">
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="landmark" style="width:24px;height:24px;"></i></div>
+                        <h4>Agricultural Credit and Finance</h4>
+                        <p>51% farmers digitally invisible. KCC renewal PoC ready.</p>
+                        <p class="opp-stat">&#8377;31.5L cr market</p>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="truck" style="width:24px;height:24px;"></i></div>
+                        <h4>Building Logistic Ecosystem</h4>
+                        <p>18-22% losses. 10K trucks PoC ready.</p>
+                        <p class="opp-stat">&#8377;2.1L cr market</p>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="wrench" style="width:24px;height:24px;"></i></div>
+                        <h4>Affordable Mechanization</h4>
+                        <p>68% use manual tools. Equipment sharing PoC ready.</p>
+                        <p class="opp-stat">&#8377;1.45L cr market</p>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="mountain-snow" style="width:24px;height:24px;"></i></div>
+                        <h4>Responsible Agritourism</h4>
+                        <p>70% investor-owned. Farm stay network PoC ready.</p>
+                        <p class="opp-stat">&#8377;22,100 cr by 2030</p>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="recycle" style="width:24px;height:24px;"></i></div>
+                        <h4>Waste to Wealth</h4>
+                        <p>4% adoption of resilient varieties. Farm trials PoC ready.</p>
+                        <p class="opp-stat">&#8377;24-49K cr budget</p>
+                    </div>
+                    <div class="opportunity-card">
+                        <div class="opportunity-card-icon"><i data-lucide="link" style="width:24px;height:24px;"></i></div>
+                        <h4>Value Chain Integration</h4>
+                        <p>86% FPOs only aggregate. Processing facility PoC ready.</p>
+                        <p class="opp-stat">&#8377;40-50K cr market</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="container footer-slim">
+            <div class="footer-links-row" style="display:flex; justify-content:center; gap:24px; margin-bottom:16px;">
+                <a href="index.html" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">Home</a>
+                <a href="venture-blueprint.html" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">Partners</a>
+                <a href="faq.html" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px;">FAQ</a>
+            </div>
             <div class="footer-logo">
                 <a href="index.html"><img src="assets/logo.png" alt="Agri Founders Field Logo"
                         style="height: 30px; filter: brightness(0) invert(1); opacity: 0.8;"></a>
