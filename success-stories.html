@@ -401,7 +401,24 @@
 
         .told-card {
             border-radius: 14px;
-            padding: 26px 22px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .told-card-img {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+        }
+
+        .told-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .told-card-body {
+            padding: 22px 20px;
         }
 
         .told-card.farmers-card {
@@ -685,8 +702,8 @@
         }
 
         .founder-avatar {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.15);
             display: flex;
@@ -694,6 +711,7 @@
             justify-content: center;
             margin-bottom: 14px;
             overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.2);
         }
 
         .founder-avatar img {
@@ -1111,7 +1129,7 @@
         <!-- ========== 1. HERO ========== -->
         <section class="ss-hero">
             <div class="ss-hero-bg">
-                <img src="assets/farm-truths-dialogue.jpg" alt="Farm background">
+                <img src="assets/Gemini_Generated_Image_vh7lllvh7lllvh7l 1.png" alt="Farm workers in agricultural field">
             </div>
             <div class="container">
                 <span class="ss-hero-tag">The Venture Blueprint Method</span>
@@ -1163,6 +1181,11 @@
                 <p class="diverse-desc">In May 2025, DISQ convened what we call a <strong>Farm Truths
                         Dialogue</strong> &mdash; an unconference designed to uncover reality, not validate assumptions.
                 </p>
+
+                <!-- Farm Truths Dialogue Photo -->
+                <div style="max-width:800px; margin:40px auto 0; border-radius:12px; overflow:hidden;">
+                    <img src="assets/image 23.png" alt="Farm Truths Dialogue - stakeholders gathered for open conversation" style="width:100%; height:auto; display:block;">
+                </div>
             </div>
         </section>
 
@@ -1242,23 +1265,33 @@
             <div class="container">
                 <div class="told-grid fade-in-up">
                     <div class="told-card farmers-card">
-                        <h3>What Farmers Told Us</h3>
-                        <div class="told-tags">
-                            <span class="told-tag">UNCERTAINITY</span>
-                            <span class="told-tag">unpredictability</span>
-                            <span class="told-tag">INSTABILITY</span>
-                            <span class="told-tag">COORDINATION</span>
-                            <span class="told-tag">TRUST</span>
+                        <div class="told-card-img">
+                            <img src="assets/image 31.png" alt="Indian farmer in field">
+                        </div>
+                        <div class="told-card-body">
+                            <h3>What Farmers Told Us</h3>
+                            <div class="told-tags">
+                                <span class="told-tag">UNCERTAINITY</span>
+                                <span class="told-tag">unpredictability</span>
+                                <span class="told-tag">INSTABILITY</span>
+                                <span class="told-tag">COORDINATION</span>
+                                <span class="told-tag">TRUST</span>
+                            </div>
                         </div>
                     </div>
                     <div class="told-card labors-card">
-                        <h3>What labors Told Us</h3>
-                        <div class="told-tags">
-                            <span class="told-tag">VOLATILITY</span>
-                            <span class="told-tag">FRAGILITY</span>
-                            <span class="told-tag">DISCONNECTION</span>
-                            <span class="told-tag">INFORMALITY</span>
-                            <span class="told-tag">EXPOSURE</span>
+                        <div class="told-card-img">
+                            <img src="assets/image 33.png" alt="Farm labor worker">
+                        </div>
+                        <div class="told-card-body">
+                            <h3>What labors Told Us</h3>
+                            <div class="told-tags">
+                                <span class="told-tag">VOLATILITY</span>
+                                <span class="told-tag">FRAGILITY</span>
+                                <span class="told-tag">DISCONNECTION</span>
+                                <span class="told-tag">INFORMALITY</span>
+                                <span class="told-tag">EXPOSURE</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1395,7 +1428,7 @@
                 <div class="founders-row fade-in-up">
                     <div class="founder-card">
                         <div class="founder-avatar">
-                            <img src="assets/archetype_resilient.png" alt="Azhaan Merchant">
+                            <img src="assets/Azaan.png" alt="Azhaan Merchant">
                         </div>
                         <p class="founder-name">Azhaan Merchant</p>
                         <p class="founder-role">Resilient Founder</p>
@@ -1411,7 +1444,7 @@
                     </div>
                     <div class="founder-card">
                         <div class="founder-avatar">
-                            <img src="assets/archetype_tech.png" alt="Gaurav Sanghai">
+                            <img src="assets/gaurav.png" alt="Gaurav Sanghai">
                         </div>
                         <p class="founder-name">Gaurav Sanghai</p>
                         <p class="founder-role">Tech Visionary</p>
