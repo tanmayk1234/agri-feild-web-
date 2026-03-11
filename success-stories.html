@@ -514,20 +514,20 @@
         .told-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 800px;
+            gap: 30px;
+            max-width: 900px;
             margin: 0 auto 30px;
         }
 
         .told-card {
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             position: relative;
         }
 
         .told-card-img {
             width: 100%;
-            height: 280px;
+            height: 420px;
             position: relative;
         }
 
@@ -542,7 +542,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.55) 100%);
         }
 
         .told-card-content {
@@ -550,30 +550,36 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 20px;
+            padding: 24px;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .told-card h3 {
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 22px;
+            font-weight: 700;
+            font-style: italic;
             color: #fff;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             font-family: var(--font-heading);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
 
         .told-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 8px;
+            justify-content: center;
         }
 
         .told-tag {
-            background: rgba(74, 222, 128, 0.7);
+            background: rgba(163, 177, 138, 0.85);
             color: #fff;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 11px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -1271,6 +1277,10 @@
         @media (max-width: 768px) {
             .told-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .told-card-img {
+                height: 350px;
             }
 
             .founders-row {
