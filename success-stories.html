@@ -865,40 +865,54 @@
 
         .founder-role {
             font-size: 13px;
-            color: #1B6B38;
+            color: #fff;
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            display: inline-block;
+            background: #1B6B38;
+            padding: 4px 16px;
+            border-radius: 20px;
         }
 
         .founder-cohort {
             font-size: 11px;
-            color: #999;
-            font-weight: 600;
-            text-transform: uppercase;
+            color: #888;
+            font-weight: 500;
             letter-spacing: 0.5px;
             margin-bottom: 16px;
-            display: inline-block;
-            background: #f0f7f4;
-            padding: 4px 12px;
-            border-radius: 20px;
         }
 
         .founder-bio {
-            font-size: 13px;
-            color: #555;
+            font-size: 12px;
+            color: #444;
             line-height: 1.7;
-            margin-bottom: 14px;
-            text-align: left;
+            margin-bottom: 16px;
+            text-align: center;
         }
 
         .founder-quote {
-            font-size: 13px;
+            font-size: 12px;
             color: #333;
-            line-height: 1.7;
+            line-height: 1.6;
             font-style: italic;
-            border-left: 3px solid #1B6B38;
-            padding-left: 14px;
+            background: #e8f5e9;
+            border-radius: 12px;
+            padding: 16px 18px;
             text-align: left;
+            position: relative;
+            margin-top: 8px;
+        }
+
+        .founder-quote::before {
+            content: '\201C';
+            font-size: 40px;
+            color: #1B6B38;
+            font-family: Georgia, serif;
+            line-height: 1;
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            opacity: 0.4;
         }
 
         .press-center {
@@ -909,11 +923,12 @@
             display: inline-block;
             background: #fff;
             color: #1B6B38;
-            padding: 12px 28px;
+            padding: 10px 28px;
             border: 2px solid #1B6B38;
-            border-radius: 6px;
-            font-size: 14px;
+            border-radius: 50px;
+            font-size: 13px;
             font-weight: 600;
+            font-style: italic;
             font-family: var(--font-heading);
             text-decoration: none;
             transition: all 0.3s ease;
@@ -1629,14 +1644,12 @@
                         <p class="founder-name">Azhaan Merchant</p>
                         <p class="founder-role">Resilient Founder</p>
                         <p class="founder-cohort">DISQ Cohort 2025</p>
-                        <p class="founder-bio">Azhaan is a global operator and investor who managed a $500M venture fund
-                            and held leadership roles across AI and technology companies before founding Bharat
-                            Intelligence. He previously served as SVP Strategy &amp; Business Development at Deep North
-                            and founded the networking app NamastHey at Emory University.</p>
-                        <p class="founder-quote">"Sahyadri's domain depth and network gave us instant distribution, live
-                            POCs and unforgiving feedback, so we could validate in weeks instead of seasons. Access to
-                            growers and partners exposed us to real farm workflows, not hypothetical user stories, so we
-                            could build for actual constraints and compress our 0-1 learning curve."</p>
+                        <p class="founder-bio">Azhaan Is A Global Operator And Investor Who Managed A $500M Venture Fund
+                            And Held Leadership Roles Across AI And Technology Companies Before Founding Bharat
+                            Intelligence. He Previously Served As SVP &ndash; Strategy &amp; Business Development At Deep North
+                            And Founded The Networking App NamastHey At Emory University.</p>
+                        <p class="founder-quote">Sahyadri's domain depth and network gave us instant distribution, live
+                            POCs and unforgiving feedback, so we could validate in weeks instead of seasons.</p>
                     </div>
                     <div class="founder-card">
                         <div class="founder-avatar">
@@ -1645,12 +1658,14 @@
                         <p class="founder-name">Gaurav Sanghai</p>
                         <p class="founder-role">Tech Visionary</p>
                         <p class="founder-cohort">DISQ Cohort 2025</p>
-                        <p class="founder-bio">Gourav built and scaled AI-led products as Co-Founder of edtech startup
-                            BodhiAI and later served as Technical Director at urban-tech VC firm Utopia, working with
-                            founders across emerging cities in Asia, Africa, and Latin America. His work focused on
-                            applying AI and machine learning to solve real-world problems.</p>
-                        <p class="founder-quote">"Access to growers and partners exposed us to real farm workflows, not hypothetical user stories, so we
-                            could build for actual constraints and compress our 0-1 learning curve."</p>
+                        <p class="founder-bio">Gourav Built And Scaled AI-Led Products As Co-Founder
+                            Of Edtech Startup BodhiAI And Later Served As Technical
+                            Director At Urban-Tech VC Firm Utopia, Working With
+                            Founders Across Emerging Cities In Asia, Africa, And
+                            Latin America. His Work Focused On Applying AI And
+                            Machine Learning To Solve Real-World Problems.</p>
+                        <p class="founder-quote">Access to growers and partners exposed us to real farm workflows, not hypothetical user
+                            stories, so we could build for actual constraints and compress our 0&ndash;1 learning curve.</p>
                     </div>
                 </div>
 
