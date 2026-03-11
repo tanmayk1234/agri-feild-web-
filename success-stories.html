@@ -290,10 +290,11 @@
 
         .room-heading {
             text-align: left;
-            font-size: clamp(22px, 2.5vw, 30px);
+            font-size: clamp(24px, 3vw, 32px);
             font-family: var(--font-heading);
-            font-weight: 600;
-            margin-bottom: 6px;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 10px;
             color: #1a1a1a;
         }
 
@@ -303,10 +304,10 @@
 
         .room-sub {
             text-align: left;
-            max-width: 500px;
-            margin: 0 0 24px;
-            font-size: 14px;
-            color: #555;
+            max-width: 450px;
+            margin: 0 0 28px;
+            font-size: 15px;
+            color: #444;
             line-height: 1.6;
         }
 
@@ -326,18 +327,18 @@
         .room-chip {
             background: #f0f7f4;
             border: 1px solid #d4e8dc;
-            border-radius: 10px;
-            padding: 14px 12px;
+            border-radius: 50px;
+            padding: 12px 20px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .room-chip-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 6px;
-            background: rgba(27, 107, 56, 0.1);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(27, 107, 56, 0.12);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -351,6 +352,8 @@
             color: #1B6B38;
             font-family: var(--font-heading);
             margin: 0;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
 
         /* Right: What We Did / Did NOT cards */
@@ -362,15 +365,17 @@
         }
 
         .did-not-card h4 {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
+            font-style: italic;
             font-family: var(--font-heading);
             margin-bottom: 14px;
             color: #fff;
+            text-align: center;
         }
 
         .did-not-card h4 .not-bold {
-            font-weight: 600;
+            font-weight: 800;
         }
 
         .did-not-items {
@@ -411,6 +416,8 @@
 
         .did-yes h4 {
             color: #fff;
+            text-align: center;
+            font-style: italic;
         }
 
         .did-yes-items {
@@ -453,51 +460,54 @@
         }
 
         .marathi-block .marathi-quote-mark {
-            font-size: 60px;
-            color: rgba(255, 255, 255, 0.3);
+            font-size: 80px;
+            color: rgba(255, 255, 255, 0.25);
             font-family: Georgia, serif;
             line-height: 1;
             position: absolute;
-            top: 10px;
-            left: 20px;
+            top: -5px;
+            left: 16px;
         }
 
         .marathi-block .marathi-quote-mark.end {
             left: auto;
-            right: 20px;
-            bottom: 10px;
+            right: 16px;
+            bottom: -5px;
             top: auto;
         }
 
         .marathi-block .marathi-text {
             font-size: clamp(20px, 2.5vw, 28px);
-            font-weight: 600;
+            font-weight: 700;
             color: #fff;
-            line-height: 1.5;
-            margin-bottom: 8px;
+            line-height: 1.4;
+            margin-bottom: 4px;
             font-style: italic;
             position: relative;
             z-index: 1;
-            padding: 0 30px;
+            text-align: center;
+            padding: 0 40px;
         }
 
         .marathi-block .marathi-attr {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 700;
+            font-style: italic;
             position: relative;
             z-index: 1;
-            padding-left: 30px;
+            text-align: center;
+            margin-bottom: 16px;
         }
 
         .marathi-note {
             text-align: center;
             font-size: 14px;
-            color: #fff;
-            font-weight: 500;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 12px 0;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 400;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
         }
 
         /* ===== WHAT FARMERS / LABORS TOLD US ===== */
@@ -1471,8 +1481,8 @@
                         <span class="marathi-quote-mark end">&rdquo;</span>
                         <p class="marathi-text">जर हा मजुरांचा प्रश्न सुटला नाही, तर आम्हाला शेती सोडावी लागेल.</p>
                         <p class="marathi-attr">&ndash; रामदास पाटील, शेतकरी</p>
+                        <p class="marathi-note">This wasn't hyperbole. It was desperation.</p>
                     </div>
-                    <p class="marathi-note">This wasn't hyperbole. It was desperation.</p>
                 </div>
             </div>
         </section>
