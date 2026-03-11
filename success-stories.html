@@ -643,23 +643,26 @@
         }
 
         .vb-col {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 12px;
             padding: 24px 20px;
         }
 
         .vb-col-label {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 600;
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             font-family: var(--font-heading);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            padding-bottom: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            padding: 8px 16px;
             text-align: center;
+            display: inline-block;
+            width: 100%;
         }
 
         .vb-numbered {
@@ -674,17 +677,18 @@
         }
 
         .vb-num {
-            width: 36px;
-            height: 36px;
-            min-width: 36px;
+            width: 38px;
+            height: 38px;
+            min-width: 38px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.5);
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 700;
             font-family: var(--font-heading);
         }
 
@@ -706,59 +710,27 @@
         /* Right col: access items */
         .vb-access {
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
+            padding: 14px 16px;
+            background: #fff;
+            border-radius: 10px;
         }
 
         .vb-access:last-child {
             margin-bottom: 0;
         }
 
-        .vb-access-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            flex-shrink: 0;
-        }
-
         .vb-access h4 {
-            font-size: 13px;
-            font-weight: 600;
-            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
             font-family: var(--font-heading);
-            margin-bottom: 1px;
+            margin-bottom: 2px;
         }
 
         .vb-access p {
-            font-size: 11px;
-            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+            color: #666;
             line-height: 1.3;
-        }
-
-        .vb-market-label {
-            margin-top: 16px;
-            text-align: center;
-        }
-
-        .vb-market-label span {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.15);
-            color: #fff;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 6px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         /* ===== SECOND INSIGHT ===== */
@@ -1595,50 +1567,32 @@
                         <div class="vb-col">
                             <p class="vb-col-label">PILOT READY ACCESS</p>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="land-plot" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>50K Acre farm</h4>
-                                    <p>Daily Labor Needs</p>
-                                </div>
+                                <h4>50K Acre farm</h4>
+                                <p>Daily Labor Needs</p>
                             </div>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="building" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>Anchor Customer Identified</h4>
-                                    <p>Single line of code</p>
-                                </div>
+                                <h4>Anchor Customer Identified</h4>
+                                <p>Single line of code</p>
                             </div>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="network" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>30K+ Farmer Network</h4>
-                                    <p>Sahyadri ecosystem</p>
-                                </div>
+                                <h4>30K+ Farmer Network</h4>
+                                <p>Sahyadri ecosystem</p>
                             </div>
                         </div>
 
                         <div class="vb-col">
                             <p class="vb-col-label">MARKET IMPACT</p>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="banknote" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>Paid pilots From Day 1</h4>
-                                    <p>Actual revenue, not free trials</p>
-                                </div>
+                                <h4>Paid pilots From Day 1</h4>
+                                <p>Actual revenue, not free trials</p>
                             </div>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="trending-up" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>Capital Pathway</h4>
-                                    <p>Facilitated fundraising with proof</p>
-                                </div>
+                                <h4>Capital Pathway</h4>
+                                <p>Facilitated fundraising with proof</p>
                             </div>
                             <div class="vb-access">
-                                <div class="vb-access-icon"><i data-lucide="users" style="width:16px;height:16px;"></i></div>
-                                <div>
-                                    <h4>30K+ Farmer Network</h4>
-                                    <p>Sahyadri ecosystem</p>
-                                </div>
+                                <h4>30K+ Farmer Network</h4>
+                                <p>Sahyadri ecosystem</p>
                             </div>
                         </div>
                     </div>
