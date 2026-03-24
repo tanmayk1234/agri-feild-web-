@@ -1210,6 +1210,33 @@ img {
     font-size: 12px;
 }
 
+.footer-copy-slim a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-copy-slim a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 @media (max-width: 768px) {
     .footer-slim {
         flex-direction: column;

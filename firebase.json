@@ -1,0 +1,55 @@
+{
+    "hosting": {
+        "public": ".",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**",
+            "Agri_Founders_Field_Complete_Website_Package.docx",
+            "doc_content.txt",
+            "doc_part_*",
+            "deploy.sh"
+        ],
+        "headers": [
+            {
+                "source": "**",
+                "headers": [
+                    { "key": "X-Content-Type-Options", "value": "nosniff" },
+                    { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+                    { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+                    { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+                ]
+            },
+            {
+                "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif)",
+                "headers": [
+                    { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+                ]
+            },
+            {
+                "source": "**/*.@(css|js)",
+                "headers": [
+                    { "key": "Cache-Control", "value": "public, max-age=604800" }
+                ]
+            },
+            {
+                "source": "**/*.@(mp4|webm)",
+                "headers": [
+                    { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+                ]
+            },
+            {
+                "source": "**/*.html",
+                "headers": [
+                    { "key": "Cache-Control", "value": "public, max-age=3600" }
+                ]
+            }
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}

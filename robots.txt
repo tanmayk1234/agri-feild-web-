@@ -1,0 +1,21 @@
+# Robots.txt for Agri Founders Field
+# https://agrifounders.com/
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /faq.html
+Allow: /assets/logo.png
+
+# Block non-essential assets from crawling
+Disallow: /firebase.json
+Disallow: /.firebaserc
+Disallow: /deploy.sh
+Disallow: /doc_content.txt
+Disallow: /doc_part_*
+
+# Sitemaps
+Sitemap: https://agrifounders.com/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
